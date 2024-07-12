@@ -21,3 +21,9 @@ draft-maldant-spice-oidc-cwt.xml
 package-lock.json
 report.xml
 !requirements.txt
+
+!versioned/draft-maldant-spice-oidc-cwt-00.xml
+
+## IDEA
+
+.idea/*
