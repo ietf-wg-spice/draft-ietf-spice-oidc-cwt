@@ -1,6 +1,6 @@
-# TODO - Your title
+# draft-maldant-spice-oidc-cwt
 
-This is the working area for the individual Internet-Draft, "TODO - Your title".
+This is the working area for the individual Internet-Draft, "draft-maldant-spice-oidc-cwt".
 
 * [Editor's Copy](https://beltram.github.io/rfc-spice-oidc-cwt/#go.draft-maldant-spice-oidc-cwt.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-maldant-spice-oidc-cwt)
