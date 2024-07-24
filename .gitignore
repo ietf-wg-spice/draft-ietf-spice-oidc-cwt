@@ -27,3 +27,4 @@ report.xml
 ## IDEA
 
 .idea/*
+*.iml
