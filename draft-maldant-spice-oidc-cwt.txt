@@ -4,8 +4,8 @@
 
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
-Intended status: Informational                              12 July 2024
-Expires: 13 January 2025
+Intended status: Informational                              24 July 2024
+Expires: 25 January 2025
 
 
     OpenID Connect standard claims registration for CBOR Web Tokens
@@ -49,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 13 January 2025.
+   This Internet-Draft will expire on 25 January 2025.
 
 Copyright Notice
 
@@ -131,7 +131,7 @@ Table of Contents
 
    *  JWT Claim Name: name
 
-   *  Claim Key: 170
+   *  Claim Key: TBD (requested assignment 170)
 
    *  Claim Value Type(s): text string
 
@@ -147,7 +147,7 @@ Table of Contents
 
    *  JWT Claim Name: given_name
 
-   *  Claim Key: 171
+   *  Claim Key: TBD (requested assignment 171)
 
    *  Claim Value Type(s): text string
 
@@ -163,7 +163,7 @@ Table of Contents
 
    *  JWT Claim Name: family_name
 
-   *  Claim Key: 172
+   *  Claim Key: TBD (requested assignment 172)
 
    *  Claim Value Type(s): text string
 
@@ -179,7 +179,7 @@ Table of Contents
 
    *  JWT Claim Name: middle_name
 
-   *  Claim Key: 173
+   *  Claim Key: TBD (requested assignment 173)
 
    *  Claim Value Type(s): text string
 
@@ -196,7 +196,7 @@ Table of Contents
 
    *  JWT Claim Name: nickname
 
-   *  Claim Key: 174
+   *  Claim Key: TBD (requested assignment 174)
 
    *  Claim Value Type(s): text string
 
@@ -213,7 +213,7 @@ Table of Contents
 
    *  JWT Claim Name: preferred_username
 
-   *  Claim Key: 175
+   *  Claim Key: TBD (requested assignment 175)
 
    *  Claim Value Type(s): text string
 
@@ -229,7 +229,7 @@ Table of Contents
 
    *  JWT Claim Name: profile
 
-   *  Claim Key: 176
+   *  Claim Key: TBD (requested assignment 176)
 
    *  Claim Value Type(s): text string
 
@@ -247,7 +247,7 @@ Table of Contents
 
    *  JWT Claim Name: picture
 
-   *  Claim Key: 177
+   *  Claim Key: TBD (requested assignment 177)
 
    *  Claim Value Type(s): text string
 
@@ -263,7 +263,7 @@ Table of Contents
 
    *  JWT Claim Name: website
 
-   *  Claim Key: 178
+   *  Claim Key: TBD (requested assignment 178)
 
    *  Claim Value Type(s): text string
 
@@ -279,7 +279,7 @@ Table of Contents
 
    *  JWT Claim Name: email
 
-   *  Claim Key: 179
+   *  Claim Key: TBD (requested assignment 179)
 
    *  Claim Value Type(s): text string
 
@@ -296,7 +296,7 @@ Table of Contents
 
    *  JWT Claim Name: email_verified
 
-   *  Claim Key: 180
+   *  Claim Key: TBD (requested assignment 180)
 
    *  Claim Value Type(s): text string
 
@@ -312,7 +312,7 @@ Table of Contents
 
    *  JWT Claim Name: gender
 
-   *  Claim Key: 181
+   *  Claim Key: TBD (requested assignment 181)
 
    *  Claim Value Type(s): text string
 
@@ -329,7 +329,7 @@ Table of Contents
 
    *  JWT Claim Name: birthdate
 
-   *  Claim Key: 182
+   *  Claim Key: TBD (requested assignment 182)
 
    *  Claim Value Type(s): text string
 
@@ -346,7 +346,7 @@ Table of Contents
 
    *  JWT Claim Name: zoneinfo
 
-   *  Claim Key: 183
+   *  Claim Key: TBD (requested assignment 183)
 
    *  Claim Value Type(s): text string
 
@@ -363,7 +363,7 @@ Table of Contents
 
    *  JWT Claim Name: locale
 
-   *  Claim Key: 184
+   *  Claim Key: TBD (requested assignment 184)
 
    *  Claim Value Type(s): text string
 
@@ -379,7 +379,7 @@ Table of Contents
 
    *  JWT Claim Name: phone_number
 
-   *  Claim Key: 185
+   *  Claim Key: TBD (requested assignment 185)
 
    *  Claim Value Type(s): text string
 
@@ -396,7 +396,7 @@ Table of Contents
 
    *  JWT Claim Name: phone_number_verified
 
-   *  Claim Key: 186
+   *  Claim Key: TBD (requested assignment 186)
 
    *  Claim Value Type(s): text string
 
@@ -412,7 +412,7 @@ Table of Contents
 
    *  JWT Claim Name: address
 
-   *  Claim Key: 187
+   *  Claim Key: TBD (requested assignment 187)
 
    *  Claim Value Type(s): text string (the content is a JSON array)
 
@@ -430,7 +430,7 @@ Table of Contents
 
    *  JWT Claim Name: updated_at
 
-   *  Claim Key: 188
+   *  Claim Key: TBD (requested assignment 188)
 
    *  Claim Value Type(s): uint
 
