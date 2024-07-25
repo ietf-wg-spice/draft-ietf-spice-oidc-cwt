@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-23T00:47:38.710867+00:00",
+  "timestamp": "2024-07-25T00:47:24.571005+00:00",
   "repo": "beltram/rfc-spice-oidc-cwt",
   "labels": [
     {
@@ -50,5 +50,34 @@
     }
   ],
   "issues": [],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOMVdXTs52S4yk",
+      "title": "feat: change from specifying number for keys to requesting them",
+      "url": "https://github.com/beltram/rfc-spice-oidc-cwt/pull/1",
+      "state": "MERGED",
+      "author": "beltram",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-24T06:22:10Z",
+      "updatedAt": "2024-07-24T06:22:47Z",
+      "baseRepository": "beltram/rfc-spice-oidc-cwt",
+      "baseRefName": "main",
+      "baseRefOid": "59565b464b0aed70403959c7639e7b4e86619ec2",
+      "headRepository": "beltram/rfc-spice-oidc-cwt",
+      "headRefName": "review",
+      "headRefOid": "e17c25178cb152c1a53bdb3bee108d817e68e82d",
+      "closedAt": "2024-07-24T06:22:44Z",
+      "mergedAt": "2024-07-24T06:22:44Z",
+      "mergedBy": "beltram",
+      "mergeCommit": {
+        "oid": "89f4b634cd9e3b0e507d883283be85d0ee0db5bd"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
