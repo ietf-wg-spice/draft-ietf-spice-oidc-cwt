@@ -51,6 +51,7 @@ informative:
 --- abstract
 
 This document registers OpenId Connect standards claims already used in JSON Web Tokens for CBOR Web Tokens.
+Given the nature of Concise Binary Object Representation claim keys, it aims at registering IANA code points inversely proportional to their respective prevalence.
 
 
 --- middle
@@ -58,6 +59,8 @@ This document registers OpenId Connect standards claims already used in JSON Web
 # Introduction
 
 OpenId Connect {{OIDCCore}} is an authentication standard including standard claims already in use for JSON Web Tokens (JWT) {{?RFC7519}}. CBOR Web Tokens (CWT) {{!RFC8392}} have a claims registry, but do not include most of these claims. This draft aims at unifying use of OIDC claims in JWTs and CWTs.
+Since the claims keys registered here are meant for (CWT) {{!RFC8392}} and data minimization is expected all the keys are unsigned integers or Major type 0 as defined in {{Section 3.1 of !RFC8949}}.
+Among these claims, some are more frequent ("name", "email") than others ("wesite", "middle_name"). Lower IANA code points are requested so that the key fits in one byte (if it's less than 24) instead of two or more bytes.
 
 # Conventions and Definitions
 
@@ -75,7 +78,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: name
 - Claim Description: End-User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the End-User's locale and preferences.
 - JWT Claim Name: name
-- Claim Key: TBD (requested assignment 170)
+- Claim Key: TBD (requested assignment 11)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -85,7 +88,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: given_name
 - Claim Description: Given name(s) or first name(s) of the End-User.
 - JWT Claim Name: given_name
-- Claim Key: TBD (requested assignment 171)
+- Claim Key: TBD (requested assignment 170)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -95,7 +98,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: family_name
 - Claim Description: Surname(s) or last name(s) of the End-User.
 - JWT Claim Name: family_name
-- Claim Key: TBD (requested assignment 172)
+- Claim Key: TBD (requested assignment 171)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -105,7 +108,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: middle_name
 - Claim Description: Middle name(s) of the End-User.
 - JWT Claim Name: middle_name
-- Claim Key: TBD (requested assignment 173)
+- Claim Key: TBD (requested assignment 172)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -115,7 +118,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: nickname
 - Claim Description: Casual name of the End-User that may or may not be the same as the given_name.
 - JWT Claim Name: nickname
-- Claim Key: TBD (requested assignment 174)
+- Claim Key: TBD (requested assignment 173)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -125,7 +128,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: preferred_username
 - Claim Description: Shorthand name by which the End-User wishes to be referred to at the Resource Server.
 - JWT Claim Name: preferred_username
-- Claim Key: TBD (requested assignment 175)
+- Claim Key: TBD (requested assignment 12)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -135,7 +138,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: profile
 - Claim Description: URL of the End-User's profile page.
 - JWT Claim Name: profile
-- Claim Key: TBD (requested assignment 176)
+- Claim Key: TBD (requested assignment 174)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -145,7 +148,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: picture
 - Claim Description: URL of the End-User's profile picture. This URL MUST refer to an image file, rather than to a Web page containing an image.
 - JWT Claim Name: picture
-- Claim Key: TBD (requested assignment 177)
+- Claim Key: TBD (requested assignment 175)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -155,7 +158,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: website
 - Claim Description: URL of the End-User's Web page or blog.
 - JWT Claim Name: website
-- Claim Key: TBD (requested assignment 178)
+- Claim Key: TBD (requested assignment 176)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -165,7 +168,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: email
 - Claim Description: End-User's preferred e-mail address.
 - JWT Claim Name: email
-- Claim Key: TBD (requested assignment 179)
+- Claim Key: TBD (requested assignment 13)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -175,7 +178,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: email_verified
 - Claim Description: True if the End-User's e-mail address has been verified; otherwise false.
 - JWT Claim Name: email_verified
-- Claim Key: TBD (requested assignment 180)
+- Claim Key: TBD (requested assignment 177)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -185,7 +188,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: gender
 - Claim Description: End-User's defined gender.
 - JWT Claim Name: gender
-- Claim Key: TBD (requested assignment 181)
+- Claim Key: TBD (requested assignment 178)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -195,7 +198,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: birthdate
 - Claim Description: End-User's birthday, represented as an [ISO8601‑1] YYYY-MM-DD format.
 - JWT Claim Name: birthdate
-- Claim Key: TBD (requested assignment 182)
+- Claim Key: TBD (requested assignment 179)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -205,7 +208,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: zoneinfo
 - Claim Description: String from IANA Time Zone Database {{IANAtimezones}} representing the End-User's time zone.
 - JWT Claim Name: zoneinfo
-- Claim Key: TBD (requested assignment 183)
+- Claim Key: TBD (requested assignment 180)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -215,7 +218,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: locale
 - Claim Description: End-User's locale, represented as a BCP47 {{!RFC5646}} language tag.
 - JWT Claim Name: locale
-- Claim Key: TBD (requested assignment 184)
+- Claim Key: TBD (requested assignment 181)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -225,7 +228,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: phone_number
 - Claim Description: End-User's preferred telephone number.
 - JWT Claim Name: phone_number
-- Claim Key: TBD (requested assignment 185)
+- Claim Key: TBD (requested assignment 182)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -235,7 +238,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: phone_number_verified
 - Claim Description:  True if the End-User's phone number has been verified; otherwise false.
 - JWT Claim Name: phone_number_verified
-- Claim Key: TBD (requested assignment 186)
+- Claim Key: TBD (requested assignment 183)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -245,7 +248,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: address
 - Claim Description: End-User's preferred postal address.
 - JWT Claim Name: address
-- Claim Key: TBD (requested assignment 187)
+- Claim Key: TBD (requested assignment 184)
 - Claim Value Type(s): text string (the content is a JSON array)
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -255,7 +258,7 @@ This document registers existing OpenID Connect standard claims already used in 
 - Claim Name: updated_at
 - Claim Description: Time the End-User's information was last updated. Its value is a number representing the number of seconds from 1970-01-01T00:00:00Z as measured in UTC until the date/time.
 - JWT Claim Name: updated_at
-- Claim Key: TBD (requested assignment 188)
+- Claim Key: TBD (requested assignment 185)
 - Claim Value Type(s): uint
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
