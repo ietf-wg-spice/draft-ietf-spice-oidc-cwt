@@ -261,3 +261,11 @@ This document registers existing OpenID Connect standard claims already used in 
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 --- back
+
+# CDDL Schema {#cddl}
+
+~~~~~~~~~~
+{::include ./oidc-claims.cddl}
+~~~~~~~~~~
+{: #cddl-schema title="A CDDL description of each claim"}
+
