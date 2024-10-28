@@ -9,24 +9,24 @@
 <meta content="
        This document registers OpenId Connect standards claims already used in JSON Web Tokens for CBOR Web Tokens. 
     " name="description">
-<meta content="xml2rfc 3.22.0" name="generator">
+<meta content="xml2rfc 3.23.2" name="generator">
 <meta content="openid connect" name="keyword">
 <meta content="oidc" name="keyword">
 <meta content="standard claims" name="keyword">
 <meta content="draft-maldant-spice-oidc-cwt-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.22.0
-    Python 3.12.3
+  xml2rfc 3.23.2
+    Python 3.12.7
     ConfigArgParse 1.7
-    google-i18n-address 3.1.0
+    google-i18n-address 3.1.1
     intervaltree 3.1.0
     Jinja2 3.1.4
     lxml 4.9.4
-    platformdirs 4.2.2
+    platformdirs 4.3.6
     pycountry 22.3.5
     PyYAML 6.0.1
     requests 2.32.3
-    setuptools 69.5.1
+    setuptools 70.3.0
     wcwidth 0.2.13
 -->
 <link href="draft-maldant-spice-oidc-cwt.xml" rel="alternate" type="application/rfc+xml">
@@ -1026,11 +1026,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">OIDC standard claims for CWT</td>
-<td class="right">July 2024</td>
+<td class="right">October 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Maldant</td>
-<td class="center">Expires 13 January 2025</td>
+<td class="center">Expires 1 May 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1043,12 +1043,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-maldant-spice-oidc-cwt-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-07-12" class="published">12 July 2024</time>
+<time datetime="2024-10-28" class="published">28 October 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-01-13">13 January 2025</time></dd>
+<dd class="expires"><time datetime="2025-05-01">1 May 2025</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1098,7 +1098,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 13 January 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 1 May 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1210,7 +1210,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-cddl-schema" class="internal xref">CDDL Schema</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
+            <p id="section-toc.1-1.7.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
 </li>
         </ul>
 </nav>
@@ -1264,7 +1267,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.1-1.3.1">JWT Claim Name: name<a href="#section-4.1-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.1-1.4">
-            <p id="section-4.1-1.4.1">Claim Key: 170<a href="#section-4.1-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.1-1.4.1">Claim Key: TBD (requested assignment 170)<a href="#section-4.1-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.1-1.5">
             <p id="section-4.1-1.5.1">Claim Value Type(s): text string<a href="#section-4.1-1.5.1" class="pilcrow">¶</a></p>
@@ -1294,7 +1297,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.2-1.3.1">JWT Claim Name: given_name<a href="#section-4.2-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.2-1.4">
-            <p id="section-4.2-1.4.1">Claim Key: 171<a href="#section-4.2-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.2-1.4.1">Claim Key: TBD (requested assignment 171)<a href="#section-4.2-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.2-1.5">
             <p id="section-4.2-1.5.1">Claim Value Type(s): text string<a href="#section-4.2-1.5.1" class="pilcrow">¶</a></p>
@@ -1324,7 +1327,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.3-1.3.1">JWT Claim Name: family_name<a href="#section-4.3-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.3-1.4">
-            <p id="section-4.3-1.4.1">Claim Key: 172<a href="#section-4.3-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.3-1.4.1">Claim Key: TBD (requested assignment 172)<a href="#section-4.3-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.3-1.5">
             <p id="section-4.3-1.5.1">Claim Value Type(s): text string<a href="#section-4.3-1.5.1" class="pilcrow">¶</a></p>
@@ -1354,7 +1357,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.4-1.3.1">JWT Claim Name: middle_name<a href="#section-4.4-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.4-1.4">
-            <p id="section-4.4-1.4.1">Claim Key: 173<a href="#section-4.4-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.4-1.4.1">Claim Key: TBD (requested assignment 173)<a href="#section-4.4-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.4-1.5">
             <p id="section-4.4-1.5.1">Claim Value Type(s): text string<a href="#section-4.4-1.5.1" class="pilcrow">¶</a></p>
@@ -1384,7 +1387,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.5-1.3.1">JWT Claim Name: nickname<a href="#section-4.5-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.5-1.4">
-            <p id="section-4.5-1.4.1">Claim Key: 174<a href="#section-4.5-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.5-1.4.1">Claim Key: TBD (requested assignment 174)<a href="#section-4.5-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.5-1.5">
             <p id="section-4.5-1.5.1">Claim Value Type(s): text string<a href="#section-4.5-1.5.1" class="pilcrow">¶</a></p>
@@ -1414,7 +1417,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.6-1.3.1">JWT Claim Name: preferred_username<a href="#section-4.6-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.6-1.4">
-            <p id="section-4.6-1.4.1">Claim Key: 175<a href="#section-4.6-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.6-1.4.1">Claim Key: TBD (requested assignment 175)<a href="#section-4.6-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.6-1.5">
             <p id="section-4.6-1.5.1">Claim Value Type(s): text string<a href="#section-4.6-1.5.1" class="pilcrow">¶</a></p>
@@ -1444,7 +1447,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.7-1.3.1">JWT Claim Name: profile<a href="#section-4.7-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.7-1.4">
-            <p id="section-4.7-1.4.1">Claim Key: 176<a href="#section-4.7-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.7-1.4.1">Claim Key: TBD (requested assignment 176)<a href="#section-4.7-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.7-1.5">
             <p id="section-4.7-1.5.1">Claim Value Type(s): text string<a href="#section-4.7-1.5.1" class="pilcrow">¶</a></p>
@@ -1474,7 +1477,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.8-1.3.1">JWT Claim Name: picture<a href="#section-4.8-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.8-1.4">
-            <p id="section-4.8-1.4.1">Claim Key: 177<a href="#section-4.8-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.8-1.4.1">Claim Key: TBD (requested assignment 177)<a href="#section-4.8-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.8-1.5">
             <p id="section-4.8-1.5.1">Claim Value Type(s): text string<a href="#section-4.8-1.5.1" class="pilcrow">¶</a></p>
@@ -1504,7 +1507,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.9-1.3.1">JWT Claim Name: website<a href="#section-4.9-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.9-1.4">
-            <p id="section-4.9-1.4.1">Claim Key: 178<a href="#section-4.9-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.9-1.4.1">Claim Key: TBD (requested assignment 178)<a href="#section-4.9-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.9-1.5">
             <p id="section-4.9-1.5.1">Claim Value Type(s): text string<a href="#section-4.9-1.5.1" class="pilcrow">¶</a></p>
@@ -1534,7 +1537,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.10-1.3.1">JWT Claim Name: email<a href="#section-4.10-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.10-1.4">
-            <p id="section-4.10-1.4.1">Claim Key: 179<a href="#section-4.10-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.10-1.4.1">Claim Key: TBD (requested assignment 179)<a href="#section-4.10-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.10-1.5">
             <p id="section-4.10-1.5.1">Claim Value Type(s): text string<a href="#section-4.10-1.5.1" class="pilcrow">¶</a></p>
@@ -1564,7 +1567,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.11-1.3.1">JWT Claim Name: email_verified<a href="#section-4.11-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.11-1.4">
-            <p id="section-4.11-1.4.1">Claim Key: 180<a href="#section-4.11-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.11-1.4.1">Claim Key: TBD (requested assignment 180)<a href="#section-4.11-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.11-1.5">
             <p id="section-4.11-1.5.1">Claim Value Type(s): text string<a href="#section-4.11-1.5.1" class="pilcrow">¶</a></p>
@@ -1594,7 +1597,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.12-1.3.1">JWT Claim Name: gender<a href="#section-4.12-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.12-1.4">
-            <p id="section-4.12-1.4.1">Claim Key: 181<a href="#section-4.12-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.12-1.4.1">Claim Key: TBD (requested assignment 181)<a href="#section-4.12-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.12-1.5">
             <p id="section-4.12-1.5.1">Claim Value Type(s): text string<a href="#section-4.12-1.5.1" class="pilcrow">¶</a></p>
@@ -1624,7 +1627,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.13-1.3.1">JWT Claim Name: birthdate<a href="#section-4.13-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.13-1.4">
-            <p id="section-4.13-1.4.1">Claim Key: 182<a href="#section-4.13-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.13-1.4.1">Claim Key: TBD (requested assignment 182)<a href="#section-4.13-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.13-1.5">
             <p id="section-4.13-1.5.1">Claim Value Type(s): text string<a href="#section-4.13-1.5.1" class="pilcrow">¶</a></p>
@@ -1654,7 +1657,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.14-1.3.1">JWT Claim Name: zoneinfo<a href="#section-4.14-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.14-1.4">
-            <p id="section-4.14-1.4.1">Claim Key: 183<a href="#section-4.14-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.14-1.4.1">Claim Key: TBD (requested assignment 183)<a href="#section-4.14-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.14-1.5">
             <p id="section-4.14-1.5.1">Claim Value Type(s): text string<a href="#section-4.14-1.5.1" class="pilcrow">¶</a></p>
@@ -1684,7 +1687,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.15-1.3.1">JWT Claim Name: locale<a href="#section-4.15-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.15-1.4">
-            <p id="section-4.15-1.4.1">Claim Key: 184<a href="#section-4.15-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.15-1.4.1">Claim Key: TBD (requested assignment 184)<a href="#section-4.15-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.15-1.5">
             <p id="section-4.15-1.5.1">Claim Value Type(s): text string<a href="#section-4.15-1.5.1" class="pilcrow">¶</a></p>
@@ -1714,7 +1717,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.16-1.3.1">JWT Claim Name: phone_number<a href="#section-4.16-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.16-1.4">
-            <p id="section-4.16-1.4.1">Claim Key: 185<a href="#section-4.16-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.16-1.4.1">Claim Key: TBD (requested assignment 185)<a href="#section-4.16-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.16-1.5">
             <p id="section-4.16-1.5.1">Claim Value Type(s): text string<a href="#section-4.16-1.5.1" class="pilcrow">¶</a></p>
@@ -1744,7 +1747,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.17-1.3.1">JWT Claim Name: phone_number_verified<a href="#section-4.17-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.17-1.4">
-            <p id="section-4.17-1.4.1">Claim Key: 186<a href="#section-4.17-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.17-1.4.1">Claim Key: TBD (requested assignment 186)<a href="#section-4.17-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.17-1.5">
             <p id="section-4.17-1.5.1">Claim Value Type(s): text string<a href="#section-4.17-1.5.1" class="pilcrow">¶</a></p>
@@ -1774,7 +1777,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.18-1.3.1">JWT Claim Name: address<a href="#section-4.18-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.18-1.4">
-            <p id="section-4.18-1.4.1">Claim Key: 187<a href="#section-4.18-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.18-1.4.1">Claim Key: TBD (requested assignment 187)<a href="#section-4.18-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.18-1.5">
             <p id="section-4.18-1.5.1">Claim Value Type(s): text string (the content is a JSON array)<a href="#section-4.18-1.5.1" class="pilcrow">¶</a></p>
@@ -1804,7 +1807,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
             <p id="section-4.19-1.3.1">JWT Claim Name: updated_at<a href="#section-4.19-1.3.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.19-1.4">
-            <p id="section-4.19-1.4.1">Claim Key: 188<a href="#section-4.19-1.4.1" class="pilcrow">¶</a></p>
+            <p id="section-4.19-1.4.1">Claim Key: TBD (requested assignment 188)<a href="#section-4.19-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-4.19-1.5">
             <p id="section-4.19-1.5.1">Claim Value Type(s): uint<a href="#section-4.19-1.5.1" class="pilcrow">¶</a></p>
@@ -1820,6 +1823,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 </div>
 </section>
 </div>
+<div id="sec-combined-references">
 <section id="section-5">
       <h2 id="name-references">
 <a href="#section-5" class="section-number selfRef">5. </a><a href="#name-references" class="section-name selfRef">References</a>
@@ -1875,8 +1879,65 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 </section>
 </div>
 </section>
-<div id="authors-addresses">
+</div>
+<div id="cddl">
 <section id="appendix-A">
+      <h2 id="name-cddl-schema">
+<a href="#appendix-A" class="section-number selfRef">Appendix A. </a><a href="#name-cddl-schema" class="section-name selfRef">CDDL Schema</a>
+      </h2>
+<span id="name-a-cddl-description-of-each-"></span><div id="cddl-schema">
+<figure id="figure-1">
+        <div class="alignLeft art-text artwork" id="appendix-A-1.1">
+<pre>
+name = (TBD1 =&gt; tstr) ; "Jane Doe"
+given_name = (TBD2 =&gt; tstr) ; "Jane"
+family_name = (TBD3 =&gt; tstr) ; "Doe"
+middle_name = (TBD4 =&gt; tstr) ; "Ellen"
+nickname = (TBD5 =&gt; tstr) ; "Jane D."
+preferred_username = (TBD6 =&gt; tstr) ; "j.doe"
+profile = (TBD7 =&gt; tstr) ; "https://example.org/about.html"
+picture = (TBD8 =&gt; tstr) ; "https://example.org/avatar.png"
+website = (TBD9 =&gt; tstr) ; "https://example.org"
+email = (TBD10 =&gt; tstr) ; "janedoe@example.com"
+email_verified = (TBD11 =&gt; tstr) ; "true"
+gender = (TBD12 =&gt; tstr) ; "female"
+birthdate = (TBD13 =&gt; tstr) ; "1970-03-22"
+zoneinfo = (TBD14 =&gt; tstr) ; "America/Los_Angeles"
+locale = (TBD15 =&gt; tstr) ; "en_US"
+phone_number = (TBD16 =&gt; tstr) ; "+1 (425) 555-1212"
+phone_number_verified = (TBD17 =&gt; tstr) ; "true"
+address = (TBD18 =&gt; tstr) ; "{"street_address": "1234 Hollywood Blvd.", "locality": "Los Angeles", "region": "CA", "postal_code": "90210", "country": "United States of America"}"
+updated_at = (TBD19 =&gt; uint) ; 1730123071
+
+TBD1 = 170
+TBD2 = 171
+TBD3 = 172
+TBD4 = 173
+TBD5 = 174
+TBD6 = 175
+TBD7 = 176
+TBD8 = 177
+TBD9 = 178
+TBD10 = 179
+TBD11 = 180
+TBD12 = 181
+TBD13 = 182
+TBD14 = 183
+TBD15 = 184
+TBD16 = 185
+TBD17 = 186
+TBD18 = 187
+TBD19 = 188
+</pre>
+</div>
+<figcaption><a href="#figure-1" class="selfRef">Figure 1</a>:
+<a href="#name-a-cddl-description-of-each-" class="selfRef">A CDDL description of each claim</a>
+        </figcaption></figure>
+</div>
+</section>
+</div>
+<div id="authors-addresses">
+<section id="appendix-B">
       <h2 id="name-authors-address">
 <a href="#name-authors-address" class="section-name selfRef">Author's Address</a>
       </h2>
