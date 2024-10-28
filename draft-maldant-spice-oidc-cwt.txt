@@ -4,8 +4,8 @@
 
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
-Intended status: Informational                              24 July 2024
-Expires: 25 January 2025
+Intended status: Informational                           28 October 2024
+Expires: 1 May 2025
 
 
     OpenID Connect standard claims registration for CBOR Web Tokens
@@ -49,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 25 January 2025.
+   This Internet-Draft will expire on 1 May 2025.
 
 Copyright Notice
 
@@ -93,6 +93,7 @@ Table of Contents
    5.  References
      5.1.  Normative References
      5.2.  Informative References
+   Appendix A.  CDDL Schema
    Author's Address
 
 1.  Introduction
@@ -477,6 +478,50 @@ Table of Contents
    [RFC7519]  Jones, M., Bradley, J., and N. Sakimura, "JSON Web Token
               (JWT)", RFC 7519, DOI 10.17487/RFC7519, May 2015,
               <https://www.rfc-editor.org/rfc/rfc7519>.
+
+Appendix A.  CDDL Schema
+
+name = (TBD1 => tstr) ; "Jane Doe"
+given_name = (TBD2 => tstr) ; "Jane"
+family_name = (TBD3 => tstr) ; "Doe"
+middle_name = (TBD4 => tstr) ; "Ellen"
+nickname = (TBD5 => tstr) ; "Jane D."
+preferred_username = (TBD6 => tstr) ; "j.doe"
+profile = (TBD7 => tstr) ; "https://example.org/about.html"
+picture = (TBD8 => tstr) ; "https://example.org/avatar.png"
+website = (TBD9 => tstr) ; "https://example.org"
+email = (TBD10 => tstr) ; "janedoe@example.com"
+email_verified = (TBD11 => tstr) ; "true"
+gender = (TBD12 => tstr) ; "female"
+birthdate = (TBD13 => tstr) ; "1970-03-22"
+zoneinfo = (TBD14 => tstr) ; "America/Los_Angeles"
+locale = (TBD15 => tstr) ; "en_US"
+phone_number = (TBD16 => tstr) ; "+1 (425) 555-1212"
+phone_number_verified = (TBD17 => tstr) ; "true"
+address = (TBD18 => tstr) ; "{"street_address": "1234 Hollywood Blvd.", "locality": "Los Angeles", "region": "CA", "postal_code": "90210", "country": "United States of America"}"
+updated_at = (TBD19 => uint) ; 1730123071
+
+TBD1 = 170
+TBD2 = 171
+TBD3 = 172
+TBD4 = 173
+TBD5 = 174
+TBD6 = 175
+TBD7 = 176
+TBD8 = 177
+TBD9 = 178
+TBD10 = 179
+TBD11 = 180
+TBD12 = 181
+TBD13 = 182
+TBD14 = 183
+TBD15 = 184
+TBD16 = 185
+TBD17 = 186
+TBD18 = 187
+TBD19 = 188
+
+              Figure 1: A CDDL description of each claim
 
 Author's Address
 
