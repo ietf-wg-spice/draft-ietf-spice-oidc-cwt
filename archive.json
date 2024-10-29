@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-27T00:59:13.328698+00:00",
+  "timestamp": "2024-10-29T00:56:33.142434+00:00",
   "repo": "beltram/rfc-spice-oidc-cwt",
   "labels": [
     {
@@ -75,6 +75,62 @@
       "mergedBy": "beltram",
       "mergeCommit": {
         "oid": "89f4b634cd9e3b0e507d883283be85d0ee0db5bd"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOMVdXTs6AHLlG",
+      "title": "Add CDDL",
+      "url": "https://github.com/beltram/rfc-spice-oidc-cwt/pull/2",
+      "state": "MERGED",
+      "author": "beltram",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-28T14:43:34Z",
+      "updatedAt": "2024-10-28T14:45:59Z",
+      "baseRepository": "beltram/rfc-spice-oidc-cwt",
+      "baseRefName": "main",
+      "baseRefOid": "8eff10111bb08222dd10a53abbc37b5c8cd73046",
+      "headRepository": "beltram/rfc-spice-oidc-cwt",
+      "headRefName": "cddl",
+      "headRefOid": "0937a37fcae89b17c7083dc49e492258a8d267ff",
+      "closedAt": "2024-10-28T14:45:59Z",
+      "mergedAt": "2024-10-28T14:45:59Z",
+      "mergedBy": "beltram",
+      "mergeCommit": {
+        "oid": "155f2d52110ad8f1bc6e2dc2eb6844953bd2150d"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOMVdXTs6AHpI5",
+      "title": "Request lower code point for frequently used claims",
+      "url": "https://github.com/beltram/rfc-spice-oidc-cwt/pull/3",
+      "state": "MERGED",
+      "author": "beltram",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-28T15:33:31Z",
+      "updatedAt": "2024-10-28T15:47:45Z",
+      "baseRepository": "beltram/rfc-spice-oidc-cwt",
+      "baseRefName": "main",
+      "baseRefOid": "155f2d52110ad8f1bc6e2dc2eb6844953bd2150d",
+      "headRepository": "beltram/rfc-spice-oidc-cwt",
+      "headRefName": "prevalence",
+      "headRefOid": "314da28911522e1c786c1b0746dce98d1983d3c2",
+      "closedAt": "2024-10-28T15:47:45Z",
+      "mergedAt": "2024-10-28T15:47:45Z",
+      "mergedBy": "beltram",
+      "mergeCommit": {
+        "oid": "331662a5c9de95a547600b3121cd1ae0069310a0"
       },
       "comments": [],
       "reviews": []
