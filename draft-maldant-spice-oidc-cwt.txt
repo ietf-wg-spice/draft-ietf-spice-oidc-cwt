@@ -4,8 +4,8 @@
 
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
-Intended status: Informational                           28 October 2024
-Expires: 1 May 2025
+Intended status: Informational                           30 October 2024
+Expires: 3 May 2025
 
 
     OpenID Connect standard claims registration for CBOR Web Tokens
@@ -14,9 +14,7 @@ Expires: 1 May 2025
 Abstract
 
    This document registers OpenId Connect standards claims already used
-   in JSON Web Tokens for CBOR Web Tokens.  Given the nature of Concise
-   Binary Object Representation claim keys, it aims at registering IANA
-   code points inversely proportional to their respective prevalence.
+   in JSON Web Tokens for CBOR Web Tokens.
 
 About This Document
 
@@ -51,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 1 May 2025.
+   This Internet-Draft will expire on 3 May 2025.
 
 Copyright Notice
 
@@ -104,13 +102,7 @@ Table of Contents
    standard claims already in use for JSON Web Tokens (JWT) [RFC7519].
    CBOR Web Tokens (CWT) [RFC8392] have a claims registry, but do not
    include most of these claims.  This draft aims at unifying use of
-   OIDC claims in JWTs and CWTs.  Since the claims keys registered here
-   are meant for (CWT) [RFC8392] and data minimization is expected all
-   the keys are unsigned integers or Major type 0 as defined in
-   Section 3.1 of [RFC8949].  Among these claims, some are more frequent
-   ("name", "email") than others ("wesite", "middle_name").  Lower IANA
-   code points are requested so that the key fits in one byte (if it's
-   less than 24) instead of two or more bytes.
+   OIDC claims in JWTs and CWTs.
 
 2.  Conventions and Definitions
 
@@ -140,7 +132,7 @@ Table of Contents
 
    *  JWT Claim Name: name
 
-   *  Claim Key: TBD (requested assignment 11)
+   *  Claim Key: TBD (requested assignment 170)
 
    *  Claim Value Type(s): text string
 
@@ -156,7 +148,7 @@ Table of Contents
 
    *  JWT Claim Name: given_name
 
-   *  Claim Key: TBD (requested assignment 170)
+   *  Claim Key: TBD (requested assignment 171)
 
    *  Claim Value Type(s): text string
 
@@ -172,7 +164,7 @@ Table of Contents
 
    *  JWT Claim Name: family_name
 
-   *  Claim Key: TBD (requested assignment 171)
+   *  Claim Key: TBD (requested assignment 172)
 
    *  Claim Value Type(s): text string
 
@@ -188,7 +180,7 @@ Table of Contents
 
    *  JWT Claim Name: middle_name
 
-   *  Claim Key: TBD (requested assignment 172)
+   *  Claim Key: TBD (requested assignment 173)
 
    *  Claim Value Type(s): text string
 
@@ -205,7 +197,7 @@ Table of Contents
 
    *  JWT Claim Name: nickname
 
-   *  Claim Key: TBD (requested assignment 173)
+   *  Claim Key: TBD (requested assignment 174)
 
    *  Claim Value Type(s): text string
 
@@ -222,7 +214,7 @@ Table of Contents
 
    *  JWT Claim Name: preferred_username
 
-   *  Claim Key: TBD (requested assignment 12)
+   *  Claim Key: TBD (requested assignment 175)
 
    *  Claim Value Type(s): text string
 
@@ -238,7 +230,7 @@ Table of Contents
 
    *  JWT Claim Name: profile
 
-   *  Claim Key: TBD (requested assignment 174)
+   *  Claim Key: TBD (requested assignment 176)
 
    *  Claim Value Type(s): text string
 
@@ -256,7 +248,7 @@ Table of Contents
 
    *  JWT Claim Name: picture
 
-   *  Claim Key: TBD (requested assignment 175)
+   *  Claim Key: TBD (requested assignment 177)
 
    *  Claim Value Type(s): text string
 
@@ -272,7 +264,7 @@ Table of Contents
 
    *  JWT Claim Name: website
 
-   *  Claim Key: TBD (requested assignment 176)
+   *  Claim Key: TBD (requested assignment 178)
 
    *  Claim Value Type(s): text string
 
@@ -288,7 +280,7 @@ Table of Contents
 
    *  JWT Claim Name: email
 
-   *  Claim Key: TBD (requested assignment 13)
+   *  Claim Key: TBD (requested assignment 179)
 
    *  Claim Value Type(s): text string
 
@@ -305,7 +297,7 @@ Table of Contents
 
    *  JWT Claim Name: email_verified
 
-   *  Claim Key: TBD (requested assignment 177)
+   *  Claim Key: TBD (requested assignment 180)
 
    *  Claim Value Type(s): text string
 
@@ -321,7 +313,7 @@ Table of Contents
 
    *  JWT Claim Name: gender
 
-   *  Claim Key: TBD (requested assignment 178)
+   *  Claim Key: TBD (requested assignment 181)
 
    *  Claim Value Type(s): text string
 
@@ -338,7 +330,7 @@ Table of Contents
 
    *  JWT Claim Name: birthdate
 
-   *  Claim Key: TBD (requested assignment 179)
+   *  Claim Key: TBD (requested assignment 182)
 
    *  Claim Value Type(s): text string
 
@@ -355,7 +347,7 @@ Table of Contents
 
    *  JWT Claim Name: zoneinfo
 
-   *  Claim Key: TBD (requested assignment 180)
+   *  Claim Key: TBD (requested assignment 183)
 
    *  Claim Value Type(s): text string
 
@@ -372,7 +364,7 @@ Table of Contents
 
    *  JWT Claim Name: locale
 
-   *  Claim Key: TBD (requested assignment 181)
+   *  Claim Key: TBD (requested assignment 184)
 
    *  Claim Value Type(s): text string
 
@@ -388,7 +380,7 @@ Table of Contents
 
    *  JWT Claim Name: phone_number
 
-   *  Claim Key: TBD (requested assignment 182)
+   *  Claim Key: TBD (requested assignment 185)
 
    *  Claim Value Type(s): text string
 
@@ -405,7 +397,7 @@ Table of Contents
 
    *  JWT Claim Name: phone_number_verified
 
-   *  Claim Key: TBD (requested assignment 183)
+   *  Claim Key: TBD (requested assignment 186)
 
    *  Claim Value Type(s): text string
 
@@ -421,7 +413,7 @@ Table of Contents
 
    *  JWT Claim Name: address
 
-   *  Claim Key: TBD (requested assignment 184)
+   *  Claim Key: TBD (requested assignment 187)
 
    *  Claim Value Type(s): text string (the content is a JSON array)
 
@@ -439,7 +431,7 @@ Table of Contents
 
    *  JWT Claim Name: updated_at
 
-   *  Claim Key: TBD (requested assignment 185)
+   *  Claim Key: TBD (requested assignment 188)
 
    *  Claim Value Type(s): uint
 
@@ -481,11 +473,6 @@ Table of Contents
               "CBOR Web Token (CWT)", RFC 8392, DOI 10.17487/RFC8392,
               May 2018, <https://www.rfc-editor.org/rfc/rfc8392>.
 
-   [RFC8949]  Bormann, C. and P. Hoffman, "Concise Binary Object
-              Representation (CBOR)", STD 94, RFC 8949,
-              DOI 10.17487/RFC8949, December 2020,
-              <https://www.rfc-editor.org/rfc/rfc8949>.
-
 5.2.  Informative References
 
    [RFC7519]  Jones, M., Bradley, J., and N. Sakimura, "JSON Web Token
@@ -514,25 +501,25 @@ phone_number_verified = (TBD17 => tstr) ; "true"
 address = (TBD18 => tstr) ; "{"street_address": "1234 Hollywood Blvd.", "locality": "Los Angeles", "region": "CA", "postal_code": "90210", "country": "United States of America"}"
 updated_at = (TBD19 => uint) ; 1730123071
 
-TBD1 = 11
-TBD2 = 170
-TBD3 = 171
-TBD4 = 172
-TBD5 = 173
-TBD6 = 12
-TBD7 = 174
-TBD8 = 175
-TBD9 = 176
-TBD10 = 13
-TBD11 = 177
-TBD12 = 178
-TBD13 = 179
-TBD14 = 180
-TBD15 = 181
-TBD16 = 182
-TBD17 = 183
-TBD18 = 184
-TBD19 = 185
+TBD1 = 170
+TBD2 = 171
+TBD3 = 172
+TBD4 = 173
+TBD5 = 174
+TBD6 = 175
+TBD7 = 176
+TBD8 = 177
+TBD9 = 178
+TBD10 = 179
+TBD11 = 180
+TBD12 = 181
+TBD13 = 182
+TBD14 = 183
+TBD15 = 184
+TBD16 = 185
+TBD17 = 186
+TBD18 = 187
+TBD19 = 188
 
               Figure 1: A CDDL description of each claim
 
