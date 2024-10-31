@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-10-29T00:56:33.142434+00:00",
+  "timestamp": "2024-10-31T00:55:59.798439+00:00",
   "repo": "beltram/rfc-spice-oidc-cwt",
   "labels": [
     {
@@ -131,6 +131,34 @@
       "mergedBy": "beltram",
       "mergeCommit": {
         "oid": "331662a5c9de95a547600b3121cd1ae0069310a0"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOMVdXTs6AV6XN",
+      "title": "Revert \"Request lower code point for frequently used claims\"",
+      "url": "https://github.com/beltram/rfc-spice-oidc-cwt/pull/4",
+      "state": "MERGED",
+      "author": "beltram",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "This reverts commit 314da28911522e1c786c1b0746dce98d1983d3c2.",
+      "createdAt": "2024-10-30T08:20:54Z",
+      "updatedAt": "2024-10-30T09:19:50Z",
+      "baseRepository": "beltram/rfc-spice-oidc-cwt",
+      "baseRefName": "main",
+      "baseRefOid": "331662a5c9de95a547600b3121cd1ae0069310a0",
+      "headRepository": "beltram/rfc-spice-oidc-cwt",
+      "headRefName": "revert",
+      "headRefOid": "b4f0bdfa00a53cc8be6b1e68820aa8bd1fa9cdf7",
+      "closedAt": "2024-10-30T09:19:50Z",
+      "mergedAt": "2024-10-30T09:19:50Z",
+      "mergedBy": "beltram",
+      "mergeCommit": {
+        "oid": "6b4d2de5147db156013c8ff9943398294e75a154"
       },
       "comments": [],
       "reviews": []
