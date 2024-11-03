@@ -4,8 +4,8 @@
 
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
-Intended status: Informational                           30 October 2024
-Expires: 3 May 2025
+Intended status: Informational                           3 November 2024
+Expires: 7 May 2025
 
 
     OpenID Connect standard claims registration for CBOR Web Tokens
@@ -49,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 May 2025.
+   This Internet-Draft will expire on 7 May 2025.
 
 Copyright Notice
 
@@ -121,6 +121,9 @@ Table of Contents
    apply.
 
 4.  IANA Considerations
+
+   All claims defined in this document are placed in the
+   [IANA.CWT.Claims] Registry.  No new IANA registry is created.
 
 4.1.  name
 
@@ -442,6 +445,10 @@ Table of Contents
 5.  References
 
 5.1.  Normative References
+
+   [IANA.CWT.Claims]
+              IANA, "CBOR Web Token (CWT) Claims",
+              <https://www.iana.org/assignments/cwt>.
 
    [IANAtimezones]
               "IANA time zones", n.d.,
