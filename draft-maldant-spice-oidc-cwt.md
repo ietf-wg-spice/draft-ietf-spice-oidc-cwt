@@ -45,6 +45,7 @@ normative:
     ISO8601‑1:
         target: https://www.iso.org/standard/81801.html
         title: "ISO8601‑1"
+    IANA.CWT.Claims: IANA.cwt
 
 informative:
 
@@ -69,6 +70,8 @@ OpenId Connect {{OIDCCore}} is an authentication standard including standard cla
 This document registers existing OpenID Connect standard claims already used in JSON Web Tokens {{?RFC7519}} for use in CBOR Web Tokens {{!RFC8392}} without changing their semantics. The Security and Privacy Considerations respectively of Sections 16 and 17 of {{OIDCCore}} also apply.
 
 # IANA Considerations
+
+All claims defined in this document are placed in the {{IANA.CWT.Claims}} Registry. No new IANA registry is created.
 
 ## name
 
