@@ -71,14 +71,14 @@ This document registers existing OpenID Connect standard claims already used in 
 
 # IANA Considerations
 
-All claims defined in this document are placed in the {{IANA.CWT.Claims}} Registry. No new IANA registry is created.
+All claims defined in this document are placed in the (CBOR Web Token (CWT) Claims) {{IANA.CWT.Claims}} Registry (part of the eponymous registry group). No new IANA registry is created.
 
 ## name
 
 - Claim Name: name
 - Claim Description: End-User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the End-User's locale and preferences.
 - JWT Claim Name: name
-- Claim Key: TBD (requested assignment 170)
+- Claim Key: 170 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -88,7 +88,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: given_name
 - Claim Description: Given name(s) or first name(s) of the End-User.
 - JWT Claim Name: given_name
-- Claim Key: TBD (requested assignment 171)
+- Claim Key: 171 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -98,7 +98,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: family_name
 - Claim Description: Surname(s) or last name(s) of the End-User.
 - JWT Claim Name: family_name
-- Claim Key: TBD (requested assignment 172)
+- Claim Key: 172 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -108,7 +108,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: middle_name
 - Claim Description: Middle name(s) of the End-User.
 - JWT Claim Name: middle_name
-- Claim Key: TBD (requested assignment 173)
+- Claim Key: 173 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -118,7 +118,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: nickname
 - Claim Description: Casual name of the End-User that may or may not be the same as the given_name.
 - JWT Claim Name: nickname
-- Claim Key: TBD (requested assignment 174)
+- Claim Key: 174 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -128,7 +128,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: preferred_username
 - Claim Description: Shorthand name by which the End-User wishes to be referred to at the Resource Server.
 - JWT Claim Name: preferred_username
-- Claim Key: TBD (requested assignment 175)
+- Claim Key: 175 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -138,7 +138,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: profile
 - Claim Description: URL of the End-User's profile page.
 - JWT Claim Name: profile
-- Claim Key: TBD (requested assignment 176)
+- Claim Key: 176 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -148,7 +148,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: picture
 - Claim Description: URL of the End-User's profile picture. This URL MUST refer to an image file, rather than to a Web page containing an image.
 - JWT Claim Name: picture
-- Claim Key: TBD (requested assignment 177)
+- Claim Key: 177 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -158,7 +158,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: website
 - Claim Description: URL of the End-User's Web page or blog.
 - JWT Claim Name: website
-- Claim Key: TBD (requested assignment 178)
+- Claim Key: 178 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -168,7 +168,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: email
 - Claim Description: End-User's preferred e-mail address.
 - JWT Claim Name: email
-- Claim Key: TBD (requested assignment 179)
+- Claim Key: 179 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -178,7 +178,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: email_verified
 - Claim Description: True if the End-User's e-mail address has been verified; otherwise false.
 - JWT Claim Name: email_verified
-- Claim Key: TBD (requested assignment 180)
+- Claim Key: 180 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -188,7 +188,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: gender
 - Claim Description: End-User's defined gender.
 - JWT Claim Name: gender
-- Claim Key: TBD (requested assignment 181)
+- Claim Key: 181 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -198,7 +198,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: birthdate
 - Claim Description: End-User's birthday, represented as an [ISO8601‑1] YYYY-MM-DD format.
 - JWT Claim Name: birthdate
-- Claim Key: TBD (requested assignment 182)
+- Claim Key: 182 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -208,7 +208,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: zoneinfo
 - Claim Description: String from IANA Time Zone Database {{IANAtimezones}} representing the End-User's time zone.
 - JWT Claim Name: zoneinfo
-- Claim Key: TBD (requested assignment 183)
+- Claim Key: 183 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -218,7 +218,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: locale
 - Claim Description: End-User's locale, represented as a BCP47 {{!RFC5646}} language tag.
 - JWT Claim Name: locale
-- Claim Key: TBD (requested assignment 184)
+- Claim Key: 184 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -228,7 +228,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: phone_number
 - Claim Description: End-User's preferred telephone number.
 - JWT Claim Name: phone_number
-- Claim Key: TBD (requested assignment 185)
+- Claim Key: 185 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -238,7 +238,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: phone_number_verified
 - Claim Description:  True if the End-User's phone number has been verified; otherwise false.
 - JWT Claim Name: phone_number_verified
-- Claim Key: TBD (requested assignment 186)
+- Claim Key: 186 (suggested)
 - Claim Value Type(s): text string
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -248,7 +248,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: address
 - Claim Description: End-User's preferred postal address.
 - JWT Claim Name: address
-- Claim Key: TBD (requested assignment 187)
+- Claim Key: 187 (suggested)
 - Claim Value Type(s): text string (the content is a JSON array)
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
@@ -258,7 +258,7 @@ All claims defined in this document are placed in the {{IANA.CWT.Claims}} Regist
 - Claim Name: updated_at
 - Claim Description: Time the End-User's information was last updated. Its value is a number representing the number of seconds from 1970-01-01T00:00:00Z as measured in UTC until the date/time.
 - JWT Claim Name: updated_at
-- Claim Key: TBD (requested assignment 188)
+- Claim Key: 188 (suggested)
 - Claim Value Type(s): uint
 - Change Controller: IESG
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
