@@ -127,8 +127,8 @@ Table of Contents
    registry group).  No new IANA registry is created.
 
    In case any of the suggested code points would have been claimed by
-   the time of the Working Group last call, any other code points are
-   fine as long as they can be represented with two bytes or less.
+   the time of the Working Group last call, IANA is asked to assign
+   Claim Key values from the 170-256 range.
 
 4.1.  name
 
@@ -140,7 +140,7 @@ Table of Contents
 
    *  JWT Claim Name: name
 
-   *  Claim Key: TBD (170 suggested)
+   *  Claim Key: TBD1 (170 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -156,7 +156,7 @@ Table of Contents
 
    *  JWT Claim Name: given_name
 
-   *  Claim Key: TBD (171 suggested)
+   *  Claim Key: TBD2 (171 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -172,7 +172,7 @@ Table of Contents
 
    *  JWT Claim Name: family_name
 
-   *  Claim Key: TBD (172 suggested)
+   *  Claim Key: TBD3 (172 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -188,7 +188,7 @@ Table of Contents
 
    *  JWT Claim Name: middle_name
 
-   *  Claim Key: TBD (173 suggested)
+   *  Claim Key: TBD4 (173 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -205,7 +205,7 @@ Table of Contents
 
    *  JWT Claim Name: nickname
 
-   *  Claim Key: TBD (174 suggested)
+   *  Claim Key: TBD5 (174 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -222,7 +222,7 @@ Table of Contents
 
    *  JWT Claim Name: preferred_username
 
-   *  Claim Key: TBD (175 suggested)
+   *  Claim Key: TBD6 (175 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -238,7 +238,7 @@ Table of Contents
 
    *  JWT Claim Name: profile
 
-   *  Claim Key: TBD (176 suggested)
+   *  Claim Key: TBD7 (176 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -256,7 +256,7 @@ Table of Contents
 
    *  JWT Claim Name: picture
 
-   *  Claim Key: TBD (177 suggested)
+   *  Claim Key: TBD8 (177 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -272,7 +272,7 @@ Table of Contents
 
    *  JWT Claim Name: website
 
-   *  Claim Key: TBD (178 suggested)
+   *  Claim Key: TBD9 (178 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -288,7 +288,7 @@ Table of Contents
 
    *  JWT Claim Name: email
 
-   *  Claim Key: TBD (179 suggested)
+   *  Claim Key: TBD10 (179 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -305,7 +305,7 @@ Table of Contents
 
    *  JWT Claim Name: email_verified
 
-   *  Claim Key: TBD (180 suggested)
+   *  Claim Key: TBD11 (180 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -321,7 +321,7 @@ Table of Contents
 
    *  JWT Claim Name: gender
 
-   *  Claim Key: TBD (181 suggested)
+   *  Claim Key: TBD12 (181 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -338,7 +338,7 @@ Table of Contents
 
    *  JWT Claim Name: birthdate
 
-   *  Claim Key: TBD (182 suggested)
+   *  Claim Key: TBD13 (182 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -355,7 +355,7 @@ Table of Contents
 
    *  JWT Claim Name: zoneinfo
 
-   *  Claim Key: TBD (183 suggested)
+   *  Claim Key: TBD14 (183 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -372,7 +372,7 @@ Table of Contents
 
    *  JWT Claim Name: locale
 
-   *  Claim Key: TBD (184 suggested)
+   *  Claim Key: TBD15 (184 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -388,7 +388,7 @@ Table of Contents
 
    *  JWT Claim Name: phone_number
 
-   *  Claim Key: TBD (185 suggested)
+   *  Claim Key: TBD16 (185 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -405,7 +405,7 @@ Table of Contents
 
    *  JWT Claim Name: phone_number_verified
 
-   *  Claim Key: TBD (186 suggested)
+   *  Claim Key: TBD17 (186 suggested)
 
    *  Claim Value Type(s): text string
 
@@ -421,7 +421,7 @@ Table of Contents
 
    *  JWT Claim Name: address
 
-   *  Claim Key: TBD (187 suggested)
+   *  Claim Key: TBD18 (187 suggested)
 
    *  Claim Value Type(s): text string (the content is a JSON array)
 
@@ -439,7 +439,7 @@ Table of Contents
 
    *  JWT Claim Name: updated_at
 
-   *  Claim Key: TBD (188 suggested)
+   *  Claim Key: TBD19 (188 suggested)
 
    *  Claim Value Type(s): uint
 
