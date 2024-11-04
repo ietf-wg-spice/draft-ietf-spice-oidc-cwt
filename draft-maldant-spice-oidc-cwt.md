@@ -73,6 +73,8 @@ This document registers existing OpenID Connect standard claims already used in 
 
 All claims defined in this document are placed in the (CBOR Web Token (CWT) Claims) {{IANA.CWT.Claims}} Registry (part of the eponymous registry group). No new IANA registry is created.
 
+In case any of the suggested code points would have been claimed by the time of the Working Group last call, any other code points are fine as long as they can be represented with two bytes or less.
+
 ## name
 
 - Claim Name: name
