@@ -80,7 +80,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: name
 - Claim Key: 170 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## given_name
@@ -90,7 +90,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: given_name
 - Claim Key: 171 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## family_name
@@ -100,7 +100,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: family_name
 - Claim Key: 172 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## middle_name
@@ -110,7 +110,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: middle_name
 - Claim Key: 173 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## nickname
@@ -120,7 +120,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: nickname
 - Claim Key: 174 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## preferred_username
@@ -130,7 +130,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: preferred_username
 - Claim Key: 175 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## profile
@@ -140,7 +140,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: profile
 - Claim Key: 176 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## picture
@@ -150,7 +150,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: picture
 - Claim Key: 177 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## website
@@ -160,7 +160,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: website
 - Claim Key: 178 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## email
@@ -170,7 +170,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: email
 - Claim Key: 179 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## email_verified
@@ -180,7 +180,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: email_verified
 - Claim Key: 180 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## gender
@@ -190,7 +190,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: gender
 - Claim Key: 181 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## birthdate
@@ -200,7 +200,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: birthdate
 - Claim Key: 182 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## zoneinfo
@@ -210,7 +210,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: zoneinfo
 - Claim Key: 183 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## locale
@@ -220,7 +220,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: locale
 - Claim Key: 184 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## phone_number
@@ -230,7 +230,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: phone_number
 - Claim Key: 185 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## phone_number_verified
@@ -240,7 +240,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: phone_number_verified
 - Claim Key: 186 (suggested)
 - Claim Value Type(s): text string
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## address
@@ -250,7 +250,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: address
 - Claim Key: 187 (suggested)
 - Claim Value Type(s): text string (the content is a JSON array)
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 ## updated_at
@@ -260,7 +260,7 @@ All claims defined in this document are placed in the (CBOR Web Token (CWT) Clai
 - JWT Claim Name: updated_at
 - Claim Key: 188 (suggested)
 - Claim Value Type(s): uint
-- Change Controller: IESG
+- Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
 --- back
