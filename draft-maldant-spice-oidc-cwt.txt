@@ -4,8 +4,8 @@
 
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
-Intended status: Informational                           3 November 2024
-Expires: 7 May 2025
+Intended status: Informational                           4 November 2024
+Expires: 8 May 2025
 
 
     OpenID Connect standard claims registration for CBOR Web Tokens
@@ -49,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 May 2025.
+   This Internet-Draft will expire on 8 May 2025.
 
 Copyright Notice
 
@@ -126,6 +126,10 @@ Table of Contents
    (CWT) Claims) [IANA.CWT.Claims] Registry (part of the eponymous
    registry group).  No new IANA registry is created.
 
+   In case any of the suggested code points would have been claimed by
+   the time of the Working Group last call, any other code points are
+   fine as long as they can be represented with two bytes or less.
+
 4.1.  name
 
    *  Claim Name: name
@@ -136,11 +140,11 @@ Table of Contents
 
    *  JWT Claim Name: name
 
-   *  Claim Key: 170 (suggested)
+   *  Claim Key: TBD (170 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -152,11 +156,11 @@ Table of Contents
 
    *  JWT Claim Name: given_name
 
-   *  Claim Key: 171 (suggested)
+   *  Claim Key: TBD (171 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -168,11 +172,11 @@ Table of Contents
 
    *  JWT Claim Name: family_name
 
-   *  Claim Key: 172 (suggested)
+   *  Claim Key: TBD (172 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -184,11 +188,11 @@ Table of Contents
 
    *  JWT Claim Name: middle_name
 
-   *  Claim Key: 173 (suggested)
+   *  Claim Key: TBD (173 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -201,11 +205,11 @@ Table of Contents
 
    *  JWT Claim Name: nickname
 
-   *  Claim Key: 174 (suggested)
+   *  Claim Key: TBD (174 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -218,11 +222,11 @@ Table of Contents
 
    *  JWT Claim Name: preferred_username
 
-   *  Claim Key: 175 (suggested)
+   *  Claim Key: TBD (175 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -234,11 +238,11 @@ Table of Contents
 
    *  JWT Claim Name: profile
 
-   *  Claim Key: 176 (suggested)
+   *  Claim Key: TBD (176 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -252,11 +256,11 @@ Table of Contents
 
    *  JWT Claim Name: picture
 
-   *  Claim Key: 177 (suggested)
+   *  Claim Key: TBD (177 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -268,11 +272,11 @@ Table of Contents
 
    *  JWT Claim Name: website
 
-   *  Claim Key: 178 (suggested)
+   *  Claim Key: TBD (178 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -284,11 +288,11 @@ Table of Contents
 
    *  JWT Claim Name: email
 
-   *  Claim Key: 179 (suggested)
+   *  Claim Key: TBD (179 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -301,11 +305,11 @@ Table of Contents
 
    *  JWT Claim Name: email_verified
 
-   *  Claim Key: 180 (suggested)
+   *  Claim Key: TBD (180 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -317,11 +321,11 @@ Table of Contents
 
    *  JWT Claim Name: gender
 
-   *  Claim Key: 181 (suggested)
+   *  Claim Key: TBD (181 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -334,11 +338,11 @@ Table of Contents
 
    *  JWT Claim Name: birthdate
 
-   *  Claim Key: 182 (suggested)
+   *  Claim Key: TBD (182 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -351,11 +355,11 @@ Table of Contents
 
    *  JWT Claim Name: zoneinfo
 
-   *  Claim Key: 183 (suggested)
+   *  Claim Key: TBD (183 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -368,11 +372,11 @@ Table of Contents
 
    *  JWT Claim Name: locale
 
-   *  Claim Key: 184 (suggested)
+   *  Claim Key: TBD (184 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -384,11 +388,11 @@ Table of Contents
 
    *  JWT Claim Name: phone_number
 
-   *  Claim Key: 185 (suggested)
+   *  Claim Key: TBD (185 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -401,11 +405,11 @@ Table of Contents
 
    *  JWT Claim Name: phone_number_verified
 
-   *  Claim Key: 186 (suggested)
+   *  Claim Key: TBD (186 suggested)
 
    *  Claim Value Type(s): text string
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -417,11 +421,11 @@ Table of Contents
 
    *  JWT Claim Name: address
 
-   *  Claim Key: 187 (suggested)
+   *  Claim Key: TBD (187 suggested)
 
    *  Claim Value Type(s): text string (the content is a JSON array)
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
@@ -435,11 +439,11 @@ Table of Contents
 
    *  JWT Claim Name: updated_at
 
-   *  Claim Key: 188 (suggested)
+   *  Claim Key: TBD (188 suggested)
 
    *  Claim Value Type(s): uint
 
-   *  Change Controller: IESG
+   *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
