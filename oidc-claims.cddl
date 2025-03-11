@@ -15,7 +15,14 @@ zoneinfo = (TBD14 => tstr) ; "America/Los_Angeles"
 locale = (TBD15 => tstr) ; "en_US"
 phone_number = (TBD16 => tstr) ; "+1 (425) 555-1212"
 phone_number_verified = (TBD17 => tstr) ; "true"
-address = (TBD18 => tstr) ; "{"street_address": "1234 Hollywood Blvd.", "locality": "Los Angeles", "region": "CA", "postal_code": "90210", "country": "United States of America"}"
+address = {
+    &(formatted: 1) ^ => tstr, ; "1234 Hollywood Blvd. Los Angeles CA, 90210 United States of America"
+    &(street_address: 2) ^ => tstr, ; "1234 Hollywood Blvd."
+    &(locality: 3) ^ => tstr, ; "Los Angeles"
+    &(region: 4) ^ => tstr, ; "CA"
+    &(postal_code: 5) ^ => tstr, ; "90210"
+    &(country: 6) ^ => tstr, ; "United States of America"
+}
 updated_at = (TBD19 => uint) ; 1730123071
 
 TBD1 = 170
