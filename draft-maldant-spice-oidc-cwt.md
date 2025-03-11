@@ -64,6 +64,10 @@ OpenId Connect {{OIDCCore}} is an authentication standard including standard cla
 
 {::boilerplate bcp14-tagged}
 
+# Address claim
+
+In order to further reduce the size of this prevalent and large claim, we register integer labels for it.
+We strictly map the definition of claims in Section 5.1.1 of {{OIDCCore}}: all the claims are optional and "formatted" can either be used instead or in addition of all the other fields.
 
 # Security Considerations
 
@@ -251,7 +255,7 @@ In case any of the suggested code points would have been claimed by the time of 
 - Claim Description: End-User's preferred postal address.
 - JWT Claim Name: address
 - Claim Key: TBD18 (187 suggested)
-- Claim Value Type(s): text string (the content is a JSON array)
+- Claim Value Type(s): map
 - Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
