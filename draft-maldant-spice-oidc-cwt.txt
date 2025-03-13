@@ -136,8 +136,8 @@ Table of Contents
    registry group).  No new IANA registry is created.
 
    In case any of the suggested code points would have been claimed by
-   the time of the Working Group last call, IANA is asked to assign
-   Claim Key values from the 170-256 range.
+   the time the IESG approves the document for publication as an RFC,
+   IANA is asked to assign Claim Key values from the 170-256 range.
 
 5.1.  name
 
