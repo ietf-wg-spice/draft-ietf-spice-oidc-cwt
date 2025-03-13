@@ -69,30 +69,31 @@ Table of Contents
 
    1.  Introduction
    2.  Conventions and Definitions
-   3.  Security Considerations
-   4.  IANA Considerations
-     4.1.  name
-     4.2.  given_name
-     4.3.  family_name
-     4.4.  middle_name
-     4.5.  nickname
-     4.6.  preferred_username
-     4.7.  profile
-     4.8.  picture
-     4.9.  website
-     4.10. email
-     4.11. email_verified
-     4.12. gender
-     4.13. birthdate
-     4.14. zoneinfo
-     4.15. locale
-     4.16. phone_number
-     4.17. phone_number_verified
-     4.18. address
-     4.19. updated_at
-   5.  References
-     5.1.  Normative References
-     5.2.  Informative References
+   3.  Address claim
+   4.  Security Considerations
+   5.  IANA Considerations
+     5.1.  name
+     5.2.  given_name
+     5.3.  family_name
+     5.4.  middle_name
+     5.5.  nickname
+     5.6.  preferred_username
+     5.7.  profile
+     5.8.  picture
+     5.9.  website
+     5.10. email
+     5.11. email_verified
+     5.12. gender
+     5.13. birthdate
+     5.14. zoneinfo
+     5.15. locale
+     5.16. phone_number
+     5.17. phone_number_verified
+     5.18. address
+     5.19. updated_at
+   6.  References
+     6.1.  Normative References
+     6.2.  Informative References
    Appendix A.  CDDL Schema
    Author's Address
 
@@ -112,7 +113,15 @@ Table of Contents
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-3.  Security Considerations
+3.  Address claim
+
+   In order to further reduce the size of this prevalent and large
+   claim, we register integer labels for it.  We strictly map the
+   definition of claims in Section 5.1.1 of [OIDCCore]: all the claims
+   are optional and "formatted" can either be used instead or in
+   addition of all the other fields.
+
+4.  Security Considerations
 
    This document registers existing OpenID Connect standard claims
    already used in JSON Web Tokens [RFC7519] for use in CBOR Web Tokens
@@ -120,7 +129,7 @@ Table of Contents
    Considerations respectively of Sections 16 and 17 of [OIDCCore] also
    apply.
 
-4.  IANA Considerations
+5.  IANA Considerations
 
    All claims defined in this document are placed in the (CBOR Web Token
    (CWT) Claims) [IANA.CWT.Claims] Registry (part of the eponymous
@@ -130,7 +139,7 @@ Table of Contents
    the time of the Working Group last call, IANA is asked to assign
    Claim Key values from the 170-256 range.
 
-4.1.  name
+5.1.  name
 
    *  Claim Name: name
 
@@ -148,7 +157,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.2.  given_name
+5.2.  given_name
 
    *  Claim Name: given_name
 
@@ -164,7 +173,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.3.  family_name
+5.3.  family_name
 
    *  Claim Name: family_name
 
@@ -180,7 +189,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.4.  middle_name
+5.4.  middle_name
 
    *  Claim Name: middle_name
 
@@ -196,7 +205,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.5.  nickname
+5.5.  nickname
 
    *  Claim Name: nickname
 
@@ -213,7 +222,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.6.  preferred_username
+5.6.  preferred_username
 
    *  Claim Name: preferred_username
 
@@ -230,7 +239,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.7.  profile
+5.7.  profile
 
    *  Claim Name: profile
 
@@ -246,7 +255,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.8.  picture
+5.8.  picture
 
    *  Claim Name: picture
 
@@ -264,7 +273,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.9.  website
+5.9.  website
 
    *  Claim Name: website
 
@@ -280,7 +289,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.10.  email
+5.10.  email
 
    *  Claim Name: email
 
@@ -296,7 +305,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.11.  email_verified
+5.11.  email_verified
 
    *  Claim Name: email_verified
 
@@ -313,7 +322,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.12.  gender
+5.12.  gender
 
    *  Claim Name: gender
 
@@ -329,7 +338,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.13.  birthdate
+5.13.  birthdate
 
    *  Claim Name: birthdate
 
@@ -346,7 +355,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.14.  zoneinfo
+5.14.  zoneinfo
 
    *  Claim Name: zoneinfo
 
@@ -363,7 +372,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.15.  locale
+5.15.  locale
 
    *  Claim Name: locale
 
@@ -380,7 +389,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.16.  phone_number
+5.16.  phone_number
 
    *  Claim Name: phone_number
 
@@ -396,7 +405,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.17.  phone_number_verified
+5.17.  phone_number_verified
 
    *  Claim Name: phone_number_verified
 
@@ -413,7 +422,7 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.18.  address
+5.18.  address
 
    *  Claim Name: address
 
@@ -423,13 +432,13 @@ Table of Contents
 
    *  Claim Key: TBD18 (187 suggested)
 
-   *  Claim Value Type(s): text string (the content is a JSON array)
+   *  Claim Value Type(s): map
 
    *  Change Controller: IETF
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-4.19.  updated_at
+5.19.  updated_at
 
    *  Claim Name: updated_at
 
@@ -447,9 +456,9 @@ Table of Contents
 
    *  Specification Document(s): Section 5.1 of [OIDCCore]
 
-5.  References
+6.  References
 
-5.1.  Normative References
+6.1.  Normative References
 
    [IANA.CWT.Claims]
               IANA, "CBOR Web Token (CWT) Claims",
@@ -485,7 +494,7 @@ Table of Contents
               "CBOR Web Token (CWT)", RFC 8392, DOI 10.17487/RFC8392,
               May 2018, <https://www.rfc-editor.org/rfc/rfc8392>.
 
-5.2.  Informative References
+6.2.  Informative References
 
    [RFC7519]  Jones, M., Bradley, J., and N. Sakimura, "JSON Web Token
               (JWT)", RFC 7519, DOI 10.17487/RFC7519, May 2015,
@@ -510,7 +519,14 @@ zoneinfo = (TBD14 => tstr) ; "America/Los_Angeles"
 locale = (TBD15 => tstr) ; "en_US"
 phone_number = (TBD16 => tstr) ; "+1 (425) 555-1212"
 phone_number_verified = (TBD17 => tstr) ; "true"
-address = (TBD18 => tstr) ; "{"street_address": "1234 Hollywood Blvd.", "locality": "Los Angeles", "region": "CA", "postal_code": "90210", "country": "United States of America"}"
+address = {
+    &(formatted: 1) ^ => tstr, ; "1234 Hollywood Blvd. Los Angeles CA, 90210 United States of America"
+    &(street_address: 2) ^ => tstr, ; "1234 Hollywood Blvd."
+    &(locality: 3) ^ => tstr, ; "Los Angeles"
+    &(region: 4) ^ => tstr, ; "CA"
+    &(postal_code: 5) ^ => tstr, ; "90210"
+    &(country: 6) ^ => tstr, ; "United States of America"
+}
 updated_at = (TBD19 => uint) ; 1730123071
 
 TBD1 = 170
