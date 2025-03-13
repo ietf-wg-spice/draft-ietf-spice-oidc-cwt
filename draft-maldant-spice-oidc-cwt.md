@@ -77,7 +77,7 @@ This document registers existing OpenID Connect standard claims already used in 
 
 All claims defined in this document are placed in the (CBOR Web Token (CWT) Claims) {{IANA.CWT.Claims}} Registry (part of the eponymous registry group). No new IANA registry is created.
 
-In case any of the suggested code points would have been claimed by the time of the Working Group last call, IANA is asked to assign Claim Key values from the 170-256 range.
+In case any of the suggested code points would have been claimed by the time the IESG approves the document for publication as an RFC, IANA is asked to assign Claim Key values from the 170-256 range.
 
 ## name
 
