@@ -185,7 +185,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Description: True if the End-User's e-mail address has been verified; otherwise false.
 - JWT Claim Name: email_verified
 - Claim Key: TBD11 (180 suggested)
-- Claim Value Type(s): text string
+- Claim Value Type(s): bool
 - Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
@@ -245,7 +245,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Description:  True if the End-User's phone number has been verified; otherwise false.
 - JWT Claim Name: phone_number_verified
 - Claim Key: TBD17 (186 suggested)
-- Claim Value Type(s): text string
+- Claim Value Type(s): bool
 - Change Controller: IETF
 - Specification Document(s): Section 5.1 of {{OIDCCore}}
 
