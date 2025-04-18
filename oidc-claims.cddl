@@ -8,13 +8,13 @@ profile = (TBD7 => tstr) ; "https://example.org/about.html"
 picture = (TBD8 => tstr) ; "https://example.org/avatar.png"
 website = (TBD9 => tstr) ; "https://example.org"
 email = (TBD10 => tstr) ; "janedoe@example.com"
-email_verified = (TBD11 => tstr) ; "true"
+email_verified = (TBD11 => bool) ; true
 gender = (TBD12 => tstr) ; "female"
 birthdate = (TBD13 => tstr) ; "1970-03-22"
 zoneinfo = (TBD14 => tstr) ; "America/Los_Angeles"
 locale = (TBD15 => tstr) ; "en_US"
 phone_number = (TBD16 => tstr) ; "+1 (425) 555-1212"
-phone_number_verified = (TBD17 => tstr) ; "true"
+phone_number_verified = (TBD17 => bool) ; true
 address = {
     &(formatted: 1) ^ => tstr, ; "1234 Hollywood Blvd. Los Angeles CA, 90210 United States of America"
     &(street_address: 2) ^ => tstr, ; "1234 Hollywood Blvd."
