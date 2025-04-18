@@ -3,7 +3,7 @@ title: "OpenID Connect standard claims registration for CBOR Web Tokens"
 abbrev: "OIDC standard claims for CWT"
 category: info
 
-docname: draft-maldant-spice-oidc-cwt-latest
+docname: draft-ietf-spice-oidc-cwt-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -21,7 +21,7 @@ venue:
   mail: "spice@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/spice/"
   github: "beltram/rfc-spice-oidc-cwt"
-  latest: "https://beltram.github.io/rfc-spice-oidc-cwt/draft-maldant-spice-oidc-cwt.html"
+  latest: "https://beltram.github.io/rfc-spice-oidc-cwt/draft-ietf-spice-oidc-cwt.html"
 
 author:
  - fullname: "Beltram Maldant"
