@@ -9,20 +9,20 @@
 <meta content="
        This document registers OpenId Connect standards claims already used in JSON Web Tokens for CBOR Web Tokens. 
     " name="description">
-<meta content="xml2rfc 3.28.0" name="generator">
+<meta content="xml2rfc 3.28.1" name="generator">
 <meta content="openid connect" name="keyword">
 <meta content="oidc" name="keyword">
 <meta content="standard claims" name="keyword">
 <meta content="draft-maldant-spice-oidc-cwt-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.28.0
-    Python 3.12.9
+  xml2rfc 3.28.1
+    Python 3.12.10
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
-    Jinja2 3.1.5
+    Jinja2 3.1.6
     lxml 5.3.0
-    platformdirs 4.3.6
+    platformdirs 4.3.7
     pycountry 24.6.1
     PyYAML 6.0.2
     requests 2.32.3
@@ -1046,11 +1046,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">OIDC standard claims for CWT</td>
-<td class="right">March 2025</td>
+<td class="right">April 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Maldant</td>
-<td class="center">Expires 18 September 2025</td>
+<td class="center">Expires 20 October 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1063,12 +1063,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-maldant-spice-oidc-cwt-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-03-17" class="published">17 March 2025</time>
+<time datetime="2025-04-18" class="published">18 April 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-09-18">18 September 2025</time></dd>
+<dd class="expires"><time datetime="2025-10-20">20 October 2025</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1118,7 +1118,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 18 September 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 20 October 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1604,7 +1604,7 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#OI
             <p id="section-5.11-1.4.1">Claim Key: TBD11 (180 suggested)<a href="#section-5.11-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-5.11-1.5">
-            <p id="section-5.11-1.5.1">Claim Value Type(s): text string<a href="#section-5.11-1.5.1" class="pilcrow">¶</a></p>
+            <p id="section-5.11-1.5.1">Claim Value Type(s): bool<a href="#section-5.11-1.5.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-5.11-1.6">
             <p id="section-5.11-1.6.1">Change Controller: IETF<a href="#section-5.11-1.6.1" class="pilcrow">¶</a></p>
@@ -1784,7 +1784,7 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#OI
             <p id="section-5.17-1.4.1">Claim Key: TBD17 (186 suggested)<a href="#section-5.17-1.4.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-5.17-1.5">
-            <p id="section-5.17-1.5.1">Claim Value Type(s): text string<a href="#section-5.17-1.5.1" class="pilcrow">¶</a></p>
+            <p id="section-5.17-1.5.1">Claim Value Type(s): bool<a href="#section-5.17-1.5.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-5.17-1.6">
             <p id="section-5.17-1.6.1">Change Controller: IETF<a href="#section-5.17-1.6.1" class="pilcrow">¶</a></p>
@@ -1937,13 +1937,13 @@ profile = (TBD7 =&gt; tstr) ; "https://example.org/about.html"
 picture = (TBD8 =&gt; tstr) ; "https://example.org/avatar.png"
 website = (TBD9 =&gt; tstr) ; "https://example.org"
 email = (TBD10 =&gt; tstr) ; "janedoe@example.com"
-email_verified = (TBD11 =&gt; tstr) ; "true"
+email_verified = (TBD11 =&gt; bool) ; true
 gender = (TBD12 =&gt; tstr) ; "female"
 birthdate = (TBD13 =&gt; tstr) ; "1970-03-22"
 zoneinfo = (TBD14 =&gt; tstr) ; "America/Los_Angeles"
 locale = (TBD15 =&gt; tstr) ; "en_US"
 phone_number = (TBD16 =&gt; tstr) ; "+1 (425) 555-1212"
-phone_number_verified = (TBD17 =&gt; tstr) ; "true"
+phone_number_verified = (TBD17 =&gt; bool) ; true
 address = {
     &amp;(formatted: 1) ^ =&gt; tstr, ; "1234 Hollywood Blvd. Los Angeles CA, 90210 United States of America"
     &amp;(street_address: 2) ^ =&gt; tstr, ; "1234 Hollywood Blvd."
