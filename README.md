@@ -1,17 +1,17 @@
-# draft-maldant-spice-oidc-cwt
+# draft-ietf-spice-oidc-cwt
 
-This is the working area for the individual Internet-Draft, "draft-maldant-spice-oidc-cwt".
+This is the working area for the individual Internet-Draft, "draft-ietf-spice-oidc-cwt".
 
-* [Editor's Copy](https://beltram.github.io/rfc-spice-oidc-cwt/#go.draft-maldant-spice-oidc-cwt.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-maldant-spice-oidc-cwt)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-maldant-spice-oidc-cwt)
-* [Compare Editor's Copy to Individual Draft](https://beltram.github.io/rfc-spice-oidc-cwt/#go.draft-maldant-spice-oidc-cwt.diff)
+* [Editor's Copy](https://ietf-wg-spice.github.io/rfc-spice-oidc-cwt/#go.draft-ietf-spice-oidc-cwt.html)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-spice-oidc-cwt)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-ietf-spice-oidc-cwt)
+* [Compare Editor's Copy to Individual Draft](https://ietf-wg-spice.github.io/rfc-spice-oidc-cwt/#go.draft-ietf-spice-oidc-cwt.diff)
 
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/beltram/rfc-spice-oidc-cwt/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/ietf-wg-spice/rfc-spice-oidc-cwt/blob/main/CONTRIBUTING.md).
 
 Contributions can be made by creating pull requests.
 The GitHub interface supports creating pull requests using the Edit (✏) button.
