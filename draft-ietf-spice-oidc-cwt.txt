@@ -4,12 +4,12 @@
 
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
-Intended status: Informational                             18 April 2025
-Expires: 20 October 2025
+Intended status: Informational                             19 April 2025
+Expires: 21 October 2025
 
 
     OpenID Connect standard claims registration for CBOR Web Tokens
-                  draft-maldant-spice-oidc-cwt-latest
+                    draft-ietf-spice-oidc-cwt-latest
 
 Abstract
 
@@ -21,9 +21,9 @@ About This Document
    This note is to be removed before publishing as an RFC.
 
    The latest revision of this draft can be found at
-   https://beltram.github.io/rfc-spice-oidc-cwt/draft-maldant-spice-
-   oidc-cwt.html.  Status information for this document may be found at
-   https://datatracker.ietf.org/doc/draft-maldant-spice-oidc-cwt/.
+   https://beltram.github.io/rfc-spice-oidc-cwt/draft-ietf-spice-oidc-
+   cwt.html.  Status information for this document may be found at
+   https://datatracker.ietf.org/doc/draft-ietf-spice-oidc-cwt/.
 
    Discussion of this document takes place on the Secure Patterns for
    Internet CrEdentials Working Group mailing list
@@ -49,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 October 2025.
+   This Internet-Draft will expire on 21 October 2025.
 
 Copyright Notice
 
