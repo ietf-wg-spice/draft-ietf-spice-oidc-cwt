@@ -1,4 +1,4 @@
 # License
 
 See the
-[guidelines for contributions](https://github.com/beltram/rfc-spice-oidc-cwt/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/blob/main/CONTRIBUTING.md).
