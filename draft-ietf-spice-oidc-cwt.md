@@ -1,6 +1,6 @@
 ---
-title: "OpenID Connect standard claims registration for CBOR Web Tokens"
-abbrev: "OIDC standard claims for CWT"
+title: "OpenID Connect Standard Claims Registration for CBOR Web Tokens"
+abbrev: "OpenID Connect Standard Claims for CWT"
 category: info
 
 docname: draft-ietf-spice-oidc-cwt-latest
@@ -12,24 +12,31 @@ v: 3
 area: "Security"
 workgroup: "Secure Patterns for Internet CrEdentials"
 keyword:
- - openid connect
- - oidc
- - standard claims
+ - Openid Connect
+ - Standard Claims
 venue:
   group: "Secure Patterns for Internet CrEdentials"
   type: "Working Group"
   mail: "spice@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/spice/"
-  github: "beltram/rfc-spice-oidc-cwt"
-  latest: "https://beltram.github.io/rfc-spice-oidc-cwt/draft-ietf-spice-oidc-cwt.html"
+  github: "ietf-wg-spice/draft-ietf-spice-oidc-cwt"
+  latest: "https://ietf-wg-spice.github.io/draft-ietf-spice-oidc-cwt/#go.draft-ietf-spice-oidc-cwt.html"
 
 author:
  - fullname: "Beltram Maldant"
    organization: SimpleLogin
    email: "beltram.ietf@pm.me"
 
+ -
+    fullname: Michael B. Jones
+    ins: M.B. Jones
+    organization: Self-Issued Consulting
+    email: michael_b_jones@hotmail.com
+    uri: https://self-issued.info/
+    country: United States
+
 normative:
-    OIDCCore:
+    OpenID.Core:
         target: https://openid.net/specs/openid-connect-core-1_0.html
         title: "OpenID Connect Core 1.0 incorporating errata set 2"
         date: 2023-12-15
@@ -51,27 +58,27 @@ informative:
 
 --- abstract
 
-This document registers OpenId Connect standards claims already used in JSON Web Tokens for CBOR Web Tokens.
+This document registers OpenID Connect standard claims already used in JSON Web Tokens for use in CBOR Web Tokens.
 
 
 --- middle
 
 # Introduction
 
-OpenId Connect {{OIDCCore}} is an authentication standard including standard claims already in use for JSON Web Tokens (JWT) {{?RFC7519}}. CBOR Web Tokens (CWT) {{!RFC8392}} have a claims registry, but do not include most of these claims. This draft aims at unifying use of OIDC claims in JWTs and CWTs.
+OpenID Connect {{OpenID.Core}} is an authentication standard including standard claims already in use for JSON Web Tokens (JWT) {{?RFC7519}}. CBOR Web Tokens (CWT) {{!RFC8392}} have a claims registry, but do not include most of these claims. This draft aims at unifying use of OpenID Connect claims in JWTs and CWTs.
 
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
 
-# Address claim
+# Address Claim
 
-In order to further reduce the size of this prevalent and large claim, we register integer labels for it.
-We strictly map the definition of claims in Section 5.1.1 of {{OIDCCore}}: all the claims are optional and "formatted" can either be used instead or in addition of all the other fields.
+To further reduce the size of this prevalent and large claim, we register integer labels for it.
+We strictly map the definition of claims in Section 5.1.1 of {{OpenID.Core}}: all the claims are optional and "formatted" can either be used instead or in addition of all the other fields.
 
 # Security Considerations
 
-This document registers existing OpenID Connect standard claims already used in JSON Web Tokens {{?RFC7519}} for use in CBOR Web Tokens {{!RFC8392}} without changing their semantics. The Security and Privacy Considerations respectively of Sections 16 and 17 of {{OIDCCore}} also apply.
+This document registers existing OpenID Connect standard claims already used in JSON Web Tokens {{?RFC7519}} for use in CBOR Web Tokens {{!RFC8392}} without changing their semantics. The Security and Privacy Considerations respectively of Sections 16 and 17 of {{OpenID.Core}} also apply.
 
 # IANA Considerations
 
@@ -87,7 +94,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD1 (170 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## given_name
 
@@ -97,7 +104,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD2 (171 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## family_name
 
@@ -107,7 +114,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD3 (172 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## middle_name
 
@@ -117,7 +124,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD4 (173 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## nickname
 
@@ -127,7 +134,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD5 (174 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## preferred_username
 
@@ -137,7 +144,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD6 (175 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## profile
 
@@ -147,7 +154,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD7 (176 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## picture
 
@@ -157,7 +164,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD8 (177 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## website
 
@@ -167,7 +174,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD9 (178 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## email
 
@@ -177,7 +184,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD10 (179 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## email_verified
 
@@ -187,7 +194,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD11 (180 suggested)
 - Claim Value Type(s): bool
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## gender
 
@@ -197,7 +204,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD12 (181 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## birthdate
 
@@ -207,7 +214,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD13 (182 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## zoneinfo
 
@@ -217,7 +224,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD14 (183 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## locale
 
@@ -227,7 +234,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD15 (184 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## phone_number
 
@@ -237,7 +244,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD16 (185 suggested)
 - Claim Value Type(s): text string
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## phone_number_verified
 
@@ -247,7 +254,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD17 (186 suggested)
 - Claim Value Type(s): bool
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## address
 
@@ -257,7 +264,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD18 (187 suggested)
 - Claim Value Type(s): map
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 ## updated_at
 
@@ -267,7 +274,7 @@ In case any of the suggested code points would have been claimed by the time the
 - Claim Key: TBD19 (188 suggested)
 - Claim Value Type(s): uint
 - Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OIDCCore}}
+- Specification Document(s): Section 5.1 of {{OpenID.Core}}
 
 --- back
 
@@ -278,3 +285,20 @@ In case any of the suggested code points would have been claimed by the time the
 ~~~~~~~~~~
 {: #cddl-schema title="A CDDL description of each claim"}
 
+
+# Acknowledgments
+{:numbered="false"}
+
+TBD
+
+# Document History
+{: numbered="false"}
+
+-01
+
+* Aligned terminology with OpenID Connect specification.
+* Added Michael B. Jones as an editor.
+
+-00
+
+* Initial working group draft, based on draft-maldant-spice-oidc-cwt-02.
