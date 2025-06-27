@@ -4,24 +4,25 @@
 
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
-Intended status: Informational                             19 April 2025
-Expires: 21 October 2025
+Intended status: Informational                               M. B. Jones
+Expires: 29 December 2025                         Self-Issued Consulting
+                                                            27 June 2025
 
 
-    OpenID Connect standard claims registration for CBOR Web Tokens
+    OpenID Connect Standard Claims Registration for CBOR Web Tokens
                     draft-ietf-spice-oidc-cwt-latest
 
 Abstract
 
-   This document registers OpenId Connect standards claims already used
-   in JSON Web Tokens for CBOR Web Tokens.
+   This document registers OpenID Connect standard claims already used
+   in JSON Web Tokens for use in CBOR Web Tokens.
 
 About This Document
 
    This note is to be removed before publishing as an RFC.
 
-   The latest revision of this draft can be found at
-   https://beltram.github.io/rfc-spice-oidc-cwt/draft-ietf-spice-oidc-
+   The latest revision of this draft can be found at https://ietf-wg-
+   spice.github.io/draft-ietf-spice-oidc-cwt/#go.draft-ietf-spice-oidc-
    cwt.html.  Status information for this document may be found at
    https://datatracker.ietf.org/doc/draft-ietf-spice-oidc-cwt/.
 
@@ -32,7 +33,7 @@ About This Document
    https://www.ietf.org/mailman/listinfo/spice/.
 
    Source for this draft and an issue tracker can be found at
-   https://github.com/beltram/rfc-spice-oidc-cwt.
+   https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt.
 
 Status of This Memo
 
@@ -49,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 October 2025.
+   This Internet-Draft will expire on 29 December 2025.
 
 Copyright Notice
 
@@ -69,7 +70,7 @@ Table of Contents
 
    1.  Introduction
    2.  Conventions and Definitions
-   3.  Address claim
+   3.  Address Claim
    4.  Security Considerations
    5.  IANA Considerations
      5.1.  name
@@ -95,15 +96,17 @@ Table of Contents
      6.1.  Normative References
      6.2.  Informative References
    Appendix A.  CDDL Schema
-   Author's Address
+   Acknowledgments
+   Document History
+   Authors' Addresses
 
 1.  Introduction
 
-   OpenId Connect [OIDCCore] is an authentication standard including
+   OpenID Connect [OpenID.Core] is an authentication standard including
    standard claims already in use for JSON Web Tokens (JWT) [RFC7519].
    CBOR Web Tokens (CWT) [RFC8392] have a claims registry, but do not
    include most of these claims.  This draft aims at unifying use of
-   OIDC claims in JWTs and CWTs.
+   OpenID Connect claims in JWTs and CWTs.
 
 2.  Conventions and Definitions
 
@@ -113,21 +116,21 @@ Table of Contents
    BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
    capitals, as shown here.
 
-3.  Address claim
+3.  Address Claim
 
-   In order to further reduce the size of this prevalent and large
-   claim, we register integer labels for it.  We strictly map the
-   definition of claims in Section 5.1.1 of [OIDCCore]: all the claims
-   are optional and "formatted" can either be used instead or in
-   addition of all the other fields.
+   To further reduce the size of this prevalent and large claim, we
+   register integer labels for it.  We strictly map the definition of
+   claims in Section 5.1.1 of [OpenID.Core]: all the claims are optional
+   and "formatted" can either be used instead or in addition of all the
+   other fields.
 
 4.  Security Considerations
 
    This document registers existing OpenID Connect standard claims
    already used in JSON Web Tokens [RFC7519] for use in CBOR Web Tokens
    [RFC8392] without changing their semantics.  The Security and Privacy
-   Considerations respectively of Sections 16 and 17 of [OIDCCore] also
-   apply.
+   Considerations respectively of Sections 16 and 17 of [OpenID.Core]
+   also apply.
 
 5.  IANA Considerations
 
@@ -155,7 +158,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.2.  given_name
 
@@ -171,7 +174,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.3.  family_name
 
@@ -187,7 +190,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.4.  middle_name
 
@@ -203,7 +206,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.5.  nickname
 
@@ -220,7 +223,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.6.  preferred_username
 
@@ -237,7 +240,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.7.  profile
 
@@ -253,7 +256,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.8.  picture
 
@@ -271,7 +274,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.9.  website
 
@@ -287,7 +290,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.10.  email
 
@@ -303,7 +306,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.11.  email_verified
 
@@ -320,7 +323,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.12.  gender
 
@@ -336,7 +339,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.13.  birthdate
 
@@ -353,7 +356,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.14.  zoneinfo
 
@@ -370,7 +373,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.15.  locale
 
@@ -387,7 +390,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.16.  phone_number
 
@@ -403,7 +406,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.17.  phone_number_verified
 
@@ -420,7 +423,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.18.  address
 
@@ -436,7 +439,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 5.19.  updated_at
 
@@ -454,7 +457,7 @@ Table of Contents
 
    *  Change Controller: IETF
 
-   *  Specification Document(s): Section 5.1 of [OIDCCore]
+   *  Specification Document(s): Section 5.1 of [OpenID.Core]
 
 6.  References
 
@@ -472,7 +475,8 @@ Table of Contents
               "ISO8601-1", n.d.,
               <https://www.iso.org/standard/81801.html>.
 
-   [OIDCCore] Sakimura, N., Bradley, J., Jones, M. B., Medeiros, B. de.,
+   [OpenID.Core]
+              Sakimura, N., Bradley, J., Jones, M. B., Medeiros, B. de.,
               and C. Mortimore, "OpenID Connect Core 1.0 incorporating
               errata set 2", 15 December 2023,
               <https://openid.net/specs/openid-connect-core-1_0.html>.
@@ -551,8 +555,32 @@ TBD19 = 188
 
               Figure 1: A CDDL description of each claim
 
-Author's Address
+Acknowledgments
+
+   TBD
+
+Document History
+
+   -01
+
+   *  Aligned terminology with OpenID Connect specification.
+
+   *  Added Michael B.  Jones as an editor.
+
+   -00
+
+   *  Initial working group draft, based on draft-maldant-spice-oidc-
+      cwt-02.
+
+Authors' Addresses
 
    Beltram Maldant
    SimpleLogin
    Email: beltram.ietf@pm.me
+
+
+   Michael B. Jones
+   Self-Issued Consulting
+   United States
+   Email: michael_b_jones@hotmail.com
+   URI:   https://self-issued.info/
