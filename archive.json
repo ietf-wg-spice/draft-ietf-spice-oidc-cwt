@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-06-26T01:05:45.907814+00:00",
+  "timestamp": "2025-06-29T01:13:40.710506+00:00",
   "repo": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
   "labels": [
     {
@@ -416,6 +416,48 @@
       },
       "comments": [],
       "reviews": []
+    },
+    {
+      "number": 14,
+      "id": "PR_kwDOMVdXTs6cUgX9",
+      "title": "Align terminology with OpenID Connect",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/pull/14",
+      "state": "MERGED",
+      "author": "selfissued",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "OpenID specifications never use the abbreviation \"OIDC\".  For branding reasons, it is always referred to as OpenID Connect.\r\n\r\nI added the missing Acknowledgements and History sections.\r\n\r\nI also fixed some capitalization errors.\r\n\r\nCc: @brentzundel",
+      "createdAt": "2025-06-26T23:19:00Z",
+      "updatedAt": "2025-06-27T08:13:36Z",
+      "baseRepository": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+      "baseRefName": "main",
+      "baseRefOid": "f0c496a7ef20878ec448d08b3b927f3010562a92",
+      "headRepository": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+      "headRefName": "mbj-OpenIDConnect",
+      "headRefOid": "4f53abcd875533b3a5bf26a17bcdacd75f709161",
+      "closedAt": "2025-06-27T08:13:36Z",
+      "mergedAt": "2025-06-27T08:13:36Z",
+      "mergedBy": "beltram",
+      "mergeCommit": {
+        "oid": "88a2dafc065b4d42fee428ff1b303804ffd5dd5a"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOMVdXTs6wvy_r",
+          "commit": {
+            "abbreviatedOid": "4f53abc"
+          },
+          "author": "beltram",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2025-06-27T08:13:24Z",
+          "updatedAt": "2025-06-27T08:13:24Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
