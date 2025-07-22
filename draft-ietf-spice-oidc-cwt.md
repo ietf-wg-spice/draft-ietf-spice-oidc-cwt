@@ -88,193 +88,459 @@ In case any of the suggested code points would have been claimed by the time the
 
 ## name
 
-- Claim Name: name
-- Claim Description: End-User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the End-User's locale and preferences.
-- JWT Claim Name: name
-- Claim Key: TBD1 (170 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: name
+
+Claim Description:
+: End-User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the End-User's locale and preferences.
+
+JWT Claim Name:
+: name
+
+Claim Key:
+: TBD1 (170 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## given_name
 
-- Claim Name: given_name
-- Claim Description: Given name(s) or first name(s) of the End-User.
-- JWT Claim Name: given_name
-- Claim Key: TBD2 (171 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: given_name
+
+Claim Description:
+: Given name(s) or first name(s) of the End-User.
+
+JWT Claim Name:
+: given_name
+
+Claim Key:
+: TBD2 (171 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## family_name
 
-- Claim Name: family_name
-- Claim Description: Surname(s) or last name(s) of the End-User.
-- JWT Claim Name: family_name
-- Claim Key: TBD3 (172 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: family_name
+
+Claim Description:
+: Surname(s) or last name(s) of the End-User.
+
+JWT Claim Name:
+: family_name
+
+Claim Key:
+: TBD3 (172 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## middle_name
 
-- Claim Name: middle_name
-- Claim Description: Middle name(s) of the End-User.
-- JWT Claim Name: middle_name
-- Claim Key: TBD4 (173 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: middle_name
+
+Claim Description:
+: Middle name(s) of the End-User.
+
+JWT Claim Name:
+: middle_name
+
+Claim Key:
+: TBD4 (173 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## nickname
 
-- Claim Name: nickname
-- Claim Description: Casual name of the End-User that may or may not be the same as the given_name.
-- JWT Claim Name: nickname
-- Claim Key: TBD5 (174 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: nickname
+
+Claim Description:
+: Casual name of the End-User that may or may not be the same as the given_name.
+
+JWT Claim Name:
+: nickname
+
+Claim Key:
+: TBD5 (174 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## preferred_username
 
-- Claim Name: preferred_username
-- Claim Description: Shorthand name by which the End-User wishes to be referred to at the Resource Server.
-- JWT Claim Name: preferred_username
-- Claim Key: TBD6 (175 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: preferred_username
+
+Claim Description:
+: Shorthand name by which the End-User wishes to be referred to at the Resource Server.
+
+JWT Claim Name:
+: preferred_username
+
+Claim Key:
+: TBD6 (175 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## profile
 
-- Claim Name: profile
-- Claim Description: URL of the End-User's profile page.
-- JWT Claim Name: profile
-- Claim Key: TBD7 (176 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: profile
+
+Claim Description:
+: URL of the End-User's profile page.
+
+JWT Claim Name:
+: profile
+
+Claim Key:
+: TBD7 (176 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## picture
 
-- Claim Name: picture
-- Claim Description: URL of the End-User's profile picture. This URL MUST refer to an image file, rather than to a Web page containing an image.
-- JWT Claim Name: picture
-- Claim Key: TBD8 (177 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: picture
+
+Claim Description:
+: URL of the End-User's profile picture. This URL MUST refer to an image file, rather than to a Web page containing an image.
+
+JWT Claim Name:
+: picture
+
+Claim Key:
+: TBD8 (177 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## website
 
-- Claim Name: website
-- Claim Description: URL of the End-User's Web page or blog.
-- JWT Claim Name: website
-- Claim Key: TBD9 (178 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: website
+
+Claim Description:
+: URL of the End-User's Web page or blog.
+
+JWT Claim Name:
+: website
+
+Claim Key:
+: TBD9 (178 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## email
 
-- Claim Name: email
-- Claim Description: End-User's preferred e-mail address.
-- JWT Claim Name: email
-- Claim Key: TBD10 (179 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: email
+
+Claim Description:
+: End-User's preferred e-mail address.
+
+JWT Claim Name:
+: email
+
+Claim Key:
+: TBD10 (179 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## email_verified
 
-- Claim Name: email_verified
-- Claim Description: True if the End-User's e-mail address has been verified; otherwise false.
-- JWT Claim Name: email_verified
-- Claim Key: TBD11 (180 suggested)
-- Claim Value Type(s): bool
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: email_verified
+
+Claim Description:
+: True if the End-User's e-mail address has been verified; otherwise false.
+
+JWT Claim Name:
+: email_verified
+
+Claim Key:
+: TBD11 (180 suggested)
+
+Claim Value Type(s):
+: bool
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## gender
 
-- Claim Name: gender
-- Claim Description: End-User's defined gender.
-- JWT Claim Name: gender
-- Claim Key: TBD12 (181 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: gender
+
+Claim Description:
+: End-User's defined gender.
+
+JWT Claim Name:
+: gender
+
+Claim Key:
+: TBD12 (181 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## birthdate
 
-- Claim Name: birthdate
-- Claim Description: End-User's birthday, represented as an [ISO8601‑1] YYYY-MM-DD format.
-- JWT Claim Name: birthdate
-- Claim Key: TBD13 (182 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: birthdate
+
+Claim Description:
+: End-User's birthday, represented as an [ISO8601‑1] YYYY-MM-DD format.
+
+JWT Claim Name:
+: birthdate
+
+Claim Key:
+: TBD13 (182 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## zoneinfo
 
-- Claim Name: zoneinfo
-- Claim Description: String from IANA Time Zone Database {{IANAtimezones}} representing the End-User's time zone.
-- JWT Claim Name: zoneinfo
-- Claim Key: TBD14 (183 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: zoneinfo
+
+Claim Description:
+: String from IANA Time Zone Database {{IANAtimezones}} representing the End-User's time zone.
+
+JWT Claim Name:
+: zoneinfo
+
+Claim Key:
+: TBD14 (183 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## locale
 
-- Claim Name: locale
-- Claim Description: End-User's locale, represented as a BCP47 {{!RFC5646}} language tag.
-- JWT Claim Name: locale
-- Claim Key: TBD15 (184 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: locale
+
+Claim Description:
+: End-User's locale, represented as a BCP47 {{!RFC5646}} language tag.
+
+JWT Claim Name:
+: locale
+
+Claim Key:
+: TBD15 (184 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## phone_number
 
-- Claim Name: phone_number
-- Claim Description: End-User's preferred telephone number.
-- JWT Claim Name: phone_number
-- Claim Key: TBD16 (185 suggested)
-- Claim Value Type(s): text string
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: phone_number
+
+Claim Description:
+: End-User's preferred telephone number.
+
+JWT Claim Name:
+: phone_number
+
+Claim Key:
+: TBD16 (185 suggested)
+
+Claim Value Type(s):
+: text string
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## phone_number_verified
 
-- Claim Name: phone_number_verified
-- Claim Description:  True if the End-User's phone number has been verified; otherwise false.
-- JWT Claim Name: phone_number_verified
-- Claim Key: TBD17 (186 suggested)
-- Claim Value Type(s): bool
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: phone_number_verified
+
+Claim Description:
+: True if the End-User's phone number has been verified; otherwise false.
+
+JWT Claim Name:
+: phone_number_verified
+
+Claim Key:
+: TBD17 (186 suggested)
+
+Claim Value Type(s):
+: bool
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## address
 
-- Claim Name: address
-- Claim Description: End-User's preferred postal address.
-- JWT Claim Name: address
-- Claim Key: TBD18 (187 suggested)
-- Claim Value Type(s): map
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: address
+
+Claim Description:
+: End-User's preferred postal address.
+
+JWT Claim Name:
+: address
+
+Claim Key:
+: TBD18 (187 suggested)
+
+Claim Value Type(s):
+: map
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 ## updated_at
 
-- Claim Name: updated_at
-- Claim Description: Time the End-User's information was last updated. Its value is a number representing the number of seconds from 1970-01-01T00:00:00Z as measured in UTC until the date/time.
-- JWT Claim Name: updated_at
-- Claim Key: TBD19 (188 suggested)
-- Claim Value Type(s): uint
-- Change Controller: IETF
-- Specification Document(s): Section 5.1 of {{OpenID.Core}}
+{:compact}
+Claim Name:
+: updated_at
+
+Claim Description:
+: Time the End-User's information was last updated. Its value is a number representing the number of seconds from 1970-01-01T00:00:00Z as measured in UTC until the date/time.
+
+JWT Claim Name:
+: updated_at
+
+Claim Key:
+: TBD19 (188 suggested)
+
+Claim Value Type(s):
+: uint
+
+Change Controller:
+: IETF
+
+Specification Document(s):
+: Section 5.1 of {{OpenID.Core}}
 
 --- back
 
