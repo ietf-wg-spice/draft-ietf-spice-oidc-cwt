@@ -10,12 +10,12 @@
 <meta content="
        This document registers OpenID Connect standard claims already used in JSON Web Tokens for use in CBOR Web Tokens. 
     " name="description">
-<meta content="xml2rfc 3.29.0" name="generator">
+<meta content="xml2rfc 3.30.0" name="generator">
 <meta content="Openid Connect" name="keyword">
 <meta content="Standard Claims" name="keyword">
 <meta content="draft-ietf-spice-oidc-cwt-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.29.0
+  xml2rfc 3.30.0
     Python 3.12.11
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
@@ -1046,11 +1046,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">OpenID Connect Standard Claims for CWT</td>
-<td class="right">June 2025</td>
+<td class="right">July 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Maldant &amp; Jones</td>
-<td class="center">Expires 29 December 2025</td>
+<td class="center">Expires 23 January 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1063,12 +1063,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-ietf-spice-oidc-cwt-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-06-27" class="published">27 June 2025</time>
+<time datetime="2025-07-22" class="published">22 July 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-12-29">29 December 2025</time></dd>
+<dd class="expires"><time datetime="2026-01-23">23 January 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1122,7 +1122,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 29 December 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 23 January 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1300,29 +1300,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-name">
 <a href="#section-5.1" class="section-number selfRef">5.1. </a><a href="#name-name" class="section-name selfRef">name</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.1-1.1">
-            <p id="section-5.1-1.1.1">Claim Name: name<a href="#section-5.1-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.1-1.2">
-            <p id="section-5.1-1.2.1">Claim Description: End-User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the End-User's locale and preferences.<a href="#section-5.1-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.1-1.3">
-            <p id="section-5.1-1.3.1">JWT Claim Name: name<a href="#section-5.1-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.1-1.4">
-            <p id="section-5.1-1.4.1">Claim Key: TBD1 (170 suggested)<a href="#section-5.1-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.1-1.5">
-            <p id="section-5.1-1.5.1">Claim Value Type(s): text string<a href="#section-5.1-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.1-1.6">
-            <p id="section-5.1-1.6.1">Change Controller: IETF<a href="#section-5.1-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.1-1.7">
-            <p id="section-5.1-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.1-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.1-1">
+          <dt id="section-5.1-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-1.2">
+            <p id="section-5.1-1.2.1">name<a href="#section-5.1-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.1-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-1.4">
+            <p id="section-5.1-1.4.1">End-User's full name in displayable form including all name parts, possibly including titles and suffixes, ordered according to the End-User's locale and preferences.<a href="#section-5.1-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.1-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-1.6">
+            <p id="section-5.1-1.6.1">name<a href="#section-5.1-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.1-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-1.8">
+            <p id="section-5.1-1.8.1">TBD1 (170 suggested)<a href="#section-5.1-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.1-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-1.10">
+            <p id="section-5.1-1.10.1">text string<a href="#section-5.1-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.1-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-1.12">
+            <p id="section-5.1-1.12.1">IETF<a href="#section-5.1-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.1-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.1-1.14">
+            <p id="section-5.1-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.1-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="givenname">
@@ -1330,29 +1344,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-given_name">
 <a href="#section-5.2" class="section-number selfRef">5.2. </a><a href="#name-given_name" class="section-name selfRef">given_name</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.2-1.1">
-            <p id="section-5.2-1.1.1">Claim Name: given_name<a href="#section-5.2-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.2-1.2">
-            <p id="section-5.2-1.2.1">Claim Description: Given name(s) or first name(s) of the End-User.<a href="#section-5.2-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.2-1.3">
-            <p id="section-5.2-1.3.1">JWT Claim Name: given_name<a href="#section-5.2-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.2-1.4">
-            <p id="section-5.2-1.4.1">Claim Key: TBD2 (171 suggested)<a href="#section-5.2-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.2-1.5">
-            <p id="section-5.2-1.5.1">Claim Value Type(s): text string<a href="#section-5.2-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.2-1.6">
-            <p id="section-5.2-1.6.1">Change Controller: IETF<a href="#section-5.2-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.2-1.7">
-            <p id="section-5.2-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.2-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.2-1">
+          <dt id="section-5.2-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.2-1.2">
+            <p id="section-5.2-1.2.1">given_name<a href="#section-5.2-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.2-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.2-1.4">
+            <p id="section-5.2-1.4.1">Given name(s) or first name(s) of the End-User.<a href="#section-5.2-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.2-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.2-1.6">
+            <p id="section-5.2-1.6.1">given_name<a href="#section-5.2-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.2-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.2-1.8">
+            <p id="section-5.2-1.8.1">TBD2 (171 suggested)<a href="#section-5.2-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.2-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.2-1.10">
+            <p id="section-5.2-1.10.1">text string<a href="#section-5.2-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.2-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.2-1.12">
+            <p id="section-5.2-1.12.1">IETF<a href="#section-5.2-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.2-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.2-1.14">
+            <p id="section-5.2-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.2-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="familyname">
@@ -1360,29 +1388,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-family_name">
 <a href="#section-5.3" class="section-number selfRef">5.3. </a><a href="#name-family_name" class="section-name selfRef">family_name</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.3-1.1">
-            <p id="section-5.3-1.1.1">Claim Name: family_name<a href="#section-5.3-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.3-1.2">
-            <p id="section-5.3-1.2.1">Claim Description: Surname(s) or last name(s) of the End-User.<a href="#section-5.3-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.3-1.3">
-            <p id="section-5.3-1.3.1">JWT Claim Name: family_name<a href="#section-5.3-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.3-1.4">
-            <p id="section-5.3-1.4.1">Claim Key: TBD3 (172 suggested)<a href="#section-5.3-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.3-1.5">
-            <p id="section-5.3-1.5.1">Claim Value Type(s): text string<a href="#section-5.3-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.3-1.6">
-            <p id="section-5.3-1.6.1">Change Controller: IETF<a href="#section-5.3-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.3-1.7">
-            <p id="section-5.3-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.3-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.3-1">
+          <dt id="section-5.3-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.3-1.2">
+            <p id="section-5.3-1.2.1">family_name<a href="#section-5.3-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.3-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.3-1.4">
+            <p id="section-5.3-1.4.1">Surname(s) or last name(s) of the End-User.<a href="#section-5.3-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.3-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.3-1.6">
+            <p id="section-5.3-1.6.1">family_name<a href="#section-5.3-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.3-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.3-1.8">
+            <p id="section-5.3-1.8.1">TBD3 (172 suggested)<a href="#section-5.3-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.3-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.3-1.10">
+            <p id="section-5.3-1.10.1">text string<a href="#section-5.3-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.3-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.3-1.12">
+            <p id="section-5.3-1.12.1">IETF<a href="#section-5.3-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.3-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.3-1.14">
+            <p id="section-5.3-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.3-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="middlename">
@@ -1390,29 +1432,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-middle_name">
 <a href="#section-5.4" class="section-number selfRef">5.4. </a><a href="#name-middle_name" class="section-name selfRef">middle_name</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.4-1.1">
-            <p id="section-5.4-1.1.1">Claim Name: middle_name<a href="#section-5.4-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.4-1.2">
-            <p id="section-5.4-1.2.1">Claim Description: Middle name(s) of the End-User.<a href="#section-5.4-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.4-1.3">
-            <p id="section-5.4-1.3.1">JWT Claim Name: middle_name<a href="#section-5.4-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.4-1.4">
-            <p id="section-5.4-1.4.1">Claim Key: TBD4 (173 suggested)<a href="#section-5.4-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.4-1.5">
-            <p id="section-5.4-1.5.1">Claim Value Type(s): text string<a href="#section-5.4-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.4-1.6">
-            <p id="section-5.4-1.6.1">Change Controller: IETF<a href="#section-5.4-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.4-1.7">
-            <p id="section-5.4-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.4-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.4-1">
+          <dt id="section-5.4-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.4-1.2">
+            <p id="section-5.4-1.2.1">middle_name<a href="#section-5.4-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.4-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.4-1.4">
+            <p id="section-5.4-1.4.1">Middle name(s) of the End-User.<a href="#section-5.4-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.4-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.4-1.6">
+            <p id="section-5.4-1.6.1">middle_name<a href="#section-5.4-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.4-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.4-1.8">
+            <p id="section-5.4-1.8.1">TBD4 (173 suggested)<a href="#section-5.4-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.4-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.4-1.10">
+            <p id="section-5.4-1.10.1">text string<a href="#section-5.4-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.4-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.4-1.12">
+            <p id="section-5.4-1.12.1">IETF<a href="#section-5.4-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.4-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.4-1.14">
+            <p id="section-5.4-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.4-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="nickname">
@@ -1420,29 +1476,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-nickname">
 <a href="#section-5.5" class="section-number selfRef">5.5. </a><a href="#name-nickname" class="section-name selfRef">nickname</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.5-1.1">
-            <p id="section-5.5-1.1.1">Claim Name: nickname<a href="#section-5.5-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.5-1.2">
-            <p id="section-5.5-1.2.1">Claim Description: Casual name of the End-User that may or may not be the same as the given_name.<a href="#section-5.5-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.5-1.3">
-            <p id="section-5.5-1.3.1">JWT Claim Name: nickname<a href="#section-5.5-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.5-1.4">
-            <p id="section-5.5-1.4.1">Claim Key: TBD5 (174 suggested)<a href="#section-5.5-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.5-1.5">
-            <p id="section-5.5-1.5.1">Claim Value Type(s): text string<a href="#section-5.5-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.5-1.6">
-            <p id="section-5.5-1.6.1">Change Controller: IETF<a href="#section-5.5-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.5-1.7">
-            <p id="section-5.5-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.5-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.5-1">
+          <dt id="section-5.5-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-1.2">
+            <p id="section-5.5-1.2.1">nickname<a href="#section-5.5-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.5-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-1.4">
+            <p id="section-5.5-1.4.1">Casual name of the End-User that may or may not be the same as the given_name.<a href="#section-5.5-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.5-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-1.6">
+            <p id="section-5.5-1.6.1">nickname<a href="#section-5.5-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.5-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-1.8">
+            <p id="section-5.5-1.8.1">TBD5 (174 suggested)<a href="#section-5.5-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.5-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-1.10">
+            <p id="section-5.5-1.10.1">text string<a href="#section-5.5-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.5-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-1.12">
+            <p id="section-5.5-1.12.1">IETF<a href="#section-5.5-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.5-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.5-1.14">
+            <p id="section-5.5-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.5-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="preferredusername">
@@ -1450,29 +1520,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-preferred_username">
 <a href="#section-5.6" class="section-number selfRef">5.6. </a><a href="#name-preferred_username" class="section-name selfRef">preferred_username</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.6-1.1">
-            <p id="section-5.6-1.1.1">Claim Name: preferred_username<a href="#section-5.6-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.6-1.2">
-            <p id="section-5.6-1.2.1">Claim Description: Shorthand name by which the End-User wishes to be referred to at the Resource Server.<a href="#section-5.6-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.6-1.3">
-            <p id="section-5.6-1.3.1">JWT Claim Name: preferred_username<a href="#section-5.6-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.6-1.4">
-            <p id="section-5.6-1.4.1">Claim Key: TBD6 (175 suggested)<a href="#section-5.6-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.6-1.5">
-            <p id="section-5.6-1.5.1">Claim Value Type(s): text string<a href="#section-5.6-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.6-1.6">
-            <p id="section-5.6-1.6.1">Change Controller: IETF<a href="#section-5.6-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.6-1.7">
-            <p id="section-5.6-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.6-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.6-1">
+          <dt id="section-5.6-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.6-1.2">
+            <p id="section-5.6-1.2.1">preferred_username<a href="#section-5.6-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.6-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.6-1.4">
+            <p id="section-5.6-1.4.1">Shorthand name by which the End-User wishes to be referred to at the Resource Server.<a href="#section-5.6-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.6-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.6-1.6">
+            <p id="section-5.6-1.6.1">preferred_username<a href="#section-5.6-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.6-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.6-1.8">
+            <p id="section-5.6-1.8.1">TBD6 (175 suggested)<a href="#section-5.6-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.6-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.6-1.10">
+            <p id="section-5.6-1.10.1">text string<a href="#section-5.6-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.6-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.6-1.12">
+            <p id="section-5.6-1.12.1">IETF<a href="#section-5.6-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.6-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.6-1.14">
+            <p id="section-5.6-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.6-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="profile">
@@ -1480,29 +1564,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-profile">
 <a href="#section-5.7" class="section-number selfRef">5.7. </a><a href="#name-profile" class="section-name selfRef">profile</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.7-1.1">
-            <p id="section-5.7-1.1.1">Claim Name: profile<a href="#section-5.7-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.7-1.2">
-            <p id="section-5.7-1.2.1">Claim Description: URL of the End-User's profile page.<a href="#section-5.7-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.7-1.3">
-            <p id="section-5.7-1.3.1">JWT Claim Name: profile<a href="#section-5.7-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.7-1.4">
-            <p id="section-5.7-1.4.1">Claim Key: TBD7 (176 suggested)<a href="#section-5.7-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.7-1.5">
-            <p id="section-5.7-1.5.1">Claim Value Type(s): text string<a href="#section-5.7-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.7-1.6">
-            <p id="section-5.7-1.6.1">Change Controller: IETF<a href="#section-5.7-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.7-1.7">
-            <p id="section-5.7-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.7-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.7-1">
+          <dt id="section-5.7-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-1.2">
+            <p id="section-5.7-1.2.1">profile<a href="#section-5.7-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.7-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-1.4">
+            <p id="section-5.7-1.4.1">URL of the End-User's profile page.<a href="#section-5.7-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.7-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-1.6">
+            <p id="section-5.7-1.6.1">profile<a href="#section-5.7-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.7-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-1.8">
+            <p id="section-5.7-1.8.1">TBD7 (176 suggested)<a href="#section-5.7-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.7-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-1.10">
+            <p id="section-5.7-1.10.1">text string<a href="#section-5.7-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.7-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-1.12">
+            <p id="section-5.7-1.12.1">IETF<a href="#section-5.7-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.7-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.7-1.14">
+            <p id="section-5.7-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.7-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="picture">
@@ -1510,29 +1608,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-picture">
 <a href="#section-5.8" class="section-number selfRef">5.8. </a><a href="#name-picture" class="section-name selfRef">picture</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.8-1.1">
-            <p id="section-5.8-1.1.1">Claim Name: picture<a href="#section-5.8-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.8-1.2">
-            <p id="section-5.8-1.2.1">Claim Description: URL of the End-User's profile picture. This URL <span class="bcp14">MUST</span> refer to an image file, rather than to a Web page containing an image.<a href="#section-5.8-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.8-1.3">
-            <p id="section-5.8-1.3.1">JWT Claim Name: picture<a href="#section-5.8-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.8-1.4">
-            <p id="section-5.8-1.4.1">Claim Key: TBD8 (177 suggested)<a href="#section-5.8-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.8-1.5">
-            <p id="section-5.8-1.5.1">Claim Value Type(s): text string<a href="#section-5.8-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.8-1.6">
-            <p id="section-5.8-1.6.1">Change Controller: IETF<a href="#section-5.8-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.8-1.7">
-            <p id="section-5.8-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.8-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.8-1">
+          <dt id="section-5.8-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.8-1.2">
+            <p id="section-5.8-1.2.1">picture<a href="#section-5.8-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.8-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.8-1.4">
+            <p id="section-5.8-1.4.1">URL of the End-User's profile picture. This URL <span class="bcp14">MUST</span> refer to an image file, rather than to a Web page containing an image.<a href="#section-5.8-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.8-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.8-1.6">
+            <p id="section-5.8-1.6.1">picture<a href="#section-5.8-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.8-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.8-1.8">
+            <p id="section-5.8-1.8.1">TBD8 (177 suggested)<a href="#section-5.8-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.8-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.8-1.10">
+            <p id="section-5.8-1.10.1">text string<a href="#section-5.8-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.8-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.8-1.12">
+            <p id="section-5.8-1.12.1">IETF<a href="#section-5.8-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.8-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.8-1.14">
+            <p id="section-5.8-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.8-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="website">
@@ -1540,29 +1652,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-website">
 <a href="#section-5.9" class="section-number selfRef">5.9. </a><a href="#name-website" class="section-name selfRef">website</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.9-1.1">
-            <p id="section-5.9-1.1.1">Claim Name: website<a href="#section-5.9-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.9-1.2">
-            <p id="section-5.9-1.2.1">Claim Description: URL of the End-User's Web page or blog.<a href="#section-5.9-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.9-1.3">
-            <p id="section-5.9-1.3.1">JWT Claim Name: website<a href="#section-5.9-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.9-1.4">
-            <p id="section-5.9-1.4.1">Claim Key: TBD9 (178 suggested)<a href="#section-5.9-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.9-1.5">
-            <p id="section-5.9-1.5.1">Claim Value Type(s): text string<a href="#section-5.9-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.9-1.6">
-            <p id="section-5.9-1.6.1">Change Controller: IETF<a href="#section-5.9-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.9-1.7">
-            <p id="section-5.9-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.9-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.9-1">
+          <dt id="section-5.9-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.9-1.2">
+            <p id="section-5.9-1.2.1">website<a href="#section-5.9-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.9-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.9-1.4">
+            <p id="section-5.9-1.4.1">URL of the End-User's Web page or blog.<a href="#section-5.9-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.9-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.9-1.6">
+            <p id="section-5.9-1.6.1">website<a href="#section-5.9-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.9-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.9-1.8">
+            <p id="section-5.9-1.8.1">TBD9 (178 suggested)<a href="#section-5.9-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.9-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.9-1.10">
+            <p id="section-5.9-1.10.1">text string<a href="#section-5.9-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.9-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.9-1.12">
+            <p id="section-5.9-1.12.1">IETF<a href="#section-5.9-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.9-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.9-1.14">
+            <p id="section-5.9-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.9-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="email">
@@ -1570,29 +1696,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-email">
 <a href="#section-5.10" class="section-number selfRef">5.10. </a><a href="#name-email" class="section-name selfRef">email</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.10-1.1">
-            <p id="section-5.10-1.1.1">Claim Name: email<a href="#section-5.10-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.10-1.2">
-            <p id="section-5.10-1.2.1">Claim Description: End-User's preferred e-mail address.<a href="#section-5.10-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.10-1.3">
-            <p id="section-5.10-1.3.1">JWT Claim Name: email<a href="#section-5.10-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.10-1.4">
-            <p id="section-5.10-1.4.1">Claim Key: TBD10 (179 suggested)<a href="#section-5.10-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.10-1.5">
-            <p id="section-5.10-1.5.1">Claim Value Type(s): text string<a href="#section-5.10-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.10-1.6">
-            <p id="section-5.10-1.6.1">Change Controller: IETF<a href="#section-5.10-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.10-1.7">
-            <p id="section-5.10-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.10-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.10-1">
+          <dt id="section-5.10-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.10-1.2">
+            <p id="section-5.10-1.2.1">email<a href="#section-5.10-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.10-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.10-1.4">
+            <p id="section-5.10-1.4.1">End-User's preferred e-mail address.<a href="#section-5.10-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.10-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.10-1.6">
+            <p id="section-5.10-1.6.1">email<a href="#section-5.10-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.10-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.10-1.8">
+            <p id="section-5.10-1.8.1">TBD10 (179 suggested)<a href="#section-5.10-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.10-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.10-1.10">
+            <p id="section-5.10-1.10.1">text string<a href="#section-5.10-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.10-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.10-1.12">
+            <p id="section-5.10-1.12.1">IETF<a href="#section-5.10-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.10-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.10-1.14">
+            <p id="section-5.10-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.10-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="emailverified">
@@ -1600,29 +1740,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-email_verified">
 <a href="#section-5.11" class="section-number selfRef">5.11. </a><a href="#name-email_verified" class="section-name selfRef">email_verified</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.11-1.1">
-            <p id="section-5.11-1.1.1">Claim Name: email_verified<a href="#section-5.11-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.11-1.2">
-            <p id="section-5.11-1.2.1">Claim Description: True if the End-User's e-mail address has been verified; otherwise false.<a href="#section-5.11-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.11-1.3">
-            <p id="section-5.11-1.3.1">JWT Claim Name: email_verified<a href="#section-5.11-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.11-1.4">
-            <p id="section-5.11-1.4.1">Claim Key: TBD11 (180 suggested)<a href="#section-5.11-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.11-1.5">
-            <p id="section-5.11-1.5.1">Claim Value Type(s): bool<a href="#section-5.11-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.11-1.6">
-            <p id="section-5.11-1.6.1">Change Controller: IETF<a href="#section-5.11-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.11-1.7">
-            <p id="section-5.11-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.11-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.11-1">
+          <dt id="section-5.11-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.11-1.2">
+            <p id="section-5.11-1.2.1">email_verified<a href="#section-5.11-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.11-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.11-1.4">
+            <p id="section-5.11-1.4.1">True if the End-User's e-mail address has been verified; otherwise false.<a href="#section-5.11-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.11-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.11-1.6">
+            <p id="section-5.11-1.6.1">email_verified<a href="#section-5.11-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.11-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.11-1.8">
+            <p id="section-5.11-1.8.1">TBD11 (180 suggested)<a href="#section-5.11-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.11-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.11-1.10">
+            <p id="section-5.11-1.10.1">bool<a href="#section-5.11-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.11-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.11-1.12">
+            <p id="section-5.11-1.12.1">IETF<a href="#section-5.11-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.11-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.11-1.14">
+            <p id="section-5.11-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.11-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="gender">
@@ -1630,29 +1784,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-gender">
 <a href="#section-5.12" class="section-number selfRef">5.12. </a><a href="#name-gender" class="section-name selfRef">gender</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.12-1.1">
-            <p id="section-5.12-1.1.1">Claim Name: gender<a href="#section-5.12-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.12-1.2">
-            <p id="section-5.12-1.2.1">Claim Description: End-User's defined gender.<a href="#section-5.12-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.12-1.3">
-            <p id="section-5.12-1.3.1">JWT Claim Name: gender<a href="#section-5.12-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.12-1.4">
-            <p id="section-5.12-1.4.1">Claim Key: TBD12 (181 suggested)<a href="#section-5.12-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.12-1.5">
-            <p id="section-5.12-1.5.1">Claim Value Type(s): text string<a href="#section-5.12-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.12-1.6">
-            <p id="section-5.12-1.6.1">Change Controller: IETF<a href="#section-5.12-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.12-1.7">
-            <p id="section-5.12-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.12-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.12-1">
+          <dt id="section-5.12-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.12-1.2">
+            <p id="section-5.12-1.2.1">gender<a href="#section-5.12-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.12-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.12-1.4">
+            <p id="section-5.12-1.4.1">End-User's defined gender.<a href="#section-5.12-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.12-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.12-1.6">
+            <p id="section-5.12-1.6.1">gender<a href="#section-5.12-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.12-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.12-1.8">
+            <p id="section-5.12-1.8.1">TBD12 (181 suggested)<a href="#section-5.12-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.12-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.12-1.10">
+            <p id="section-5.12-1.10.1">text string<a href="#section-5.12-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.12-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.12-1.12">
+            <p id="section-5.12-1.12.1">IETF<a href="#section-5.12-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.12-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.12-1.14">
+            <p id="section-5.12-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.12-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="birthdate">
@@ -1660,29 +1828,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-birthdate">
 <a href="#section-5.13" class="section-number selfRef">5.13. </a><a href="#name-birthdate" class="section-name selfRef">birthdate</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.13-1.1">
-            <p id="section-5.13-1.1.1">Claim Name: birthdate<a href="#section-5.13-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.13-1.2">
-            <p id="section-5.13-1.2.1">Claim Description: End-User's birthday, represented as an <span>[<a href="#ISO8601_1" class="cite xref">ISO8601_1</a>]</span> YYYY-MM-DD format.<a href="#section-5.13-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.13-1.3">
-            <p id="section-5.13-1.3.1">JWT Claim Name: birthdate<a href="#section-5.13-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.13-1.4">
-            <p id="section-5.13-1.4.1">Claim Key: TBD13 (182 suggested)<a href="#section-5.13-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.13-1.5">
-            <p id="section-5.13-1.5.1">Claim Value Type(s): text string<a href="#section-5.13-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.13-1.6">
-            <p id="section-5.13-1.6.1">Change Controller: IETF<a href="#section-5.13-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.13-1.7">
-            <p id="section-5.13-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.13-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.13-1">
+          <dt id="section-5.13-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-1.2">
+            <p id="section-5.13-1.2.1">birthdate<a href="#section-5.13-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-1.4">
+            <p id="section-5.13-1.4.1">End-User's birthday, represented as an <span>[<a href="#ISO8601_1" class="cite xref">ISO8601_1</a>]</span> YYYY-MM-DD format.<a href="#section-5.13-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-1.6">
+            <p id="section-5.13-1.6.1">birthdate<a href="#section-5.13-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-1.8">
+            <p id="section-5.13-1.8.1">TBD13 (182 suggested)<a href="#section-5.13-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-1.10">
+            <p id="section-5.13-1.10.1">text string<a href="#section-5.13-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-1.12">
+            <p id="section-5.13-1.12.1">IETF<a href="#section-5.13-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.13-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.13-1.14">
+            <p id="section-5.13-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.13-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="zoneinfo">
@@ -1690,29 +1872,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-zoneinfo">
 <a href="#section-5.14" class="section-number selfRef">5.14. </a><a href="#name-zoneinfo" class="section-name selfRef">zoneinfo</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.14-1.1">
-            <p id="section-5.14-1.1.1">Claim Name: zoneinfo<a href="#section-5.14-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.14-1.2">
-            <p id="section-5.14-1.2.1">Claim Description: String from IANA Time Zone Database <span>[<a href="#IANAtimezones" class="cite xref">IANAtimezones</a>]</span> representing the End-User's time zone.<a href="#section-5.14-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.14-1.3">
-            <p id="section-5.14-1.3.1">JWT Claim Name: zoneinfo<a href="#section-5.14-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.14-1.4">
-            <p id="section-5.14-1.4.1">Claim Key: TBD14 (183 suggested)<a href="#section-5.14-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.14-1.5">
-            <p id="section-5.14-1.5.1">Claim Value Type(s): text string<a href="#section-5.14-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.14-1.6">
-            <p id="section-5.14-1.6.1">Change Controller: IETF<a href="#section-5.14-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.14-1.7">
-            <p id="section-5.14-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.14-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.14-1">
+          <dt id="section-5.14-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.14-1.2">
+            <p id="section-5.14-1.2.1">zoneinfo<a href="#section-5.14-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.14-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.14-1.4">
+            <p id="section-5.14-1.4.1">String from IANA Time Zone Database <span>[<a href="#IANAtimezones" class="cite xref">IANAtimezones</a>]</span> representing the End-User's time zone.<a href="#section-5.14-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.14-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.14-1.6">
+            <p id="section-5.14-1.6.1">zoneinfo<a href="#section-5.14-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.14-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.14-1.8">
+            <p id="section-5.14-1.8.1">TBD14 (183 suggested)<a href="#section-5.14-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.14-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.14-1.10">
+            <p id="section-5.14-1.10.1">text string<a href="#section-5.14-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.14-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.14-1.12">
+            <p id="section-5.14-1.12.1">IETF<a href="#section-5.14-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.14-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.14-1.14">
+            <p id="section-5.14-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.14-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="locale">
@@ -1720,29 +1916,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-locale">
 <a href="#section-5.15" class="section-number selfRef">5.15. </a><a href="#name-locale" class="section-name selfRef">locale</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.15-1.1">
-            <p id="section-5.15-1.1.1">Claim Name: locale<a href="#section-5.15-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.15-1.2">
-            <p id="section-5.15-1.2.1">Claim Description: End-User's locale, represented as a BCP47 <span>[<a href="#RFC5646" class="cite xref">RFC5646</a>]</span> language tag.<a href="#section-5.15-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.15-1.3">
-            <p id="section-5.15-1.3.1">JWT Claim Name: locale<a href="#section-5.15-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.15-1.4">
-            <p id="section-5.15-1.4.1">Claim Key: TBD15 (184 suggested)<a href="#section-5.15-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.15-1.5">
-            <p id="section-5.15-1.5.1">Claim Value Type(s): text string<a href="#section-5.15-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.15-1.6">
-            <p id="section-5.15-1.6.1">Change Controller: IETF<a href="#section-5.15-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.15-1.7">
-            <p id="section-5.15-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.15-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.15-1">
+          <dt id="section-5.15-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.15-1.2">
+            <p id="section-5.15-1.2.1">locale<a href="#section-5.15-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.15-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.15-1.4">
+            <p id="section-5.15-1.4.1">End-User's locale, represented as a BCP47 <span>[<a href="#RFC5646" class="cite xref">RFC5646</a>]</span> language tag.<a href="#section-5.15-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.15-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.15-1.6">
+            <p id="section-5.15-1.6.1">locale<a href="#section-5.15-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.15-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.15-1.8">
+            <p id="section-5.15-1.8.1">TBD15 (184 suggested)<a href="#section-5.15-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.15-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.15-1.10">
+            <p id="section-5.15-1.10.1">text string<a href="#section-5.15-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.15-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.15-1.12">
+            <p id="section-5.15-1.12.1">IETF<a href="#section-5.15-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.15-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.15-1.14">
+            <p id="section-5.15-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.15-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="phonenumber">
@@ -1750,29 +1960,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-phone_number">
 <a href="#section-5.16" class="section-number selfRef">5.16. </a><a href="#name-phone_number" class="section-name selfRef">phone_number</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.16-1.1">
-            <p id="section-5.16-1.1.1">Claim Name: phone_number<a href="#section-5.16-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.16-1.2">
-            <p id="section-5.16-1.2.1">Claim Description: End-User's preferred telephone number.<a href="#section-5.16-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.16-1.3">
-            <p id="section-5.16-1.3.1">JWT Claim Name: phone_number<a href="#section-5.16-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.16-1.4">
-            <p id="section-5.16-1.4.1">Claim Key: TBD16 (185 suggested)<a href="#section-5.16-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.16-1.5">
-            <p id="section-5.16-1.5.1">Claim Value Type(s): text string<a href="#section-5.16-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.16-1.6">
-            <p id="section-5.16-1.6.1">Change Controller: IETF<a href="#section-5.16-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.16-1.7">
-            <p id="section-5.16-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.16-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.16-1">
+          <dt id="section-5.16-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.16-1.2">
+            <p id="section-5.16-1.2.1">phone_number<a href="#section-5.16-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.16-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.16-1.4">
+            <p id="section-5.16-1.4.1">End-User's preferred telephone number.<a href="#section-5.16-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.16-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.16-1.6">
+            <p id="section-5.16-1.6.1">phone_number<a href="#section-5.16-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.16-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.16-1.8">
+            <p id="section-5.16-1.8.1">TBD16 (185 suggested)<a href="#section-5.16-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.16-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.16-1.10">
+            <p id="section-5.16-1.10.1">text string<a href="#section-5.16-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.16-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.16-1.12">
+            <p id="section-5.16-1.12.1">IETF<a href="#section-5.16-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.16-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.16-1.14">
+            <p id="section-5.16-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.16-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="phonenumberverified">
@@ -1780,29 +2004,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-phone_number_verified">
 <a href="#section-5.17" class="section-number selfRef">5.17. </a><a href="#name-phone_number_verified" class="section-name selfRef">phone_number_verified</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.17-1.1">
-            <p id="section-5.17-1.1.1">Claim Name: phone_number_verified<a href="#section-5.17-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.17-1.2">
-            <p id="section-5.17-1.2.1">Claim Description:  True if the End-User's phone number has been verified; otherwise false.<a href="#section-5.17-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.17-1.3">
-            <p id="section-5.17-1.3.1">JWT Claim Name: phone_number_verified<a href="#section-5.17-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.17-1.4">
-            <p id="section-5.17-1.4.1">Claim Key: TBD17 (186 suggested)<a href="#section-5.17-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.17-1.5">
-            <p id="section-5.17-1.5.1">Claim Value Type(s): bool<a href="#section-5.17-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.17-1.6">
-            <p id="section-5.17-1.6.1">Change Controller: IETF<a href="#section-5.17-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.17-1.7">
-            <p id="section-5.17-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.17-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.17-1">
+          <dt id="section-5.17-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.17-1.2">
+            <p id="section-5.17-1.2.1">phone_number_verified<a href="#section-5.17-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.17-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.17-1.4">
+            <p id="section-5.17-1.4.1">True if the End-User's phone number has been verified; otherwise false.<a href="#section-5.17-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.17-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.17-1.6">
+            <p id="section-5.17-1.6.1">phone_number_verified<a href="#section-5.17-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.17-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.17-1.8">
+            <p id="section-5.17-1.8.1">TBD17 (186 suggested)<a href="#section-5.17-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.17-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.17-1.10">
+            <p id="section-5.17-1.10.1">bool<a href="#section-5.17-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.17-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.17-1.12">
+            <p id="section-5.17-1.12.1">IETF<a href="#section-5.17-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.17-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.17-1.14">
+            <p id="section-5.17-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.17-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="address">
@@ -1810,29 +2048,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-address">
 <a href="#section-5.18" class="section-number selfRef">5.18. </a><a href="#name-address" class="section-name selfRef">address</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.18-1.1">
-            <p id="section-5.18-1.1.1">Claim Name: address<a href="#section-5.18-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.18-1.2">
-            <p id="section-5.18-1.2.1">Claim Description: End-User's preferred postal address.<a href="#section-5.18-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.18-1.3">
-            <p id="section-5.18-1.3.1">JWT Claim Name: address<a href="#section-5.18-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.18-1.4">
-            <p id="section-5.18-1.4.1">Claim Key: TBD18 (187 suggested)<a href="#section-5.18-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.18-1.5">
-            <p id="section-5.18-1.5.1">Claim Value Type(s): map<a href="#section-5.18-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.18-1.6">
-            <p id="section-5.18-1.6.1">Change Controller: IETF<a href="#section-5.18-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.18-1.7">
-            <p id="section-5.18-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.18-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.18-1">
+          <dt id="section-5.18-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.18-1.2">
+            <p id="section-5.18-1.2.1">address<a href="#section-5.18-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.18-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.18-1.4">
+            <p id="section-5.18-1.4.1">End-User's preferred postal address.<a href="#section-5.18-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.18-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.18-1.6">
+            <p id="section-5.18-1.6.1">address<a href="#section-5.18-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.18-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.18-1.8">
+            <p id="section-5.18-1.8.1">TBD18 (187 suggested)<a href="#section-5.18-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.18-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.18-1.10">
+            <p id="section-5.18-1.10.1">map<a href="#section-5.18-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.18-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.18-1.12">
+            <p id="section-5.18-1.12.1">IETF<a href="#section-5.18-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.18-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.18-1.14">
+            <p id="section-5.18-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.18-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 <div id="updatedat">
@@ -1840,29 +2092,43 @@ We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#Op
         <h3 id="name-updated_at">
 <a href="#section-5.19" class="section-number selfRef">5.19. </a><a href="#name-updated_at" class="section-name selfRef">updated_at</a>
         </h3>
-<ul class="normal">
-<li class="normal" id="section-5.19-1.1">
-            <p id="section-5.19-1.1.1">Claim Name: updated_at<a href="#section-5.19-1.1.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.19-1.2">
-            <p id="section-5.19-1.2.1">Claim Description: Time the End-User's information was last updated. Its value is a number representing the number of seconds from 1970-01-01T00:00:00Z as measured in UTC until the date/time.<a href="#section-5.19-1.2.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.19-1.3">
-            <p id="section-5.19-1.3.1">JWT Claim Name: updated_at<a href="#section-5.19-1.3.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.19-1.4">
-            <p id="section-5.19-1.4.1">Claim Key: TBD19 (188 suggested)<a href="#section-5.19-1.4.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.19-1.5">
-            <p id="section-5.19-1.5.1">Claim Value Type(s): uint<a href="#section-5.19-1.5.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.19-1.6">
-            <p id="section-5.19-1.6.1">Change Controller: IETF<a href="#section-5.19-1.6.1" class="pilcrow">¶</a></p>
-</li>
-          <li class="normal" id="section-5.19-1.7">
-            <p id="section-5.19-1.7.1">Specification Document(s): Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.19-1.7.1" class="pilcrow">¶</a></p>
-</li>
-        </ul>
+<span class="break"></span><dl class="dlCompact dlParallel" id="section-5.19-1">
+          <dt id="section-5.19-1.1">Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-1.2">
+            <p id="section-5.19-1.2.1">updated_at<a href="#section-5.19-1.2.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.19-1.3">Claim Description:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-1.4">
+            <p id="section-5.19-1.4.1">Time the End-User's information was last updated. Its value is a number representing the number of seconds from 1970-01-01T00:00:00Z as measured in UTC until the date/time.<a href="#section-5.19-1.4.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.19-1.5">JWT Claim Name:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-1.6">
+            <p id="section-5.19-1.6.1">updated_at<a href="#section-5.19-1.6.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.19-1.7">Claim Key:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-1.8">
+            <p id="section-5.19-1.8.1">TBD19 (188 suggested)<a href="#section-5.19-1.8.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.19-1.9">Claim Value Type(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-1.10">
+            <p id="section-5.19-1.10.1">uint<a href="#section-5.19-1.10.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.19-1.11">Change Controller:</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-1.12">
+            <p id="section-5.19-1.12.1">IETF<a href="#section-5.19-1.12.1" class="pilcrow">¶</a></p>
+</dd>
+          <dd class="break"></dd>
+<dt id="section-5.19-1.13">Specification Document(s):</dt>
+          <dd style="margin-left: 1.5em" id="section-5.19-1.14">
+            <p id="section-5.19-1.14.1">Section 5.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span><a href="#section-5.19-1.14.1" class="pilcrow">¶</a></p>
+</dd>
+        <dd class="break"></dd>
+</dl>
 </section>
 </div>
 </section>
