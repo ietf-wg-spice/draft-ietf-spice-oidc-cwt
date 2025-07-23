@@ -23,7 +23,7 @@ address = {
     &(postal_code: 5) ^ => tstr, ; "90210"
     &(country: 6) ^ => tstr, ; "United States of America"
 }
-updated_at = (TBD19 => uint) ; 1730123071
+updated_at = (TBD19 => int / float) ; 1730123071
 
 TBD1 = 170
 TBD2 = 171

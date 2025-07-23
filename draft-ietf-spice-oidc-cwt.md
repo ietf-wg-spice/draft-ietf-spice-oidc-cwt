@@ -525,7 +525,7 @@ Claim Name:
 : updated_at
 
 Claim Description:
-: Time the End-User's information was last updated. Its value is a number representing the number of seconds from 1970-01-01T00:00:00Z as measured in UTC until the date/time.
+: Time the End-User's information was last updated. Its value is a NumericDate as defined in Section 2 of {{!RFC8392}}.
 
 JWT Claim Name:
 : updated_at
@@ -534,7 +534,7 @@ Claim Key:
 : TBD19 (188 suggested)
 
 Claim Value Type(s):
-: uint
+: integer or floating-point number
 
 Change Controller:
 : IETF
