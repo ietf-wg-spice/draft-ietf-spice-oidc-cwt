@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-22T01:10:03.852446+00:00",
+  "timestamp": "2025-07-24T01:10:19.102412+00:00",
   "repo": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
   "labels": [
     {
@@ -49,7 +49,112 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 15,
+      "id": "I_kwDOMVdXTs7Bz-PJ",
+      "title": "Consider use of definition lists",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/issues/15",
+      "state": "CLOSED",
+      "author": "martinthomson",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Strictly editorial comment\n\nThe document uses bulleted lists for each of the sections, but this ends up being a little messy in its presentation.\n\nA definition looks like this:\n\n```markdown\n{:compact}\nLabel:\n: Text defining the thing\n\nOther Label:\n: Other text for the the other thing\n```\n\nYou can also add `{:compact}` at the top or bottom, as I have done here, to make the lists tighter.",
+      "createdAt": "2025-07-22T08:16:55Z",
+      "updatedAt": "2025-07-22T16:11:48Z",
+      "closedAt": "2025-07-22T16:11:48Z",
+      "comments": []
+    },
+    {
+      "number": 17,
+      "id": "I_kwDOMVdXTs7CDmG6",
+      "title": "birthdate rules",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/issues/17",
+      "state": "OPEN",
+      "author": "beltram",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Birthdate has additional rules on what is valid, including both \u201c0000-MM-DD\u201d and \u201cYYYY\u201d syntaxes. These are not represented in the IANA registration entry provided. I would recommend specifying it as a tstr value, with the OIDC Core reference defining the additional constraints.",
+      "createdAt": "2025-07-23T09:58:44Z",
+      "updatedAt": "2025-07-23T10:18:30Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "selfissued",
+          "authorAssociation": "COLLABORATOR",
+          "body": "We should copy the following text from https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims into our definition:\n> End-User's birthday, represented as an [ISO 8601-1](https://openid.net/specs/openid-connect-core-1_0.html#ISO8601-1) [ISO8601\u20111] YYYY-MM-DD format. The year MAY be 0000, indicating that it is omitted. To represent only the year, YYYY format is allowed. Note that depending on the underlying platform's date related function, providing just year can result in varying month and day, so the implementers need to take this factor into account to correctly process the dates.",
+          "createdAt": "2025-07-23T10:18:29Z",
+          "updatedAt": "2025-07-23T10:18:29Z"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "id": "I_kwDOMVdXTs7CDmbl",
+      "title": "updated_at as json number",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/issues/18",
+      "state": "CLOSED",
+      "author": "beltram",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The `updated_at` claim is defined as a uint, while in OIDC Core it is defined as a JSON Number. I would recommend copying the definition of other instants in the claims registry, such as `iat` which is an \u201cinteger or floating-point number\u201d",
+      "createdAt": "2025-07-23T09:59:11Z",
+      "updatedAt": "2025-07-23T10:31:45Z",
+      "closedAt": "2025-07-23T10:31:45Z",
+      "comments": []
+    },
+    {
+      "number": 19,
+      "id": "I_kwDOMVdXTs7CDnU_",
+      "title": "claims uniqueness",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/issues/19",
+      "state": "OPEN",
+      "author": "beltram",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Some claims do not require uniqueness from the Relying Party, such as prefferred_username",
+      "createdAt": "2025-07-23T10:00:25Z",
+      "updatedAt": "2025-07-23T10:19:12Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "selfissued",
+          "authorAssociation": "COLLABORATOR",
+          "body": "What do you mean \"do not require uniqueness\"?  Uniqueness of what?",
+          "createdAt": "2025-07-23T10:19:12Z",
+          "updatedAt": "2025-07-23T10:19:12Z"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "id": "I_kwDOMVdXTs7CDosA",
+      "title": "verified claims",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/issues/20",
+      "state": "OPEN",
+      "author": "beltram",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Develop on what verified means for `email_verified` and `phone_number_verified`. Also add a notice about validity of this verification in time",
+      "createdAt": "2025-07-23T10:02:16Z",
+      "updatedAt": "2025-07-23T10:22:47Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "selfissued",
+          "authorAssociation": "COLLABORATOR",
+          "body": "We should copy these definitions from https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims and not go beyond them:\n\nFor `email_verified`:\n> True if the End-User's e-mail address has been verified; otherwise false. When this Claim Value is true, this means that the OP took affirmative steps to ensure that this e-mail address was controlled by the End-User at the time the verification was performed. The means by which an e-mail address is verified is context specific, and dependent upon the trust framework or contractual agreements within which the parties are operating.\n\nFor `phone_number_verified`:\n> True if the End-User's phone number has been verified; otherwise false. When this Claim Value is true, this means that the OP took affirmative steps to ensure that this phone number was controlled by the End-User at the time the verification was performed. The means by which a phone number is verified is context specific, and dependent upon the trust framework or contractual agreements within which the parties are operating. When true, the phone_number Claim MUST be in E.164 format and any extensions MUST be represented in RFC 3966 format.\n\nThe CWT claims should mean exactly the same thing as the corresponding JWT claims.",
+          "createdAt": "2025-07-23T10:22:47Z",
+          "updatedAt": "2025-07-23T10:22:47Z"
+        }
+      ]
+    }
+  ],
   "pulls": [
     {
       "number": 1,
@@ -455,6 +560,76 @@
           "body": "",
           "createdAt": "2025-06-27T08:13:24Z",
           "updatedAt": "2025-06-27T08:13:24Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "id": "PR_kwDOMVdXTs6gGmDv",
+      "title": "using compact definition lists. Fixes #15",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/pull/16",
+      "state": "MERGED",
+      "author": "beltram",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-07-22T16:04:52Z",
+      "updatedAt": "2025-07-22T16:11:47Z",
+      "baseRepository": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+      "baseRefName": "main",
+      "baseRefOid": "88a2dafc065b4d42fee428ff1b303804ffd5dd5a",
+      "headRepository": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+      "headRefName": "definition-list",
+      "headRefOid": "1099fb41a17c41fa9b1bbae45568cf12db87892e",
+      "closedAt": "2025-07-22T16:11:47Z",
+      "mergedAt": "2025-07-22T16:11:47Z",
+      "mergedBy": "beltram",
+      "mergeCommit": {
+        "oid": "1884a4281a88d62caf347bc8eab12ecbd59e1542"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 21,
+      "id": "PR_kwDOMVdXTs6gO-NQ",
+      "title": "map updated_at to other time claims (exp, iat, nbf) and allow it to b\u2026",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/pull/21",
+      "state": "MERGED",
+      "author": "beltram",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "\u2026e a float. Fixes #18",
+      "createdAt": "2025-07-23T10:03:31Z",
+      "updatedAt": "2025-07-23T10:31:45Z",
+      "baseRepository": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+      "baseRefName": "main",
+      "baseRefOid": "1884a4281a88d62caf347bc8eab12ecbd59e1542",
+      "headRepository": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+      "headRefName": "updated_at",
+      "headRefOid": "0eec4a22138bcb67f4f23fee4967ce914965c14b",
+      "closedAt": "2025-07-23T10:31:45Z",
+      "mergedAt": "2025-07-23T10:31:44Z",
+      "mergedBy": "beltram",
+      "mergeCommit": {
+        "oid": "4d382c18ce33e61abf42126ba6f0d66048d254f0"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOMVdXTs61mDeX",
+          "commit": {
+            "abbreviatedOid": "0eec4a2"
+          },
+          "author": "selfissued",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2025-07-23T10:15:11Z",
+          "updatedAt": "2025-07-23T10:15:11Z",
           "comments": []
         }
       ]
