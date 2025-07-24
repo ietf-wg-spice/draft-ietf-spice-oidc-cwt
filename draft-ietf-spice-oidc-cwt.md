@@ -381,7 +381,9 @@ Claim Name:
 : birthdate
 
 Claim Description:
-: End-User's birthday, represented as an [ISO8601‑1] YYYY-MM-DD format.
+: End-User's birthday, represented as an [ISO8601‑1] `YYYY-MM-DD` format. The year MAY be `0000`, indicating that it is omitted.
+To represent only the year, `YYYY` format is allowed.
+Note that depending on the underlying platform's date related function, providing just year can result in varying month and day, so the implementers need to take this factor into account to correctly process the dates.
 
 JWT Claim Name:
 : birthdate
