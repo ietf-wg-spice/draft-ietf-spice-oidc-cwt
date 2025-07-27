@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-24T01:10:19.102412+00:00",
+  "timestamp": "2025-07-27T01:16:52.458194+00:00",
   "repo": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
   "labels": [
     {
@@ -118,7 +118,7 @@
       "labels": [],
       "body": "Some claims do not require uniqueness from the Relying Party, such as prefferred_username",
       "createdAt": "2025-07-23T10:00:25Z",
-      "updatedAt": "2025-07-23T10:19:12Z",
+      "updatedAt": "2025-07-24T08:08:43Z",
       "closedAt": null,
       "comments": [
         {
@@ -127,6 +127,13 @@
           "body": "What do you mean \"do not require uniqueness\"?  Uniqueness of what?",
           "createdAt": "2025-07-23T10:19:12Z",
           "updatedAt": "2025-07-23T10:19:12Z"
+        },
+        {
+          "author": "beltram",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Uniqueness across users and stability. Basically the plan here is to repeat [section 5.7 of OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html#ClaimStability).\nI think it bears repeating",
+          "createdAt": "2025-07-24T08:08:43Z",
+          "updatedAt": "2025-07-24T08:08:43Z"
         }
       ]
     },
@@ -633,6 +640,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 22,
+      "id": "PR_kwDOMVdXTs6gaoSJ",
+      "title": "mention additional validation rules of birthday. Fixes #17",
+      "url": "https://github.com/ietf-wg-spice/draft-ietf-spice-oidc-cwt/pull/22",
+      "state": "OPEN",
+      "author": "beltram",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-07-24T09:16:28Z",
+      "updatedAt": "2025-07-24T09:16:28Z",
+      "baseRepository": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+      "baseRefName": "main",
+      "baseRefOid": "4d382c18ce33e61abf42126ba6f0d66048d254f0",
+      "headRepository": "ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+      "headRefName": "birthdate-rules",
+      "headRefOid": "4b8b593ec4cd0b5be9b18d43635809d1eec10989",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
