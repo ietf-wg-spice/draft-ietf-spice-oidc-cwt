@@ -333,7 +333,10 @@ Claim Name:
 : email_verified
 
 Claim Description:
-: True if the End-User's e-mail address has been verified; otherwise false.
+: True if the End-User's e-mail address has been verified; otherwise false. When this Claim Value is true, this means
+that the OP took affirmative steps to ensure that this e-mail address was controlled by the End-User at the time the
+verification was performed. The means by which an e-mail address is verified is context specific, and dependent upon
+the trust framework or contractual agreements within which the parties are operating.
 
 JWT Claim Name:
 : email_verified
@@ -383,7 +386,8 @@ Claim Name:
 Claim Description:
 : End-User's birthday, represented as an [ISO8601‑1] `YYYY-MM-DD` format. The year MAY be `0000`, indicating that it is omitted.
 To represent only the year, `YYYY` format is allowed.
-Note that depending on the underlying platform's date related function, providing just year can result in varying month and day, so the implementers need to take this factor into account to correctly process the dates.
+Note that depending on the underlying platform's date related function, providing just year can result in varying month
+and day, so the implementers need to take this factor into account to correctly process the dates.
 
 JWT Claim Name:
 : birthdate
@@ -479,7 +483,11 @@ Claim Name:
 : phone_number_verified
 
 Claim Description:
-: True if the End-User's phone number has been verified; otherwise false.
+: True if the End-User's phone number has been verified; otherwise false. When this Claim Value is true, this means that
+the OP took affirmative steps to ensure that this phone number was controlled by the End-User at the time the verification
+was performed. The means by which a phone number is verified is context specific, and dependent upon the trust framework
+or contractual agreements within which the parties are operating. When true, the phone_number Claim MUST be in E.164
+format and any extensions MUST be represented in {{!RFC3966}} format.
 
 JWT Claim Name:
 : phone_number_verified
