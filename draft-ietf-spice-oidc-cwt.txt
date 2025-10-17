@@ -5,8 +5,8 @@
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
 Intended status: Informational                               M. B. Jones
-Expires: 3 April 2026                             Self-Issued Consulting
-                                                       30 September 2025
+Expires: 20 April 2026                            Self-Issued Consulting
+                                                         17 October 2025
 
 
     OpenID Connect Standard Claims Registration for CBOR Web Tokens
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 April 2026.
+   This Internet-Draft will expire on 20 April 2026.
 
 Copyright Notice
 
@@ -252,7 +252,13 @@ Table of Contents
 
    Claim Name:  email_verified
    Claim Description:  True if the End-User's e-mail address has been
-      verified; otherwise false.
+      verified; otherwise false.  When this Claim Value is true, this
+      means that the OP took affirmative steps to ensure that this
+      e-mail address was controlled by the End-User at the time the
+      verification was performed.  The means by which an e-mail address
+      is verified is context specific, and dependent upon the trust
+      framework or contractual agreements within which the parties are
+      operating.
    JWT Claim Name:  email_verified
    Claim Key:  TBD11 (180 suggested)
    Claim Value Type(s):  bool
@@ -321,7 +327,14 @@ Table of Contents
 
    Claim Name:  phone_number_verified
    Claim Description:  True if the End-User's phone number has been
-      verified; otherwise false.
+      verified; otherwise false.  When this Claim Value is true, this
+      means that the OP took affirmative steps to ensure that this phone
+      number was controlled by the End-User at the time the verification
+      was performed.  The means by which a phone number is verified is
+      context specific, and dependent upon the trust framework or
+      contractual agreements within which the parties are operating.
+      When true, the phone_number Claim MUST be in E.164 format and any
+      extensions MUST be represented in [RFC3966] format.
    JWT Claim Name:  phone_number_verified
    Claim Key:  TBD17 (186 suggested)
    Claim Value Type(s):  bool
@@ -375,6 +388,10 @@ Table of Contents
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/rfc/rfc2119>.
+
+   [RFC3966]  Schulzrinne, H., "The tel URI for Telephone Numbers",
+              RFC 3966, DOI 10.17487/RFC3966, December 2004,
+              <https://www.rfc-editor.org/rfc/rfc3966>.
 
    [RFC5646]  Phillips, A., Ed. and M. Davis, Ed., "Tags for Identifying
               Languages", BCP 47, RFC 5646, DOI 10.17487/RFC5646,
