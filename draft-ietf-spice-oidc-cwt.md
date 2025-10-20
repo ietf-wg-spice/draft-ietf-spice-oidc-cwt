@@ -570,6 +570,11 @@ TBD
 # Document History
 {: numbered="false"}
 
+-02
+
+* Update descriptions of `email_verified`, `phone_number_verified`, and `birthdate` claims using text from {{OpenID.Core}}.
+* Use TBD<n> names for CWT requested claim numbers.
+
 -01
 
 * Aligned terminology with OpenID Connect specification.
