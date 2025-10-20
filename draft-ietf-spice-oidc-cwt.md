@@ -573,7 +573,7 @@ TBD
 -02
 
 * Update descriptions of `email_verified`, `phone_number_verified`, and `birthdate` claims using text from {{OpenID.Core}}.
-* Use TBD<n> names for CWT requested claim numbers.
+* Use TBDn names for CWT requested claim numbers.
 
 -01
 
