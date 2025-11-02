@@ -360,7 +360,7 @@ Claim Name:
 : gender
 
 Claim Description:
-: End-User's defined gender.
+: End-User's defined gender. Values defined by this specification are `female` and `male`. Other values MAY be used when neither of the defined values are applicable.
 
 JWT Claim Name:
 : gender
@@ -569,6 +569,10 @@ TBD
 
 # Document History
 {: numbered="false"}
+
+-03
+
+* Copied text describing `gender` claim values from {{OpenID.Core}}.
 
 -02
 
