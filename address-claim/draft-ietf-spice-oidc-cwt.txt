@@ -512,6 +512,10 @@ Acknowledgments
 
 Document History
 
+   -03
+
+   *  Repeat suggested normative labels for address claim items
+
    -02
 
    *  Update descriptions of email_verified, phone_number_verified, and
