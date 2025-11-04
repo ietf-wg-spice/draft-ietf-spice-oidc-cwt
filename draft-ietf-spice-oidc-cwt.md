@@ -73,7 +73,18 @@ OpenID Connect {{OpenID.Core}} is an authentication standard including standard 
 
 # Address Claim
 
-To further reduce the size of this prevalent and large claim, we register integer labels for it.
+To further reduce the size of this prevalent and large claim, these unsigned integer labels for its members are defined:
+
+| Name           | Label | Type        | Description |
+|----------------|-------|-------------|-------------|
+| formatted      | 1     | text string | Full mailing address, formatted for display or use on a mailing label. This field MAY contain multiple lines, separated by newlines. Newlines can be represented either as a carriage return/line feed pair ("\r\n") or as a single line feed character ("\n"). |
+| street_address | 2     | text string | Full street address component, which MAY include house number, street name, Post Office Box, and multi-line extended street address information. This field MAY contain multiple lines, separated by newlines. Newlines can be represented either as a carriage return/line feed pair ("\r\n") or as a single line feed character ("\n"). |
+| locality       | 3     | text string | City or locality component. |
+| region         | 4     | text string | State, province, prefecture, or region component. |
+| postal_code    | 5     | text string | Zip code or postal code component. |
+| country        | 6     | text string | Country name component. |
+{: #tab-address-label title="Address labels"}
+
 We strictly map the definition of claims in Section 5.1.1 of {{OpenID.Core}}: all the claims are optional and "formatted" can either be used instead or in addition of all the other fields.
 
 # Security Considerations
@@ -572,6 +583,7 @@ TBD
 
 -03
 
+* Repeat suggested normative labels for address claim items
 * Copied text describing `gender` claim values from {{OpenID.Core}}.
 
 -02
