@@ -5,8 +5,8 @@
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
 Intended status: Informational                               M. B. Jones
-Expires: 8 May 2026                               Self-Issued Consulting
-                                                         4 November 2025
+Expires: 21 May 2026                              Self-Issued Consulting
+                                                        17 November 2025
 
 
     OpenID Connect Standard Claims Registration for CBOR Web Tokens
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 8 May 2026.
+   This Internet-Draft will expire on 21 May 2026.
 
 Copyright Notice
 
@@ -312,7 +312,9 @@ Table of Contents
 5.12.  gender
 
    Claim Name:  gender
-   Claim Description:  End-User's defined gender.
+   Claim Description:  End-User's defined gender.  Values defined by
+      this specification are female and male.  Other values MAY be used
+      when neither of the defined values are applicable.
    JWT Claim Name:  gender
    Claim Key:  TBD12 (181 suggested)
    Claim Value Type(s):  text string
@@ -515,6 +517,8 @@ Document History
    -03
 
    *  Repeat suggested normative labels for address claim items
+
+   *  Copied text describing gender claim values from [OpenID.Core].
 
    -02
 
