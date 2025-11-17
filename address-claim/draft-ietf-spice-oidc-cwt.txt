@@ -118,8 +118,8 @@ Table of Contents
 
 3.  Address Claim
 
-   To further reduce the size of this prevalent and large claim, we
-   register normative unsigned integer labels for it as follow:
+   To further reduce the size of this prevalent and large claim, these
+   unsigned integer labels for its members are defined:
 
    +================+=======+========+=================================+
    | Name           | Label | Type   | Description                     |
