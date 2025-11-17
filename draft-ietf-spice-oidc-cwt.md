@@ -71,7 +71,7 @@ OpenID Connect {{OpenID.Core}} is an authentication standard including standard 
 
 {::boilerplate bcp14-tagged}
 
-# OpenID Connect Claims
+# OpenID Connect Claims {#claims}
 
 ## name
 
