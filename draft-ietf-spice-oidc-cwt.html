@@ -1275,8 +1275,62 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
       <h2 id="name-address-claim">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-address-claim" class="section-name selfRef">Address Claim</a>
       </h2>
-<p id="section-3-1">To further reduce the size of this prevalent and large claim, we register integer labels for it.
-We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span>: all the claims are optional and "formatted" can either be used instead or in addition of all the other fields.<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">To further reduce the size of this prevalent and large claim, these unsigned integer labels for its members are defined:<a href="#section-3-1" class="pilcrow">¶</a></p>
+<span id="name-address-labels"></span><div id="tab-address-label">
+<table class="center" id="table-1">
+        <caption>
+<a href="#table-1" class="selfRef">Table 1</a>:
+<a href="#name-address-labels" class="selfRef">Address labels</a>
+        </caption>
+<thead>
+          <tr>
+            <th class="text-left" rowspan="1" colspan="1">Name</th>
+            <th class="text-left" rowspan="1" colspan="1">Label</th>
+            <th class="text-left" rowspan="1" colspan="1">Type</th>
+            <th class="text-left" rowspan="1" colspan="1">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">formatted</td>
+            <td class="text-left" rowspan="1" colspan="1">1</td>
+            <td class="text-left" rowspan="1" colspan="1">text string</td>
+            <td class="text-left" rowspan="1" colspan="1">Full mailing address, formatted for display or use on a mailing label. This field <span class="bcp14">MAY</span> contain multiple lines, separated by newlines. Newlines can be represented either as a carriage return/line feed pair ("\r\n") or as a single line feed character ("\n").</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">street_address</td>
+            <td class="text-left" rowspan="1" colspan="1">2</td>
+            <td class="text-left" rowspan="1" colspan="1">text string</td>
+            <td class="text-left" rowspan="1" colspan="1">Full street address component, which <span class="bcp14">MAY</span> include house number, street name, Post Office Box, and multi-line extended street address information. This field <span class="bcp14">MAY</span> contain multiple lines, separated by newlines. Newlines can be represented either as a carriage return/line feed pair ("\r\n") or as a single line feed character ("\n").</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">locality</td>
+            <td class="text-left" rowspan="1" colspan="1">3</td>
+            <td class="text-left" rowspan="1" colspan="1">text string</td>
+            <td class="text-left" rowspan="1" colspan="1">City or locality component.</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">region</td>
+            <td class="text-left" rowspan="1" colspan="1">4</td>
+            <td class="text-left" rowspan="1" colspan="1">text string</td>
+            <td class="text-left" rowspan="1" colspan="1">State, province, prefecture, or region component.</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">postal_code</td>
+            <td class="text-left" rowspan="1" colspan="1">5</td>
+            <td class="text-left" rowspan="1" colspan="1">text string</td>
+            <td class="text-left" rowspan="1" colspan="1">Zip code or postal code component.</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">country</td>
+            <td class="text-left" rowspan="1" colspan="1">6</td>
+            <td class="text-left" rowspan="1" colspan="1">text string</td>
+            <td class="text-left" rowspan="1" colspan="1">Country name component.</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<p id="section-3-3">We strictly map the definition of claims in Section 5.1.1 of <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span>: all the claims are optional and "formatted" can either be used instead or in addition of all the other fields.<a href="#section-3-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="security-considerations">
@@ -2286,7 +2340,10 @@ TBD19 = 188
 <p id="appendix-C-1">-03<a href="#appendix-C-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-C-2.1">
-          <p id="appendix-C-2.1.1">Copied text describing <code>gender</code> claim values from <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span>.<a href="#appendix-C-2.1.1" class="pilcrow">¶</a></p>
+          <p id="appendix-C-2.1.1">Repeat suggested normative labels for address claim items<a href="#appendix-C-2.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-C-2.2">
+          <p id="appendix-C-2.2.1">Copied text describing <code>gender</code> claim values from <span>[<a href="#OpenID.Core" class="cite xref">OpenID.Core</a>]</span>.<a href="#appendix-C-2.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="appendix-C-3">-02<a href="#appendix-C-3" class="pilcrow">¶</a></p>
