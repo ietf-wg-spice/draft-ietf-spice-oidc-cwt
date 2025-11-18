@@ -567,6 +567,8 @@ Specification Document(s):
 
 # CDDL Schema {#cddl}
 
+The following CDDL Schema {{?CDDL=RFC8610}} includes example values for each item.
+
 ~~~~~~~~~~
 {::include ./oidc-claims.cddl}
 ~~~~~~~~~~

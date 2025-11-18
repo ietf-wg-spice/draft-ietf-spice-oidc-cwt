@@ -16,7 +16,9 @@ locale = (TBD15 => tstr) ; "en_US"
 phone_number = (TBD16 => tstr) ; "+1 (425) 555-1212"
 phone_number_verified = (TBD17 => bool) ; true
 address = {
-    &(formatted: 1) ^ => tstr, ; "1234 Hollywood Blvd. Los Angeles CA, 90210 United States of America"
+    &(formatted: 1) ^ => tstr,
+    ; "1234 Hollywood Blvd. Los Angeles CA,"
+    ; " 90210 United States of America"
     &(street_address: 2) ^ => tstr, ; "1234 Hollywood Blvd."
     &(locality: 3) ^ => tstr, ; "Los Angeles"
     &(region: 4) ^ => tstr, ; "CA"
