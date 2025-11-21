@@ -73,6 +73,8 @@ OpenID Connect {{OpenID.Core}} is an authentication standard including standard 
 
 # OpenID Connect Claims {#claims}
 
+This section enumerates the OpenID Connect claims that are registered, including the fields necessary for registration with IANA; see {{iana}}.  The definitions of each field are taken from {{OIDC...}} verbatim.
+
 ## name
 
 {:compact}
