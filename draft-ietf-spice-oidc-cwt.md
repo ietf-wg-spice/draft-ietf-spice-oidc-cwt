@@ -73,7 +73,7 @@ OpenID Connect {{OpenID.Core}} is an authentication standard including standard 
 
 # OpenID Connect Claims {#claims}
 
-This section enumerates the OpenID Connect claims that are registered, including the fields necessary for registration with IANA; see {{iana}}.  The definitions of each field are taken from {{OIDC...}} verbatim.
+This section enumerates the OpenID Connect claims that are registered, including the fields necessary for registration with IANA; see {{iana}}.  The definitions of each field are taken from {{OpenID.Core}} verbatim.
 
 ## name
 
@@ -563,7 +563,7 @@ Specification Document(s):
 
 This document registers existing OpenID Connect standard claims already used in JSON Web Tokens {{?RFC7519}} for use in CBOR Web Tokens {{!RFC8392}} without changing their semantics. The Security and Privacy Considerations respectively of Sections 16 and 17 of {{OpenID.Core}} also apply.
 
-# IANA Considerations
+# IANA Considerations {#iana}
 
 All claims defined in {{claims}} are registered in the (CBOR Web Token (CWT) Claims) {{IANA.CWT.Claims}} Registry (part of the eponymous registry group). No new IANA registry is created.
 
