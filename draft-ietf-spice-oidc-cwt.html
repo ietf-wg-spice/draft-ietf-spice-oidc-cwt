@@ -1049,7 +1049,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Maldant &amp; Jones</td>
-<td class="center">Expires 25 May 2026</td>
+<td class="center">Expires 30 May 2026</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1062,12 +1062,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-ietf-spice-oidc-cwt-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-11-21" class="published">21 November 2025</time>
+<time datetime="2025-11-26" class="published">26 November 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2026-05-25">25 May 2026</time></dd>
+<dd class="expires"><time datetime="2026-05-30">30 May 2026</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1121,7 +1121,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 25 May 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 30 May 2026.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -2265,6 +2265,10 @@ format and any extensions <span class="bcp14">MUST</span> be represented in <spa
 <a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
         </h3>
 <dl class="references">
+<dt id="CDDL">[CDDL]</dt>
+        <dd>
+<span class="refAuthor">Birkholz, H.</span>, <span class="refAuthor">Vigano, C.</span>, and <span class="refAuthor">C. Bormann</span>, <span class="refTitle">"Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures"</span>, <span class="seriesInfo">RFC 8610</span>, <span class="seriesInfo">DOI 10.17487/RFC8610</span>, <time datetime="2019-06" class="refDate">June 2019</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8610">https://www.rfc-editor.org/rfc/rfc8610</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC7519">[RFC7519]</dt>
       <dd>
 <span class="refAuthor">Jones, M.</span>, <span class="refAuthor">Bradley, J.</span>, and <span class="refAuthor">N. Sakimura</span>, <span class="refTitle">"JSON Web Token (JWT)"</span>, <span class="seriesInfo">RFC 7519</span>, <span class="seriesInfo">DOI 10.17487/RFC7519</span>, <time datetime="2015-05" class="refDate">May 2015</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc7519">https://www.rfc-editor.org/rfc/rfc7519</a>&gt;</span>. </dd>
@@ -2279,9 +2283,10 @@ format and any extensions <span class="bcp14">MUST</span> be represented in <spa
       <h2 id="name-cddl-schema">
 <a href="#appendix-A" class="section-number selfRef">Appendix A. </a><a href="#name-cddl-schema" class="section-name selfRef">CDDL Schema</a>
       </h2>
+<p id="appendix-A-1">The following CDDL Schema <span>[<a href="#CDDL" class="cite xref">CDDL</a>]</span> includes example values for each item.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 <span id="name-a-cddl-description-of-each-"></span><div id="cddl-schema">
 <figure id="figure-1">
-        <div class="alignLeft art-text artwork" id="appendix-A-1.1">
+        <div class="alignLeft art-text artwork" id="appendix-A-2.1">
 <pre>
 name = (TBD1 =&gt; tstr) ; "Jane Doe"
 given_name = (TBD2 =&gt; tstr) ; "Jane"
@@ -2301,7 +2306,9 @@ locale = (TBD15 =&gt; tstr) ; "en_US"
 phone_number = (TBD16 =&gt; tstr) ; "+1 (425) 555-1212"
 phone_number_verified = (TBD17 =&gt; bool) ; true
 address = {
-    &amp;(formatted: 1) ^ =&gt; tstr, ; "1234 Hollywood Blvd. Los Angeles CA, 90210 United States of America"
+    &amp;(formatted: 1) ^ =&gt; tstr,
+    ; "1234 Hollywood Blvd. Los Angeles CA,"
+    ; " 90210 United States of America"
     &amp;(street_address: 2) ^ =&gt; tstr, ; "1234 Hollywood Blvd."
     &amp;(locality: 3) ^ =&gt; tstr, ; "Los Angeles"
     &amp;(region: 4) ^ =&gt; tstr, ; "CA"
