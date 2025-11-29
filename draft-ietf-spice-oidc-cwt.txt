@@ -5,8 +5,8 @@
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
 Intended status: Informational                               M. B. Jones
-Expires: 30 May 2026                              Self-Issued Consulting
-                                                        26 November 2025
+Expires: 2 June 2026                              Self-Issued Consulting
+                                                        29 November 2025
 
 
     OpenID Connect Standard Claims Registration for CBOR Web Tokens
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 30 May 2026.
+   This Internet-Draft will expire on 2 June 2026.
 
 Copyright Notice
 
@@ -535,7 +535,9 @@ Document History
 
    -03
 
-   *  Repeat suggested normative labels for address claim items
+   *  Moved claim definitions into the body of the specification.
+
+   *  Defined numeric labels for address claim items.
 
    *  Copied text describing gender claim values from [OpenID.Core].
 
