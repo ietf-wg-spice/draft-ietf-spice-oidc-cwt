@@ -591,7 +591,8 @@ TBD
 
 -03
 
-* Repeat suggested normative labels for address claim items
+* Moved claim definitions into the body of the specification.
+* Defined numeric labels for address claim items.
 * Copied text describing `gender` claim values from {{OpenID.Core}}.
 
 -02
