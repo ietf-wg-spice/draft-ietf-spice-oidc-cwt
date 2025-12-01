@@ -584,14 +584,22 @@ The following CDDL Schema {{?CDDL=RFC8610}} includes example values for each ite
 # Acknowledgments
 {:numbered="false"}
 
-TBD
+The authors would like to thank the following individuals for their
+contributions to this specification:
+Martin Thompson
+and
+David Waite.
+
 
 # Document History
 {: numbered="false"}
 
--03
+-04
 
 * Moved claim definitions into the body of the specification.
+
+-03
+
 * Defined numeric labels for address claim items.
 * Copied text describing `gender` claim values from {{OpenID.Core}}.
 
