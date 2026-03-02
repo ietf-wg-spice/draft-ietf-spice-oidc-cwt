@@ -5,8 +5,8 @@
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
 Intended status: Informational                               M. B. Jones
-Expires: 4 June 2026                              Self-Issued Consulting
-                                                         1 December 2025
+Expires: 3 September 2026                         Self-Issued Consulting
+                                                            2 March 2026
 
 
     OpenID Connect Standard Claims Registration for CBOR Web Tokens
@@ -50,11 +50,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 4 June 2026.
+   This Internet-Draft will expire on 3 September 2026.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -119,10 +119,16 @@ Table of Contents
 
 3.  OpenID Connect Claims
 
-   This section enumerates the OpenID Connect claims that are
-   registered, including the fields necessary for registration with
-   IANA; see Section 5.  The definitions of each field are taken from
-   [OpenID.Core] verbatim.
+   This section enumerates the claims defined and registered by OpenID
+   Connect.  It includes the fields necessary for registration of the
+   equivalent CWT claims in the "CBOR Web Token (CWT) Claims"
+   [IANA.CWT.Claims] registry.  The claim names and descriptions are
+   substantially the same as those in [OpenID.Core].
+
+   Note that while the "sub" claim is included in the table of claims in
+   Section 5.1 of [OpenID.Core], it is not included here because it is
+   already registered in the "CBOR Web Token (CWT) Claims"
+   [IANA.CWT.Claims] registry.
 
 3.1.  name
 
@@ -181,7 +187,7 @@ Table of Contents
 
    Claim Name:  preferred_username
    Claim Description:  Shorthand name by which the End-User wishes to be
-      referred to at the Resource Server.
+      referred to.
    JWT Claim Name:  preferred_username
    Claim Key:  TBD6 (175 suggested)
    Claim Value Type(s):  text string
@@ -235,12 +241,12 @@ Table of Contents
    Claim Name:  email_verified
    Claim Description:  True if the End-User's e-mail address has been
       verified; otherwise false.  When this Claim Value is true, this
-      means that the OP took affirmative steps to ensure that this
-      e-mail address was controlled by the End-User at the time the
-      verification was performed.  The means by which an e-mail address
-      is verified is context specific, and dependent upon the trust
-      framework or contractual agreements within which the parties are
-      operating.
+      means that the issuer of the CWT took affirmative steps to ensure
+      that this e-mail address was controlled by the End-User at the
+      time the verification was performed.  The means by which an e-mail
+      address is verified is context specific, and dependent upon the
+      trust framework or contractual agreements within which the parties
+      are operating.
    JWT Claim Name:  email_verified
    Claim Key:  TBD11 (180 suggested)
    Claim Value Type(s):  bool
@@ -266,9 +272,9 @@ Table of Contents
       [ISO8601_1] YYYY-MM-DD format.  The year MAY be 0000, indicating
       that it is omitted.  To represent only the year, YYYY format is
       allowed.  Note that depending on the underlying platform's date
-      related function, providing just year can result in varying month
-      and day, so the implementers need to take this factor into account
-      to correctly process the dates.
+      related function, providing just the year can result in an
+      unpredictable month and day, so the implementers need to take this
+      factor into account to correctly process the dates.
    JWT Claim Name:  birthdate
    Claim Key:  TBD13 (182 suggested)
    Claim Value Type(s):  text string
@@ -312,13 +318,13 @@ Table of Contents
    Claim Name:  phone_number_verified
    Claim Description:  True if the End-User's phone number has been
       verified; otherwise false.  When this Claim Value is true, this
-      means that the OP took affirmative steps to ensure that this phone
-      number was controlled by the End-User at the time the verification
-      was performed.  The means by which a phone number is verified is
-      context specific, and dependent upon the trust framework or
-      contractual agreements within which the parties are operating.
-      When true, the phone_number Claim MUST be in E.164 format and any
-      extensions MUST be represented in [RFC3966] format.
+      means that the issuer of the CWT took affirmative steps to ensure
+      that this phone number was controlled by the End-User at the time
+      the verification was performed.  The means by which a phone number
+      is verified is context specific, and dependent upon the trust
+      framework or contractual agreements within which the parties are
+      operating.  When true, the phone_number Claim MUST be in E.164
+      format and any extensions MUST be represented in [RFC3966] format.
    JWT Claim Name:  phone_number_verified
    Claim Key:  TBD17 (186 suggested)
    Claim Value Type(s):  bool
@@ -385,7 +391,7 @@ Table of Contents
 
    We strictly map the definition of claims in Section 5.1.1 of
    [OpenID.Core]: all the claims are optional and "formatted" can either
-   be used instead or in addition of all the other fields.
+   be used instead of, or in addition to all the other fields.
 
 3.19.  updated_at
 
@@ -394,7 +400,7 @@ Table of Contents
       Its value is a NumericDate as defined in Section 2 of [RFC8392].
    JWT Claim Name:  updated_at
    Claim Key:  TBD19 (188 suggested)
-   Claim Value Type(s):  integer or floating-point number
+   Claim Value Type(s):  integer or finite floating-point number
    Change Controller:  IETF
    Specification Document(s):  Section 5.1 of [OpenID.Core]
 
@@ -408,13 +414,15 @@ Table of Contents
 
 5.  IANA Considerations
 
-   All claims defined in Section 3 are registered in the (CBOR Web Token
-   (CWT) Claims) [IANA.CWT.Claims] Registry (part of the eponymous
-   registry group).  No new IANA registry is created.
+   IANA is requested to register the CWT claims defined in Section 3 in
+   the "CBOR Web Token (CWT) Claims" registry [IANA.CWT.Claims].
+
+   [[ Note to the RFC Editor: Please remove this instruction to IANA
+   following successful IANA registrations.
 
    In case any of the suggested code points would have been claimed by
    the time the IESG approves the document for publication as an RFC,
-   IANA is asked to assign Claim Key values from the 170-256 range.
+   IANA is asked to assign Claim Key values from the 170-256 range. ]]
 
 6.  References
 
@@ -530,9 +538,14 @@ Appendix A.  CDDL Schema
 Acknowledgments
 
    The authors would like to thank the following individuals for their
-   contributions to this specification: Martin Thompson and David Waite.
+   contributions to this specification: Rohan Mahy, Martin Thompson, and
+   David Waite.
 
 Document History
+
+   -05
+
+   *  Applied shepherd review comments by Rohan Mahy.
 
    -04
 
