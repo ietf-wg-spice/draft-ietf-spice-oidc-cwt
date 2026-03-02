@@ -323,8 +323,9 @@ Table of Contents
       the verification was performed.  The means by which a phone number
       is verified is context specific, and dependent upon the trust
       framework or contractual agreements within which the parties are
-      operating.  When true, the phone_number Claim MUST be in E.164
-      format and any extensions MUST be represented in [RFC3966] format.
+      operating.  When true, the phone_number Claim MUST conform the to
+      syntax of the global-number production in [RFC3966], including any
+      extensions.
    JWT Claim Name:  phone_number_verified
    Claim Key:  TBD17 (186 suggested)
    Claim Value Type(s):  bool

@@ -2016,8 +2016,8 @@ and day, so the implementers need to take this factor into account to correctly 
             <p id="section-3.17-1.4.1">True if the End-User's phone number has been verified; otherwise false. When this Claim Value is true, this means that
 the issuer of the CWT took affirmative steps to ensure that this phone number was controlled by the End-User at the time the verification
 was performed. The means by which a phone number is verified is context specific, and dependent upon the trust framework
-or contractual agreements within which the parties are operating. When true, the phone_number Claim <span class="bcp14">MUST</span> be in E.164
-format and any extensions <span class="bcp14">MUST</span> be represented in <span>[<a href="#RFC3966" class="cite xref">RFC3966</a>]</span> format.<a href="#section-3.17-1.4.1" class="pilcrow">¶</a></p>
+or contractual agreements within which the parties are operating. When true, the phone_number Claim <span class="bcp14">MUST</span> conform the to
+syntax of the <code>global-number</code> production in <span>[<a href="#RFC3966" class="cite xref">RFC3966</a>]</span>, including any extensions.<a href="#section-3.17-1.4.1" class="pilcrow">¶</a></p>
 </dd>
           <dd class="break"></dd>
 <dt id="section-3.17-1.5">JWT Claim Name:</dt>
