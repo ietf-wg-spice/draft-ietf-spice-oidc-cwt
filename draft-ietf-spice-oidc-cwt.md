@@ -615,7 +615,7 @@ David Waite.
   - Removed uses of the undefined terms Resource Server and OP.
   - Improved "birthdate" description.
   - Improved "phone_number_verified" description.
-  - Say that floats used in "updated_at" must be finite.
+  - Said that floats used in "updated_at" must be finite.
   - Improved IANA Considerations wording.
   - Improved the CDDL and the examples in Appendix A.
 
