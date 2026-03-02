@@ -73,7 +73,15 @@ OpenID Connect {{OpenID.Core}} is an authentication standard including standard 
 
 # OpenID Connect Claims {#claims}
 
-This section enumerates the OpenID Connect claims that are registered, including the fields necessary for registration with IANA; see {{iana}}.  The definitions of each field are taken from {{OpenID.Core}} verbatim.
+This section enumerates the claims defined and registered by OpenID Connect.
+It includes the fields necessary for registration of the equivalent CWT claims
+in the "CBOR Web Token (CWT) Claims" {{IANA.CWT.Claims}} registry.
+The claim names and descriptions are substantially the same as those in {{OpenID.Core}}.
+
+Note that while the "sub" claim is included in the table of claims in
+Section 5.1 of {{OpenID.Core}},
+it is not included here because it is already registered
+in the "CBOR Web Token (CWT) Claims" {{IANA.CWT.Claims}} registry.
 
 ## name
 
@@ -202,7 +210,7 @@ Claim Name:
 : preferred_username
 
 Claim Description:
-: Shorthand name by which the End-User wishes to be referred to at the Resource Server.
+: Shorthand name by which the End-User wishes to be referred to.
 
 JWT Claim Name:
 : preferred_username
@@ -323,7 +331,7 @@ Claim Name:
 
 Claim Description:
 : True if the End-User's e-mail address has been verified; otherwise false. When this Claim Value is true, this means
-that the OP took affirmative steps to ensure that this e-mail address was controlled by the End-User at the time the
+that the issuer of the CWT took affirmative steps to ensure that this e-mail address was controlled by the End-User at the time the
 verification was performed. The means by which an e-mail address is verified is context specific, and dependent upon
 the trust framework or contractual agreements within which the parties are operating.
 
@@ -375,7 +383,7 @@ Claim Name:
 Claim Description:
 : End-User's birthday, represented as an [ISO8601‑1] `YYYY-MM-DD` format. The year MAY be `0000`, indicating that it is omitted.
 To represent only the year, `YYYY` format is allowed.
-Note that depending on the underlying platform's date related function, providing just year can result in varying month
+Note that depending on the underlying platform's date related function, providing just the year can result in an unpredictable month
 and day, so the implementers need to take this factor into account to correctly process the dates.
 
 JWT Claim Name:
@@ -473,7 +481,7 @@ Claim Name:
 
 Claim Description:
 : True if the End-User's phone number has been verified; otherwise false. When this Claim Value is true, this means that
-the OP took affirmative steps to ensure that this phone number was controlled by the End-User at the time the verification
+the issuer of the CWT took affirmative steps to ensure that this phone number was controlled by the End-User at the time the verification
 was performed. The means by which a phone number is verified is context specific, and dependent upon the trust framework
 or contractual agreements within which the parties are operating. When true, the phone_number Claim MUST be in E.164
 format and any extensions MUST be represented in {{!RFC3966}} format.
@@ -532,7 +540,7 @@ To further reduce the size of this prevalent and large claim, these unsigned int
 | country        | 6     | text string | Country name component. |
 {: #tab-address-label title="Address labels"}
 
-We strictly map the definition of claims in Section 5.1.1 of {{OpenID.Core}}: all the claims are optional and "formatted" can either be used instead or in addition of all the other fields.
+We strictly map the definition of claims in Section 5.1.1 of {{OpenID.Core}}: all the claims are optional and "formatted" can either be used instead of, or in addition to all the other fields.
 
 
 ## updated_at
@@ -551,7 +559,7 @@ Claim Key:
 : TBD19 (188 suggested)
 
 Claim Value Type(s):
-: integer or floating-point number
+: integer or finite floating-point number
 
 Change Controller:
 : IETF
@@ -565,9 +573,13 @@ This document registers existing OpenID Connect standard claims already used in 
 
 # IANA Considerations {#iana}
 
-All claims defined in {{claims}} are registered in the (CBOR Web Token (CWT) Claims) {{IANA.CWT.Claims}} Registry (part of the eponymous registry group). No new IANA registry is created.
+IANA is requested to register the CWT claims defined in {{claims}} in the
+"CBOR Web Token (CWT) Claims" registry {{IANA.CWT.Claims}}.
+
+[[ Note to the RFC Editor:  Please remove this instruction to IANA following successful IANA registrations.
 
 In case any of the suggested code points would have been claimed by the time the IESG approves the document for publication as an RFC, IANA is asked to assign Claim Key values from the 170-256 range.
+]]
 
 --- back
 
@@ -586,13 +598,18 @@ The following CDDL Schema {{?CDDL=RFC8610}} includes example values for each ite
 
 The authors would like to thank the following individuals for their
 contributions to this specification:
-Martin Thompson
+Rohan Mahy,
+Martin Thompson,
 and
 David Waite.
 
 
 # Document History
 {: numbered="false"}
+
+-05
+
+* Applied shepherd review comments by Rohan Mahy.
 
 -04
 
