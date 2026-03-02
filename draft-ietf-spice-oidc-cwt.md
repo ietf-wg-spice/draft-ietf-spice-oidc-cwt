@@ -483,8 +483,8 @@ Claim Description:
 : True if the End-User's phone number has been verified; otherwise false. When this Claim Value is true, this means that
 the issuer of the CWT took affirmative steps to ensure that this phone number was controlled by the End-User at the time the verification
 was performed. The means by which a phone number is verified is context specific, and dependent upon the trust framework
-or contractual agreements within which the parties are operating. When true, the phone_number Claim MUST be in E.164
-format and any extensions MUST be represented in {{!RFC3966}} format.
+or contractual agreements within which the parties are operating. When true, the phone_number Claim MUST conform the to
+syntax of the `global-number` production in {{!RFC3966}}, including any extensions.
 
 JWT Claim Name:
 : phone_number_verified
