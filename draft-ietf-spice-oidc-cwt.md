@@ -76,7 +76,7 @@ OpenID Connect {{OpenID.Core}} is an authentication standard including standard 
 This section enumerates the claims defined and registered by OpenID Connect.
 It includes the fields necessary for registration of the equivalent CWT claims
 in the "CBOR Web Token (CWT) Claims" {{IANA.CWT.Claims}} registry.
-The claim names and descriptions are taken from {{OpenID.Core}} verbatim.
+The claim names and descriptions are substantially the same as in {{OpenID.Core}} verbatim.
 
 Note that while the "sub" claim is included in the table of claims in
 Section 5.1 of {{OpenID.Core}},
