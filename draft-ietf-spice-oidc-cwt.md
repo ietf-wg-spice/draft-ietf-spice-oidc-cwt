@@ -73,7 +73,15 @@ OpenID Connect {{OpenID.Core}} is an authentication standard including standard 
 
 # OpenID Connect Claims {#claims}
 
-This section enumerates the OpenID Connect claims that are registered, including the fields necessary for registration with IANA; see {{iana}}.  The definitions of each field are taken from {{OpenID.Core}} verbatim.
+This section enumerates the claims defined and registered by OpenID Connect.
+It includes the fields necessary for registration of the equivalent CWT claims
+in the "CBOR Web Token (CWT) Claims" {{IANA.CWT.Claims}} registry.
+The claim names and descriptions are taken from {{OpenID.Core}} verbatim.
+
+Note that while the "sub" claim is included in the table of claims in
+Section 5.1 of {{OpenID.Core}},
+it is not included here because it is already registered
+in the "CBOR Web Token (CWT) Claims" {{IANA.CWT.Claims}} registry.
 
 ## name
 
@@ -565,9 +573,12 @@ This document registers existing OpenID Connect standard claims already used in 
 
 # IANA Considerations {#iana}
 
-All claims defined in {{claims}} are registered in the (CBOR Web Token (CWT) Claims) {{IANA.CWT.Claims}} Registry (part of the eponymous registry group). No new IANA registry is created.
+All claims defined in {{claims}} are registered in the "CBOR Web Token (CWT) Claims" {{IANA.CWT.Claims}} registry (part of the eponymous registry group). No new IANA registry is created.
+
+[[ Note to the RFC Editor:  Please remove this instruction to IANA following successful IANA registrations.
 
 In case any of the suggested code points would have been claimed by the time the IESG approves the document for publication as an RFC, IANA is asked to assign Claim Key values from the 170-256 range.
+]]
 
 --- back
 
@@ -586,13 +597,18 @@ The following CDDL Schema {{?CDDL=RFC8610}} includes example values for each ite
 
 The authors would like to thank the following individuals for their
 contributions to this specification:
-Martin Thompson
+Rohan Mahy,
+Martin Thompson,
 and
 David Waite.
 
 
 # Document History
 {: numbered="false"}
+
+-05
+
+* Applied shepherd review comments by Rohan Mahy.
 
 -04
 
