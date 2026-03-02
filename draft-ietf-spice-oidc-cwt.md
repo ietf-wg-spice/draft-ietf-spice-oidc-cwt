@@ -609,7 +609,15 @@ David Waite.
 
 -05
 
-* Applied shepherd review comments by Rohan Mahy.
+* Applied shepherd review comments by Rohan Mahy, specifically:
+  - No longer say that the claim descriptions are copied verbatim.
+  - Mentioned that "sub" is already registered.
+  - Removed uses of the undefined terms Resource Server and OP.
+  - Improved "birthdate" description.
+  - Improved "phone_number_verified" description.
+  - Said that floats used in "updated_at" must be finite.
+  - Improved IANA Considerations wording.
+  - Improved the CDDL and the examples in Appendix A.
 
 -04
 
