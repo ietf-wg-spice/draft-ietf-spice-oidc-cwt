@@ -2300,34 +2300,40 @@ format and any extensions <span class="bcp14">MUST</span> be represented in <spa
 <figure id="figure-1">
         <div class="alignLeft art-text artwork" id="appendix-A-2.1">
 <pre>
-name = (TBD1 =&gt; tstr) ; "Jane Doe"
-given_name = (TBD2 =&gt; tstr) ; "Jane"
-family_name = (TBD3 =&gt; tstr) ; "Doe"
-middle_name = (TBD4 =&gt; tstr) ; "Ellen"
-nickname = (TBD5 =&gt; tstr) ; "Jane D."
-preferred_username = (TBD6 =&gt; tstr) ; "j.doe"
-profile = (TBD7 =&gt; tstr) ; "https://example.org/about.html"
-picture = (TBD8 =&gt; tstr) ; "https://example.org/avatar.png"
-website = (TBD9 =&gt; tstr) ; "https://example.org"
-email = (TBD10 =&gt; tstr) ; "janedoe@example.com"
-email_verified = (TBD11 =&gt; bool) ; true
-gender = (TBD12 =&gt; tstr) ; "female"
-birthdate = (TBD13 =&gt; tstr) ; "1970-03-22"
-zoneinfo = (TBD14 =&gt; tstr) ; "America/Los_Angeles"
-locale = (TBD15 =&gt; tstr) ; "en_US"
-phone_number = (TBD16 =&gt; tstr) ; "+1 (425) 555-1212"
-phone_number_verified = (TBD17 =&gt; bool) ; true
-address = {
-    &amp;(formatted: 1) ^ =&gt; tstr,
-    ; "1234 Hollywood Blvd. Los Angeles CA,"
-    ; " 90210 United States of America"
-    &amp;(street_address: 2) ^ =&gt; tstr, ; "1234 Hollywood Blvd."
-    &amp;(locality: 3) ^ =&gt; tstr, ; "Los Angeles"
-    &amp;(region: 4) ^ =&gt; tstr, ; "CA"
-    &amp;(postal_code: 5) ^ =&gt; tstr, ; "90210"
-    &amp;(country: 6) ^ =&gt; tstr, ; "United States of America"
+oidc-claims = {
+    ? &amp;(sub: 2) ^ =&gt; tstr,        ; "https://device.example"
+    ? &amp;(name: TBD1) ^ =&gt; tstr,               ; "Jane Doe"
+    ? &amp;(given_name: TBD2) ^ =&gt; tstr,         ; "Jane"
+    ? &amp;(family_name: TBD3) ^ =&gt; tstr,        ; "Doe"
+    ? &amp;(middle_name: TBD4) ^ =&gt; tstr,        ; "Ellen"
+    ? &amp;(nickname: TBD5) ^ =&gt; tstr,           ; "Janet"
+    ? &amp;(preferred_username: TBD6) ^ =&gt; tstr, ; "j.doe"
+    ? &amp;(profile: TBD7) ^ =&gt; tstr, ; "https://example.org/about.html"
+    ? &amp;(picture: TBD8) ^ =&gt; tstr, ; "https://example.org/avatar.png"
+    ? &amp;(website: TBD9) ^ =&gt; tstr, ; "https://example.org"
+    ? &amp;(email: TBD10) ^ =&gt; tstr,             ; "janedoe@example.com"
+    ? &amp;(email_verified: TBD11) ^ =&gt; bool,    ; true
+    ? &amp;(gender: TBD12) ^ =&gt; tstr,            ; "female"
+    ? &amp;(birthdate: TBD13) ^ =&gt; tstr,         ; "1970-03-22"
+    ? &amp;(zoneinfo: TBD14) ^ =&gt; tstr,          ; "America/Los_Angeles"
+    ? &amp;(locale: TBD15) ^ =&gt; tstr,            ; "en_US"
+    ? &amp;(phone_number: TBD16) ^ =&gt; tstr,      ; "+1(425)555-1212"
+    ? &amp;(phone_number_verified: TBD17) ^ =&gt; bool, ; true
+    ? &amp;(address: TBD18) ^ =&gt; address_type,
+    ? &amp;(updated_at: TBD19) ^ =&gt; int / float,     ; 1730123071
 }
-updated_at = (TBD19 =&gt; int / float) ; 1730123071
+
+address_type = {
+    ? &amp;(formatted: 1) ^ =&gt; tstr,
+        ; "1234 Hollywood Blvd\n"
+        ; "Los Angeles CA 90210\n"
+        ; "USA"
+    ? &amp;(street_address: 2) ^ =&gt; tstr, ; "1234 Hollywood Boulevard"
+    ? &amp;(locality: 3) ^ =&gt; tstr,       ; "Los Angeles"
+    ? &amp;(region: 4) ^ =&gt; tstr,         ; "CA"
+    ? &amp;(postal_code: 5) ^ =&gt; tstr,    ; "90210"
+    ? &amp;(country: 6) ^ =&gt; tstr,        ; "United States of America"
+}
 
 TBD1 = 170
 TBD2 = 171
