@@ -1,0 +1,30 @@
+{
+    170: "Jane Doe",                        /name/
+    171: "Jane",                            /given_name/
+    172: "Doe",                             /family_name/
+    173: "Ellen",                           /middle_name/
+    174: "Janet",                           /nickname/
+    175: "j.doe",                           /preferred_username/
+    176: "https://example.org/about.html",  /profile/
+    177: "https://example.org/avatar.png",  /picture/
+    178: "https://example.org",             /website/
+    179: "janedoe@example.com",             /email/
+    180: true,                              /email_verified/
+    181: "female",                          /gender/
+    182: "1970-03-22",                      /birthdate/
+    183: "America/Los_Angeles",             /zoneinfo/
+    184: "en_US",                           /locale/
+    185: "+1 (425) 555-1212",               /phone_number/
+    186: true,                              /phone_number_verified/
+    187: {                                  /address/
+        1: "1234 Hollywood Blvd\n" +
+           "Los Angeles CA 90210\n" +
+           "USA",                               /formatted/
+        2: "1234 Hollywood Boulevard",          /street_address/
+        3: "Los Angeles",                       /locality/
+        4: "CA",                                /region/
+        5: "90210",                             /postal_code/
+        6: "United States of America"           /country/
+    },
+    188: 1730123071                         /updated_at/
+}
