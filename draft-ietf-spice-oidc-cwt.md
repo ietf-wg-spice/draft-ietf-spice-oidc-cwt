@@ -390,8 +390,9 @@ Claim Name:
 : birthdate
 
 Claim Description:
-: End-User's birthday, represented as an [ISO8601‑1] `YYYY-MM-DD` format. The year MAY be `0000`, indicating that it is omitted.
-To represent only the year, `YYYY` format is allowed.
+: End-User's birthday, represented as an [ISO8601‑1] `YYYY-MM-DD` format when all three values are provided.
+The year MAY be `0000`, indicating that it is omitted.
+To represent only the year, the `YYYY` format is allowed.
 Note that depending on the underlying platform's date related function, providing just the year can result in an unpredictable month
 and day, so the implementers need to take this factor into account to correctly process the dates.
 
@@ -607,6 +608,7 @@ The following CDDL Schema {{RFC8610}} includes example values for each item.
 
 The authors would like to thank the following individuals for their
 contributions to this specification:
+Chris Inacio,
 Rohan Mahy,
 Martin Thompson,
 and
@@ -615,6 +617,10 @@ David Waite.
 
 # Document History
 {: numbered="false"}
+
+-07
+
+* Clarified description of omitting the year in a birthdate claim.
 
 -06
 
