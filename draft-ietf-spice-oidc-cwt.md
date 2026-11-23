@@ -581,6 +581,28 @@ Specification Document(s):
 
 This document registers existing OpenID Connect standard claims already used in JSON Web Tokens {{?RFC7519}} for use in CBOR Web Tokens {{!RFC8392}} without changing their semantics. The Security and Privacy Considerations respectively of Sections 16 and 17 of {{OpenID.Core}} also apply.
 
+# CBOR Tags and Claim Values
+
+The requirements of {{Section 5 of RFC8392}} (CBOR Tags and Claim Values)
+apply to the claims defined by this specification
+and the values in the "address" claim structure.
+Specifically, the values defined in this specification
+MUST NOT be prefixed with any CBOR tag.
+
+# Extensibility of Address Claim Structure
+
+Additional members within the "address" claim structure MAY be defined and used.
+Any such members that are not understood by implementations MUST be ignored.
+This aligns with {{Section 3 of RFC8392}}, which states that
+"... all claims that are not understood by implementations MUST be ignored".
+
+# Omitting Absent Claims
+
+If a claim is not used in a CWT,
+that claim MUST be omitted from the CBOR object representing the claims in the CWT;
+it MUST NOT be present with a null or empty string value.
+This aligns with the corresponding guidance in Section 5.3.2 of {{OpenID.Core}}.
+
 # IANA Considerations {#iana}
 
 IANA is requested to register the CWT claims defined in {{claims}} in the
@@ -621,6 +643,9 @@ David Waite.
 -07
 
 * Clarified description of omitting the year in a birthdate claim.
+* Defined that values MUST NOT be prefixed by CBOR tags.
+* Described extensibility of "address" claim structure.
+* Prohibited including absent claims with null or empty string values.
 
 -06
 
