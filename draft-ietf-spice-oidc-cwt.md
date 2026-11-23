@@ -577,10 +577,6 @@ Change Controller:
 Specification Document(s):
 : Section 5.1 of {{OpenID.Core}}
 
-# Security Considerations
-
-This document registers existing OpenID Connect standard claims already used in JSON Web Tokens {{?RFC7519}} for use in CBOR Web Tokens {{!RFC8392}} without changing their semantics. The Security and Privacy Considerations respectively of Sections 16 and 17 of {{OpenID.Core}} also apply.
-
 # CBOR Tags and Claim Values
 
 The requirements of {{Section 5 of RFC8392}} (CBOR Tags and Claim Values)
@@ -602,6 +598,10 @@ If a claim is not used in a CWT,
 that claim MUST be omitted from the CBOR object representing the claims in the CWT;
 it MUST NOT be present with a null or empty string value.
 This aligns with the corresponding guidance in Section 5.3.2 of {{OpenID.Core}}.
+
+# Security Considerations
+
+This document registers existing OpenID Connect standard claims already used in JSON Web Tokens {{?RFC7519}} for use in CBOR Web Tokens {{!RFC8392}} without changing their semantics. The Security and Privacy Considerations respectively of Sections 16 and 17 of {{OpenID.Core}} also apply.
 
 # IANA Considerations {#iana}
 
