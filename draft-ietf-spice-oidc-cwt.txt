@@ -5,8 +5,8 @@
 Secure Patterns for Internet CrEdentials                      B. Maldant
 Internet-Draft                                               SimpleLogin
 Intended status: Standards Track                             M. B. Jones
-Expires: 26 May 2027                              Self-Issued Consulting
-                                                        22 November 2026
+Expires: 27 May 2027                              Self-Issued Consulting
+                                                        23 November 2026
 
 
     OpenID Connect Standard Claims Registration for CBOR Web Tokens
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 26 May 2027.
+   This Internet-Draft will expire on 27 May 2027.
 
 Copyright Notice
 
@@ -92,10 +92,13 @@ Table of Contents
        3.18.1.  Address Claim
      3.19. updated_at
    4.  Security Considerations
-   5.  IANA Considerations
-   6.  References
-     6.1.  Normative References
-     6.2.  Informative References
+   5.  CBOR Tags and Claim Values
+   6.  Extensibility of Address Claim Structure
+   7.  Omitting Absent Claims
+   8.  IANA Considerations
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
    Appendix A.  CDDL Schema
    Acknowledgments
    Document History
@@ -414,7 +417,29 @@ Table of Contents
    Considerations respectively of Sections 16 and 17 of [OpenID.Core]
    also apply.
 
-5.  IANA Considerations
+5.  CBOR Tags and Claim Values
+
+   The requirements of Section 5 of [RFC8392] (CBOR Tags and Claim
+   Values) apply to the claims defined by this specification and the
+   values in the "address" claim structure.  Specifically, the values
+   defined in this specification MUST NOT be prefixed with any CBOR tag.
+
+6.  Extensibility of Address Claim Structure
+
+   Additional members within the "address" claim structure MAY be
+   defined and used.  Any such members that are not understood by
+   implementations MUST be ignored.  This aligns with Section 3 of
+   [RFC8392], which states that "... all claims that are not understood
+   by implementations MUST be ignored".
+
+7.  Omitting Absent Claims
+
+   If a claim is not used in a CWT, that claim MUST be omitted from the
+   CBOR object representing the claims in the CWT; it MUST NOT be
+   present with a null or empty string value.  This aligns with the
+   corresponding guidance in Section 5.3.2 of [OpenID.Core].
+
+8.  IANA Considerations
 
    IANA is requested to register the CWT claims defined in Section 3 in
    the "CBOR Web Token (CWT) Claims" registry [IANA.CWT.Claims].
@@ -426,9 +451,9 @@ Table of Contents
    the time the IESG approves the document for publication as an RFC,
    IANA is asked to assign Claim Key values from the 170-256 range. ]]
 
-6.  References
+9.  References
 
-6.1.  Normative References
+9.1.  Normative References
 
    [IANA.CWT.Claims]
               IANA, "CBOR Web Token (CWT) Claims",
@@ -469,7 +494,7 @@ Table of Contents
               "CBOR Web Token (CWT)", RFC 8392, DOI 10.17487/RFC8392,
               May 2018, <https://www.rfc-editor.org/rfc/rfc8392>.
 
-6.2.  Informative References
+9.2.  Informative References
 
    [RFC7519]  Jones, M., Bradley, J., and N. Sakimura, "JSON Web Token
               (JWT)", RFC 7519, DOI 10.17487/RFC7519, May 2015,
@@ -554,6 +579,13 @@ Document History
    -07
 
    *  Clarified description of omitting the year in a birthdate claim.
+
+   *  Defined that values MUST NOT be prefixed by CBOR tags.
+
+   *  Described extensibility of "address" claim structure.
+
+   *  Prohibited including absent claims with null or empty string
+      values.
 
    -06
 
