@@ -91,10 +91,10 @@ Table of Contents
      3.18. address
        3.18.1.  Address Claim
      3.19. updated_at
-   4.  Security Considerations
-   5.  CBOR Tags and Claim Values
-   6.  Extensibility of Address Claim Structure
-   7.  Omitting Absent Claims
+   4.  CBOR Tags and Claim Values
+   5.  Extensibility of Address Claim Structure
+   6.  Omitting Absent Claims
+   7.  Security Considerations
    8.  IANA Considerations
    9.  References
      9.1.  Normative References
@@ -409,22 +409,14 @@ Table of Contents
    Change Controller:  IETF
    Specification Document(s):  Section 5.1 of [OpenID.Core]
 
-4.  Security Considerations
-
-   This document registers existing OpenID Connect standard claims
-   already used in JSON Web Tokens [RFC7519] for use in CBOR Web Tokens
-   [RFC8392] without changing their semantics.  The Security and Privacy
-   Considerations respectively of Sections 16 and 17 of [OpenID.Core]
-   also apply.
-
-5.  CBOR Tags and Claim Values
+4.  CBOR Tags and Claim Values
 
    The requirements of Section 5 of [RFC8392] (CBOR Tags and Claim
    Values) apply to the claims defined by this specification and the
    values in the "address" claim structure.  Specifically, the values
    defined in this specification MUST NOT be prefixed with any CBOR tag.
 
-6.  Extensibility of Address Claim Structure
+5.  Extensibility of Address Claim Structure
 
    Additional members within the "address" claim structure MAY be
    defined and used.  Any such members that are not understood by
@@ -432,12 +424,20 @@ Table of Contents
    [RFC8392], which states that "... all claims that are not understood
    by implementations MUST be ignored".
 
-7.  Omitting Absent Claims
+6.  Omitting Absent Claims
 
    If a claim is not used in a CWT, that claim MUST be omitted from the
    CBOR object representing the claims in the CWT; it MUST NOT be
    present with a null or empty string value.  This aligns with the
    corresponding guidance in Section 5.3.2 of [OpenID.Core].
+
+7.  Security Considerations
+
+   This document registers existing OpenID Connect standard claims
+   already used in JSON Web Tokens [RFC7519] for use in CBOR Web Tokens
+   [RFC8392] without changing their semantics.  The Security and Privacy
+   Considerations respectively of Sections 16 and 17 of [OpenID.Core]
+   also apply.
 
 8.  IANA Considerations
 
